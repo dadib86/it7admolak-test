@@ -22,7 +22,7 @@ h1,h2,h3{font-family:"Bricolage Grotesque",Manrope,system-ui,sans-serif;line-hei
 .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
 .ar{font-family:Cairo,"Segoe UI",system-ui,sans-serif;font-weight:800;margin-inline-start:8px}
 .nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
-.brand{font-family:"Bricolage Grotesque",Manrope,sans-serif;font-weight:800;font-size:20px}
+.brand{font-family:"Bricolage Grotesque",Manrope,sans-serif;font-weight:800;font-size:20px;display:flex;align-items:center;gap:10px}.brand img{width:32px;height:32px;border-radius:8px}
 .btn{display:inline-block;border:0;background:var(--cta);color:var(--oncta);font:inherit;font-weight:800;padding:13px 22px;border-radius:12px;cursor:pointer;text-decoration:none}
 .btn.small{padding:9px 16px;font-size:15px}
 .btn.line{background:none;color:var(--ink);border:1.5px solid var(--line);font-weight:600}
@@ -162,7 +162,7 @@ function done(){
 }
 function render(){
   document.documentElement.lang=lang;document.documentElement.dir=lang=='ar'?'rtl':'ltr';document.title='it7ad molak | إتحاد ملاك – '+(lang=='ar'?'فلوس عمارتك واضحة':'Clear money for your building');
-  var h='<div class="nav"><div class="brand">it7ad molak <span class="ar" lang="ar">إتحاد ملاك</span></div><div class="navr"><button class="btn small line" onclick="setLang(\''+(lang=='ar'?'en':'ar')+'\')">'+(lang=='ar'?'English':'العربية')+'</button><a class="btn small" href="/app/">'+t('cta')+'</a></div></div>';
+  var h='<div class="nav"><div class="brand"><img src="/favicon.svg" alt="" width="32" height="32">it7ad molak <span class="ar" lang="ar">إتحاد ملاك</span></div><div class="navr"><button class="btn small line" onclick="setLang(\''+(lang=='ar'?'en':'ar')+'\')">'+(lang=='ar'?'English':'العربية')+'</button><a class="btn small" href="/app/">'+t('cta')+'</a></div></div>';
   h+='<header class="hero"><div><h1>'+t('h1')+'</h1><p>'+t('heroP')+'</p><div class="acts"><a class="btn" href="/app/">'+t('cta1')+'</a><a class="btn line" href="#how">'+t('cta2')+'</a></div><div class="fine">'+t('fine')+'</div></div>';
   h+='<div class="ledger"><div class="lbl">'+t('lLbl')+'</div><div class="big">14,250 '+t('egp')+'</div><div class="bar"><i></i></div><div class="lbl">'+t('lPct')+'</div><div style="margin-top:12px">'+[['r1','1,450'],['r2','1,200'],['r3','900']].map(function(r){return '<div class="lrow"><span>'+t(r[0])+'</span><span>'+r[1]+' '+t('egp')+'<span class="chip">'+t('photo')+'</span></span></div>'}).join('')+'</div></div></header>';
   h+='<section><h2>'+t('s1h')+'</h2><p class="lead">'+t('s1p')+'</p><div class="grid three">'+[1,2,3,4,5,6].map(card).join('')+'</div></section>';
