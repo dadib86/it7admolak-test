@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#14304A">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>it7ad molak | إتحاد ملاك – Clear money for your building</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Manrope:wght@400;600;800&family=Cairo:wght@400;600;800&display=swap">
+<style>
+:root{--bg:#F1F5F8;--card:#fff;--ink:#14304A;--muted:#566B7F;--line:#D3DDE6;--brand:#14304A;--onbrand:#fff;--cta:#F2A93B;--oncta:#2A1B00;--ok:#16774D;--okbg:#DDF3E8;--warn:#9A5A00;--warnbg:#FBEBCF;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1923;--card:#172635;--ink:#E7EFF6;--muted:#97ABBD;--line:#2A3E51;--brand:#1F4466;--onbrand:#fff;--cta:#F2A93B;--oncta:#2A1B00;--ok:#5FD39B;--okbg:#17382B;--warn:#F0B35A;--warnbg:#3A2C12;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E1923;--card:#172635;--ink:#E7EFF6;--muted:#97ABBD;--line:#2A3E51;--brand:#1F4466;--onbrand:#fff;--cta:#F2A93B;--oncta:#2A1B00;--ok:#5FD39B;--okbg:#17382B;--warn:#F0B35A;--warnbg:#3A2C12;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.55}
+h1,h2,h3{font-family:"Bricolage Grotesque",Manrope,system-ui,sans-serif;line-height:1.1;margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.ar{font-family:Cairo,"Segoe UI",system-ui,sans-serif;font-weight:800;margin-inline-start:8px}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.brand{font-family:"Bricolage Grotesque",Manrope,sans-serif;font-weight:800;font-size:20px}
+.btn{display:inline-block;border:0;background:var(--cta);color:var(--oncta);font:inherit;font-weight:800;padding:13px 22px;border-radius:12px;cursor:pointer;text-decoration:none}
+.btn.small{padding:9px 16px;font-size:15px}
+.btn.line{background:none;color:var(--ink);border:1.5px solid var(--line);font-weight:600}
+.hero{display:grid;gap:32px;padding:28px 0 56px}
+.hero h1{font-size:clamp(36px,7vw,58px);font-weight:800;letter-spacing:-.02em;max-width:14ch}
+.hero p{color:var(--muted);font-size:19px;max-width:46ch;margin:16px 0 24px}
+.acts{display:flex;flex-wrap:wrap;gap:10px}
+.fine{font-size:14px;color:var(--muted);margin-top:12px}
+.ledger{background:var(--brand);color:var(--onbrand);border-radius:20px;padding:22px;max-width:440px;width:100%}
+.ledger .lbl{font-size:13px;opacity:.75}
+.ledger .big{font-family:"Bricolage Grotesque",Manrope,sans-serif;font-size:38px;font-weight:800;letter-spacing:-.02em}
+.bar{height:9px;background:rgba(255,255,255,.22);border-radius:99px;overflow:hidden;margin:12px 0 6px}
+.bar i{display:block;height:100%;width:62%;background:var(--cta);border-radius:99px}
+.lrow{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-top:1px solid rgba(255,255,255,.18);font-size:15px}
+.chip{font-size:12px;font-weight:600;padding:2px 9px;border-radius:99px;background:rgba(255,255,255,.16);margin-left:8px}
+section{padding:44px 0}
+h2{font-size:clamp(28px,5vw,38px);font-weight:800;letter-spacing:-.01em;margin-bottom:10px}
+.lead{color:var(--muted);max-width:56ch;margin:0 0 26px}
+.grid{display:grid;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.card h3{font-size:20px;margin-bottom:8px}
+.card p{margin:0;color:var(--muted);font-size:16px}
+.steps{counter-reset:s;display:grid;gap:14px;padding:0;margin:0;list-style:none}
+.steps li{counter-increment:s;display:flex;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.steps li::before{content:counter(s);flex:none;width:34px;height:34px;border-radius:50%;background:var(--brand);color:var(--onbrand);display:grid;place-items:center;font-weight:800}
+.steps b{display:block;font-size:18px}.steps span{color:var(--muted);font-size:16px}
+.price{font-family:"Bricolage Grotesque",Manrope,sans-serif;font-size:32px;font-weight:800}
+.price small{font-family:Manrope,sans-serif;font-size:15px;font-weight:400;color:var(--muted)}
+.signup{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px}
+.fields{display:grid;gap:4px}
+label{display:block;font-size:14px;font-weight:600;color:var(--muted);margin:12px 0 4px}
+input{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:13px}
+input:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid var(--cta);outline-offset:2px}
+.est{margin-top:14px;padding:12px 14px;border-radius:12px;background:var(--warnbg);color:var(--warn);font-weight:600;font-size:15px;display:none}
+.err{color:#B3372E;font-size:14px;font-weight:600;min-height:20px;margin-top:10px}
+.done{display:none;text-align:left}
+.done h3{font-size:26px;margin-bottom:10px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:10px}
+summary{font-weight:600;cursor:pointer}
+details p{margin:10px 0 0;color:var(--muted);font-size:16px}
+html[lang=ar] body{font-family:Cairo,Manrope,system-ui,sans-serif}
+html[lang=ar] h1,html[lang=ar] h2,html[lang=ar] h3,html[lang=ar] .brand,html[lang=ar] .price,html[lang=ar] .ledger .big{font-family:Cairo,"Bricolage Grotesque",sans-serif;line-height:1.3}
+html[lang=ar] .hero h1{letter-spacing:0;max-width:16ch}
+.navr{display:flex;gap:8px;align-items:center}
+.done h3{font-size:26px;margin-bottom:10px}
+.est{display:none}
+.est{margin-top:14px}
+@media (min-width:760px){.grid.three{grid-template-columns:repeat(3,1fr)}}
+footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);margin-top:20px}
+@media (min-width:760px){.hero{grid-template-columns:1.1fr .9fr;align-items:center}.grid.three{grid-template-columns:repeat(3,1fr)}.fields{grid-template-columns:1fr 1fr;column-gap:14px}.fields .full{grid-column:1/-1}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap" id="root"></div>
+<script>
+var lang='ar';try{lang=localStorage.getItem('lang')||'ar'}catch(e){}
+var D={en:{
+cta:'Start free trial',
+h1:'Your building’s money, clear to everyone.',heroP:'Record what residents pay and what the building spends. Every resident can see where the money goes, with a photo of each invoice.',cta1:'Start 30-day free trial',cta2:'See how it works',fine:'No card needed. Works on any phone.',
+egp:'EGP',lLbl:'Example building · fund balance',lPct:'62% of yearly fees collected',r1:'Electricity',r2:'Elevator maintenance',r3:'Cleaning',photo:'Photo',
+s1h:'No more arguments about money',s1p:'Everyone sees the same numbers, so there is nothing to explain twice.',
+f1t:'For the treasurer',f1p:'Record any payment: part of the year, split in pieces, or the full amount. Save a photo of each invoice in seconds.',
+f2t:'For residents',f2p:'View only. Each resident sees what they paid, what is left, and every expense with its invoice photo.',
+f3t:'Month by month',f3p:'Pick any month from a menu and see the money in, the money out, and every receipt.',
+f4t:'Nothing is hidden',f4p:'Every change is saved in a history that cannot be erased, so everyone can trust the numbers.',
+f5t:'Easy to share',f5p:'Send receipts and payment reminders to residents, and share the monthly statement in your building group.',
+f6t:'Safe sign-in',f6p:'Managers sign in with an email code plus a second step, so only the right person can change the accounts.',
+hwh:'Ready in one afternoon',hwp:'You do not need to be good with technology.',
+w1t:'Sign up for the free trial',w1p:'Tell us about your building. It takes two minutes.',
+w2t:'Add your apartments',w2p:'Enter the number of floors and apartments. Every apartment gets a code like 102, and you invite residents with a link.',
+w3t:'Start recording',w3p:'Save payments and expenses. Residents can now see everything.',
+ph:'One simple price per year',pp:'Free for 30 days. After that, you pay once a year, based on the size of your building.',
+t1:'Small',t1d:'Up to 20 apartments',t2:'Medium',t2d:'21 to 50 apartments',t3:'Large',t3d:'51 apartments or more',perY:'EGP / year',
+sh:'Start your free trial',sp:'Create your account in two minutes. You only need your email.',
+lb:'Building name',lc:'City or area',ln:'Your name',lu:'Number of apartments',lm:'Mobile number',le:'Email',
+pb:'e.g. Lotus Tower',pc:'e.g. Maadi',pn:'Building manager or treasurer',
+est:'After the free trial, your price would be {p} per year.',sbtn:'Start my free trial',sfine:'30 days free. No card needed. Cancel any time.',
+e1:'Please type the building name and your name.',e2:'Please type the number of apartments.',e3:'Please type a valid mobile number, like 01012345678.',e4:'Please type a valid email, like name@example.com.',
+thanks:'Thank you, {n}.',doneP:'We received the free trial request for {b}{a}. We will contact you on {m} to set up your building.',inA:' in {a}',
+next:'What happens next',nextP:'1. We message you. 2. We add your {u} apartments together. 3. You start your 30 free days.',afterT:'After the trial: {p} per year.',
+qh:'Common questions',
+q1:'What happens after the 30 days?',a1:'We message you before the trial ends. If you want to continue, you pay the yearly price for your building size. If you do not pay, the account is locked and your records are kept safe until you do.',
+q2:'Can residents pay in parts?',a2:'Yes. The treasurer records any amount at any time, so residents can pay monthly, in pieces, or all at once.',
+q3:'Can residents change the numbers?',a3:'No. Residents can only view. Only the treasurer can add payments and expenses, and every change is saved in the history.',
+q4:'Is our information private?',a4:'Each building only sees its own records. Residents see their own account and the building’s expenses, not other residents’ payments.',
+foot:'© 2026 it7ad molak | إتحاد ملاك · it7admolak.com. Made for residents who want clear accounts.'
+},ar:{
+cta:'ابدأ التجربة المجانية',
+h1:'فلوس عمارتك واضحة لكل السكان.',heroP:'سجّل ما يدفعه السكان وما تصرفه العمارة. كل ساكن يرى أين تذهب الأموال، مع صورة لكل فاتورة.',cta1:'ابدأ تجربة مجانية 30 يوماً',cta2:'شاهد طريقة العمل',fine:'بدون بطاقة بنكية. يعمل على أي موبايل.',
+egp:'ج.م',lLbl:'عمارة تجريبية · رصيد الصندوق',lPct:'تم تحصيل 62% من الرسوم السنوية',r1:'كهرباء',r2:'صيانة الأسانسير',r3:'نظافة',photo:'صورة',
+s1h:'لا مزيد من الخلافات حول الفلوس',s1p:'الكل يرى نفس الأرقام، فلا حاجة للشرح مرتين.',
+f1t:'لأمين الصندوق',f1p:'سجّل أي دفعة: جزء من السنة أو على أقساط أو المبلغ كاملاً. احفظ صورة كل فاتورة في ثوانٍ.',
+f2t:'للسكان',f2p:'للعرض فقط. يرى كل ساكن ما دفعه وما تبقى عليه وكل مصروف مع صورة فاتورته.',
+f3t:'شهراً بشهر',f3p:'اختر أي شهر من القائمة وشاهد الوارد والمصروف وكل الإيصالات.',
+f4t:'لا شيء مخفي',f4p:'كل تغيير يُحفظ في سجل لا يمكن مسحه، فيثق الجميع في الأرقام.',
+f5t:'سهل المشاركة',f5p:'أرسل الإيصالات وتذكيرات الدفع للسكان، وشارك الكشف الشهري في جروب العمارة.',
+f6t:'دخول آمن',f6p:'يدخل المدير بكود بالبريد الإلكتروني وخطوة ثانية، حتى لا يعدّل الحسابات إلا الشخص المناسب.',
+hwh:'جاهز في عصر يوم واحد',hwp:'لا تحتاج أن تكون خبيراً بالتكنولوجيا.',
+w1t:'سجّل في التجربة المجانية',w1p:'أخبرنا عن عمارتك. يستغرق الأمر دقيقتين.',
+w2t:'أضف شققك',w2p:'أدخل عدد الأدوار والشقق. كل شقة تأخذ كوداً مثل 102، وتدعو السكان برابط.',
+w3t:'ابدأ التسجيل',w3p:'سجّل الدفعات والمصروفات. يستطيع السكان الآن رؤية كل شيء.',
+ph:'سعر واحد بسيط في السنة',pp:'مجاناً لمدة 30 يوماً. بعدها تدفع مرة واحدة في السنة حسب حجم عمارتك.',
+t1:'صغيرة',t1d:'حتى 20 شقة',t2:'متوسطة',t2d:'من 21 إلى 50 شقة',t3:'كبيرة',t3d:'51 شقة أو أكثر',perY:'ج.م / سنة',
+sh:'ابدأ تجربتك المجانية',sp:'أنشئ حسابك في دقيقتين. كل ما تحتاجه بريدك الإلكتروني.',
+lb:'اسم العمارة',lc:'المدينة أو المنطقة',ln:'اسمك',lu:'عدد الشقق',lm:'رقم الموبايل',le:'البريد الإلكتروني',
+pb:'مثال: برج اللوتس',pc:'مثال: المعادي',pn:'مدير العمارة أو أمين الصندوق',
+est:'بعد التجربة المجانية سيكون سعرك {p} في السنة.',sbtn:'ابدأ تجربتي المجانية',sfine:'30 يوماً مجاناً. بدون بطاقة بنكية. يمكنك الإلغاء في أي وقت.',
+e1:'اكتب اسم العمارة واسمك من فضلك.',e2:'اكتب عدد الشقق من فضلك.',e3:'اكتب رقم موبايل صحيحاً مثل 01012345678.',e4:'اكتب بريداً إلكترونياً صحيحاً مثل name@example.com.',
+thanks:'شكراً لك يا {n}.',doneP:'استلمنا طلب التجربة المجانية لعمارة {b}{a}. سنتواصل معك على الرقم {m} لإعداد عمارتك.',inA:' في {a}',
+next:'ماذا بعد؟',nextP:'1. نراسلك. 2. ندخل شققك الـ {u} معاً. 3. تبدأ أيام التجربة الثلاثين.',afterT:'بعد التجربة: {p} في السنة.',
+qh:'أسئلة شائعة',
+q1:'ماذا يحدث بعد 30 يوماً؟',a1:'نراسلك قبل انتهاء التجربة. إذا أردت الاستمرار تدفع السعر السنوي حسب حجم عمارتك. وإذا لم تدفع يُقفل الحساب وتبقى سجلاتك محفوظة حتى تدفع.',
+q2:'هل يستطيع السكان الدفع على أقساط؟',a2:'نعم. يسجّل أمين الصندوق أي مبلغ في أي وقت، فيمكن للسكان الدفع شهرياً أو على أجزاء أو دفعة واحدة.',
+q3:'هل يستطيع السكان تغيير الأرقام؟',a3:'لا. السكان يشاهدون فقط. أمين الصندوق وحده يضيف الدفعات والمصروفات، وكل تغيير يُحفظ في السجل.',
+q4:'هل بياناتنا خاصة؟',a4:'كل عمارة ترى سجلاتها فقط. يرى السكان حسابهم ومصروفات العمارة، ولا يرون دفعات السكان الآخرين.',
+foot:'© 2026 it7ad molak | إتحاد ملاك · it7admolak.com. صُنع لسكان يريدون حسابات واضحة.'
+}};
+function t(k,v){var s=D[lang][k];if(s===undefined)s=D.en[k];if(v)s=s.replace(/\{(\w+)\}/g,function(m,x){return v[x]!==undefined?v[x]:m});return s}
+var tiers=[[20,3000],[50,6000],[1e9,10000]],fv={bn:'',ar:'',nm:'',un:'',mb:'',em:''},sent=null,err='';
+function price(u){for(var i=0;i<tiers.length;i++)if(u<=tiers[i][0])return tiers[i][1]}
+function fmt(n){return n.toLocaleString('en-US')+' '+t('egp')}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function $(i){return document.getElementById(i)}
+function readForm(){if(!$('bn'))return;['bn','ar','nm','un','mb','em'].forEach(function(k){fv[k]=$(k).value})}
+function setLang(l){readForm();lang=l;try{localStorage.setItem('lang',l)}catch(e){}render()}
+function card(i){return '<div class="card"><h3>'+t('f'+i+'t')+'</h3><p>'+t('f'+i+'p')+'</p></div>'}
+function tierCard(i){return '<div class="card"><h3>'+t('t'+i)+'</h3><p>'+t('t'+i+'d')+'</p><div class="price" style="margin-top:10px">'+tiers[i-1][1].toLocaleString('en-US')+' <small>'+t('perY')+'</small></div></div>'}
+function estText(){var u=parseInt(fv.un,10);return u>0?t('est',{p:fmt(price(u))}):''}
+function est(){var u=parseInt($('un').value,10),e=$('est');fv.un=$('un').value;if(u>0){e.style.display='block';e.textContent=t('est',{p:fmt(price(u))})}else e.style.display='none'}
+function form(){
+  return '<div id="formBox"><h2>'+t('sh')+'</h2><p class="lead" style="margin-bottom:14px">'+t('sp')+'</p><a class="btn" style="display:block;text-align:center;padding:16px;font-size:18px" href="/app/">'+t('sbtn')+'</a><div class="fine">'+t('sfine')+'</div></div>';
+}
+function done(){
+  var u=parseInt(sent.u,10);
+  return '<div class="done" style="display:block"><h3>'+t('thanks',{n:esc(sent.n)})+'</h3><p class="lead" style="margin-bottom:12px">'+t('doneP',{b:'<b>'+esc(sent.b)+'</b>',a:sent.a?t('inA',{a:esc(sent.a)}):'',m:'<span dir="ltr">'+esc(sent.m)+'</span>'})+'</p><div class="card"><b>'+t('next')+'</b><p style="margin-top:6px">'+t('nextP',{u:u})+'</p></div><p class="fine">'+t('afterT',{p:fmt(price(u))})+'</p></div>';
+}
+function render(){
+  document.documentElement.lang=lang;document.documentElement.dir=lang=='ar'?'rtl':'ltr';document.title='it7ad molak | إتحاد ملاك – '+(lang=='ar'?'فلوس عمارتك واضحة':'Clear money for your building');
+  var h='<div class="nav"><div class="brand">it7ad molak <span class="ar" lang="ar">إتحاد ملاك</span></div><div class="navr"><button class="btn small line" onclick="setLang(\''+(lang=='ar'?'en':'ar')+'\')">'+(lang=='ar'?'English':'العربية')+'</button><a class="btn small" href="/app/">'+t('cta')+'</a></div></div>';
+  h+='<header class="hero"><div><h1>'+t('h1')+'</h1><p>'+t('heroP')+'</p><div class="acts"><a class="btn" href="/app/">'+t('cta1')+'</a><a class="btn line" href="#how">'+t('cta2')+'</a></div><div class="fine">'+t('fine')+'</div></div>';
+  h+='<div class="ledger"><div class="lbl">'+t('lLbl')+'</div><div class="big">14,250 '+t('egp')+'</div><div class="bar"><i></i></div><div class="lbl">'+t('lPct')+'</div><div style="margin-top:12px">'+[['r1','1,450'],['r2','1,200'],['r3','900']].map(function(r){return '<div class="lrow"><span>'+t(r[0])+'</span><span>'+r[1]+' '+t('egp')+'<span class="chip">'+t('photo')+'</span></span></div>'}).join('')+'</div></div></header>';
+  h+='<section><h2>'+t('s1h')+'</h2><p class="lead">'+t('s1p')+'</p><div class="grid three">'+[1,2,3,4,5,6].map(card).join('')+'</div></section>';
+  h+='<section id="how"><h2>'+t('hwh')+'</h2><p class="lead">'+t('hwp')+'</p><ol class="steps">'+[1,2,3].map(function(i){return '<li><div><b>'+t('w'+i+'t')+'</b><span>'+t('w'+i+'p')+'</span></div></li>'}).join('')+'</ol></section>';
+  h+='<section><h2>'+t('ph')+'</h2><p class="lead">'+t('pp')+'</p><div class="grid three">'+[1,2,3].map(tierCard).join('')+'</div></section>';
+  h+='<section id="signup"><div class="signup">'+(sent?done():form())+'</div></section>';
+  h+='<section><h2>'+t('qh')+'</h2>'+[1,2,3,4].map(function(i){return '<details><summary>'+t('q'+i)+'</summary><p>'+t('a'+i)+'</p></details>'}).join('')+'</section><footer>'+t('foot')+'</footer>';
+  $('root').innerHTML=h;
+}
+function send(){
+  readForm();var u=parseInt(fv.un,10),m=fv.mb.replace(/[\s-]/g,'');
+  if(!fv.bn.trim()||!fv.nm.trim())err='e1';
+  else if(!(u>0))err='e2';
+  else if(!/^01[0125]\d{8}$/.test(m))err='e3';
+  else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fv.em.trim()))err='e4';
+  else{err='';sent={b:fv.bn.trim(),a:fv.ar.trim(),n:fv.nm.trim(),u:u,m:fv.mb.trim()}}
+  render();if(sent)$('signup').scrollIntoView({behavior:'smooth',block:'center'});
+}
+render();
+</script>
+</body>
+</html>
