@@ -1,187 +1,784 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>it7ad molak | إتحاد ملاك</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#14304A">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>it7ad molak | إتحاد ملاك – Clear money for your building</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Manrope:wght@400;600;800&family=Cairo:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Cairo:wght@400;600;800&display=swap">
 <style>
-:root{--bg:#F1F5F8;--card:#fff;--ink:#14304A;--muted:#566B7F;--line:#D3DDE6;--brand:#14304A;--onbrand:#fff;--cta:#F2A93B;--oncta:#2A1B00;--ok:#16774D;--okbg:#DDF3E8;--warn:#9A5A00;--warnbg:#FBEBCF;
+:root{--bg:#EAF0F4;--card:#fff;--ink:#14304A;--muted:#5B7084;--line:#D5DEE6;--brand:#14304A;--onbrand:#fff;--cta:#F2A93B;--oncta:#2A1B00;--ok:#16774D;--okbg:#DDF3E8;--warn:#9A5A00;--warnbg:#FBEBCF;--bad:#A8322A;--badbg:#F8DEDB;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1923;--card:#172635;--ink:#E7EFF6;--muted:#97ABBD;--line:#2A3E51;--brand:#1F4466;--onbrand:#fff;--cta:#F2A93B;--oncta:#2A1B00;--ok:#5FD39B;--okbg:#17382B;--warn:#F0B35A;--warnbg:#3A2C12;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#0E1923;--card:#172635;--ink:#E7EFF6;--muted:#97ABBD;--line:#2A3E51;--brand:#1F4466;--onbrand:#fff;--cta:#F2A93B;--oncta:#2A1B00;--ok:#5FD39B;--okbg:#17382B;--warn:#F0B35A;--warnbg:#3A2C12;color-scheme:dark}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1A25;--card:#182636;--ink:#E6EEF5;--muted:#93A8BB;--line:#2A3D50;--brand:#1F4466;--ok:#5FD39B;--okbg:#17382B;--warn:#F0B35A;--warnbg:#3A2C12;--bad:#F29088;--badbg:#3B1B18;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1A25;--card:#182636;--ink:#E6EEF5;--muted:#93A8BB;--line:#2A3D50;--brand:#1F4466;--ok:#5FD39B;--okbg:#17382B;--warn:#F0B35A;--warnbg:#3A2C12;--bad:#F29088;--badbg:#3B1B18;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.55}
-h1,h2,h3{font-family:"Bricolage Grotesque",Manrope,system-ui,sans-serif;line-height:1.1;margin:0}
-.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-.ar{font-family:Cairo,"Segoe UI",system-ui,sans-serif;font-weight:800;margin-inline-start:8px}
-.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
-.brand{font-family:"Bricolage Grotesque",Manrope,sans-serif;font-weight:800;font-size:20px;display:flex;align-items:center;gap:10px}.brand img{width:32px;height:32px;border-radius:8px}
-.btn{display:inline-block;border:0;background:var(--cta);color:var(--oncta);font:inherit;font-weight:800;padding:13px 22px;border-radius:12px;cursor:pointer;text-decoration:none}
-.btn.small{padding:9px 16px;font-size:15px}
-.btn.line{background:none;color:var(--ink);border:1.5px solid var(--line);font-weight:600}
-.hero{display:grid;gap:32px;padding:28px 0 56px}
-.hero h1{font-size:clamp(36px,7vw,58px);font-weight:800;letter-spacing:-.02em;max-width:14ch}
-.hero p{color:var(--muted);font-size:19px;max-width:46ch;margin:16px 0 24px}
-.acts{display:flex;flex-wrap:wrap;gap:10px}
-.fine{font-size:14px;color:var(--muted);margin-top:12px}
-.ledger{background:var(--brand);color:var(--onbrand);border-radius:20px;padding:22px;max-width:440px;width:100%}
-.ledger .lbl{font-size:13px;opacity:.75}
-.ledger .big{font-family:"Bricolage Grotesque",Manrope,sans-serif;font-size:38px;font-weight:800;letter-spacing:-.02em}
-.bar{height:9px;background:rgba(255,255,255,.22);border-radius:99px;overflow:hidden;margin:12px 0 6px}
-.bar i{display:block;height:100%;width:62%;background:var(--cta);border-radius:99px}
-.lrow{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-top:1px solid rgba(255,255,255,.18);font-size:15px}
-.chip{font-size:12px;font-weight:600;padding:2px 9px;border-radius:99px;background:rgba(255,255,255,.16);margin-left:8px}
-section{padding:44px 0}
-h2{font-size:clamp(28px,5vw,38px);font-weight:800;letter-spacing:-.01em;margin-bottom:10px}
-.lead{color:var(--muted);max-width:56ch;margin:0 0 26px}
-.grid{display:grid;gap:14px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
-.card h3{font-size:20px;margin-bottom:8px}
-.card p{margin:0;color:var(--muted);font-size:16px}
-.steps{counter-reset:s;display:grid;gap:14px;padding:0;margin:0;list-style:none}
-.steps li{counter-increment:s;display:flex;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
-.steps li::before{content:counter(s);flex:none;width:34px;height:34px;border-radius:50%;background:var(--brand);color:var(--onbrand);display:grid;place-items:center;font-weight:800}
-.steps b{display:block;font-size:18px}.steps span{color:var(--muted);font-size:16px}
-.price{font-family:"Bricolage Grotesque",Manrope,sans-serif;font-size:32px;font-weight:800}
-.price small{font-family:Manrope,sans-serif;font-size:15px;font-weight:400;color:var(--muted)}
-.signup{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px}
-.fields{display:grid;gap:4px}
-label{display:block;font-size:14px;font-weight:600;color:var(--muted);margin:12px 0 4px}
-input{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:13px}
-input:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid var(--cta);outline-offset:2px}
-.est{margin-top:14px;padding:12px 14px;border-radius:12px;background:var(--warnbg);color:var(--warn);font-weight:600;font-size:15px;display:none}
-.err{color:#B3372E;font-size:14px;font-weight:600;min-height:20px;margin-top:10px}
-.done{display:none;text-align:left}
-.done h3{font-size:26px;margin-bottom:10px}
-details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:10px}
-summary{font-weight:600;cursor:pointer}
-details p{margin:10px 0 0;color:var(--muted);font-size:16px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.45}
+.app{max-width:480px;margin:0 auto;min-height:100vh;padding:16px 16px 100px}
+h1{font-size:22px;font-weight:800;margin:0}h2{font-size:15px;font-weight:800;margin:22px 0 10px}h3{margin:0 0 6px;font-size:18px}
+.sub{color:var(--muted);font-size:13px}.brand{font-weight:800;font-size:13px;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:12px}
+.hero{background:var(--brand);color:var(--onbrand);border-radius:18px;padding:20px;margin-top:12px}.hero .big{font-size:30px;font-weight:800;letter-spacing:-.5px}.hero .sub{color:inherit;opacity:.78}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.two .card{margin-top:0}.two .big{font-size:22px;font-weight:800}
+.bar{height:10px;background:var(--line);border-radius:99px;overflow:hidden;margin:10px 0 6px}.bar i{display:block;height:100%;background:var(--ok);border-radius:99px}
+.item{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}.item:last-child{border-bottom:0}.click{cursor:pointer}
+.tag{font-size:12px;font-weight:600;padding:3px 9px;border-radius:99px;white-space:nowrap}.paid{background:var(--okbg);color:var(--ok)}.due{background:var(--warnbg);color:var(--warn)}.late{background:var(--badbg);color:var(--bad)}.pic{background:var(--bg);color:var(--muted);border:1px solid var(--line)}
+.btn{border:0;background:var(--brand);color:var(--onbrand);font:inherit;font-weight:600;padding:12px 16px;border-radius:12px;cursor:pointer}
+.btn.small{padding:7px 12px;font-size:13px}.btn.full{width:100%;padding:15px;font-size:16px;margin-top:12px}.btn.ghost{background:none;color:var(--ink);border:1px solid var(--line)}.btn.go{background:var(--cta);color:var(--oncta);font-weight:800}.btn[disabled]{opacity:.5}
+.switch{display:flex;background:var(--card);border:1px solid var(--line);border-radius:99px;padding:3px;margin:12px 0 4px}.switch button{flex:1;border:0;background:none;color:var(--muted);font:inherit;font-weight:600;padding:9px;border-radius:99px;cursor:pointer}.switch button.on{background:var(--brand);color:var(--onbrand)}
+label{display:block;font-size:13px;font-weight:600;color:var(--muted);margin:12px 0 4px}
+input,select{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:11px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.chip{border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-weight:600;padding:7px 11px;border-radius:10px;cursor:pointer;min-width:54px}
+.chip.invited{border-color:var(--warn);background:var(--warnbg);color:var(--warn)}.chip.joined{border-color:var(--ok);background:var(--okbg);color:var(--ok)}.chip.sel{outline:3px solid var(--cta);outline-offset:1px}
+.code{font-size:34px;font-weight:800;letter-spacing:3px}
+.warn{background:var(--warnbg);color:var(--warn);border-radius:12px;padding:12px 14px;font-weight:600;font-size:14px;margin-top:12px}
+.err{color:var(--bad);font-weight:600;font-size:14px;min-height:20px;margin-top:8px}
+.tabs{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);display:flex;justify-content:center;padding-bottom:env(safe-area-inset-bottom,0px);z-index:45}
+.tabs div{display:flex;width:100%;max-width:480px}.tabs button{flex:1;border:0;background:none;color:var(--muted);font:inherit;font-weight:600;font-size:13px;padding:14px 2px;cursor:pointer}
+.tabs button.on{color:var(--ink);box-shadow:inset 0 3px 0 var(--ink)}.tabs button.hl{background:var(--cta);color:var(--oncta)}
+.tour{position:fixed;inset:0;background:rgba(10,20,30,.62);z-index:40;display:none}.tour.show{display:block}
+.tcard{position:absolute;left:0;right:0;margin:0 auto;width:calc(100% - 24px);max-width:456px;bottom:calc(66px + env(safe-area-inset-bottom,0px));background:var(--card);border-radius:16px;padding:16px}
+.tcard p{margin:0 0 14px;color:var(--muted)}.tcard .arrow{position:absolute;bottom:-8px;width:16px;height:16px;background:var(--card);transform:translateX(-50%) rotate(45deg)}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--brand);color:var(--onbrand);padding:11px 16px;border-radius:12px;font-weight:600;font-size:14px;max-width:90%;text-align:center;opacity:0;pointer-events:none;transition:opacity .25s;z-index:60}.toast.show{opacity:1}
+.opt{display:block;width:100%;text-align:start;background:var(--card);border:1px solid var(--line);color:var(--ink);font:inherit;border-radius:14px;padding:14px;margin-top:10px;cursor:pointer}
+.codes{display:grid;grid-template-columns:1fr 1fr;gap:8px}.codes b{font-family:ui-monospace,Menlo,monospace;font-size:16px;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px;text-align:center}
+.g2b{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.note{font-size:13px;color:var(--muted);margin-top:12px}
+.top{display:flex;justify-content:space-between;align-items:center}
 html[lang=ar] body{font-family:Cairo,Manrope,system-ui,sans-serif}
-html[lang=ar] h1,html[lang=ar] h2,html[lang=ar] h3,html[lang=ar] .brand,html[lang=ar] .price,html[lang=ar] .ledger .big{font-family:Cairo,"Bricolage Grotesque",sans-serif;line-height:1.3}
-html[lang=ar] .hero h1{letter-spacing:0;max-width:16ch}
-.navr{display:flex;gap:8px;align-items:center}
-.done h3{font-size:26px;margin-bottom:10px}
-.est{display:none}
-.est{margin-top:14px}
-@media (min-width:760px){.grid.three{grid-template-columns:repeat(3,1fr)}}
-footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);margin-top:20px}
-@media (min-width:760px){.hero{grid-template-columns:1.1fr .9fr;align-items:center}.grid.three{grid-template-columns:repeat(3,1fr)}.fields{grid-template-columns:1fr 1fr;column-gap:14px}.fields .full{grid-column:1/-1}}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+html[lang=ar] .code,html[lang=ar] .big{letter-spacing:0}
+
+.item.wrap{flex-wrap:wrap}.acts{display:flex;gap:6px;flex-wrap:wrap;width:100%}
+.modal{position:fixed;inset:0;background:rgba(10,20,30,.75);z-index:80;display:none;align-items:center;justify-content:center;padding:16px}.modal.show{display:flex}
+.mbox{background:var(--card);border-radius:16px;padding:12px;max-width:480px;width:100%;max-height:90vh;overflow:auto}.mbox img{width:100%;border-radius:10px;margin-bottom:10px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px}.top .r{display:flex;gap:6px;align-items:center}
+html[lang=ar] body{font-family:Cairo,Manrope,system-ui,sans-serif}
+html[lang=ar] .code,html[lang=ar] .big{letter-spacing:0}
+.banner{display:none}.banner.show{display:block;position:sticky;top:0;z-index:70}
+textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:11px;resize:vertical}
+.errbox{display:flex;gap:10px;justify-content:space-between;align-items:flex-start;background:var(--badbg);color:var(--bad);border:1.5px solid var(--bad);border-radius:12px;padding:12px 14px;margin-top:12px}
 </style>
 </head>
 <body>
-<div class="wrap" id="root"></div>
+<div class="app"><div class="top"><div class="brand">it7ad molak | <span lang="ar">إتحاد ملاك</span></div><div class="r"><button class="btn small ghost" id="bl" style="display:none;position:relative" aria-label="Notifications"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span id="bb" style="display:none;position:absolute;top:-6px;inset-inline-end:-6px;min-width:18px;height:18px;line-height:18px;border-radius:9px;background:var(--bad);color:#fff;font-size:11px;font-weight:800;text-align:center;padding:0 4px"></span></button><button class="btn small ghost" id="st" style="display:none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></button><button class="btn small ghost" id="lg"></button></div></div><div class="banner" id="banner" role="alert"></div><div id="main"></div></div>
+<nav class="tabs" id="nav" style="display:none"><div id="tabs"></div></nav>
+<div class="tour" id="tour"></div>
+<div class="modal" id="modal"></div>
+<div class="toast" id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
 <script>
+var GE_S="Cairo:Nasr City,Heliopolis,Maadi,New Cairo,Shubra,Helwan,Zamalek,Downtown,El Marg,Ain Shams,Mokattam,El Shorouk,Badr City|Giza:Dokki,Mohandessin,Agouza,Haram,Faisal,6th of October,Sheikh Zayed,Imbaba,Giza City,Bulaq El Dakrour,Badrashin|Alexandria:Montaza,Sidi Gaber,Smouha,Miami,Agami,Borg El Arab,Mandara,Gleem,Stanley,Attarin|Qalyubia:Banha,Shubra El Kheima,Qalyub,Khanka,Obour,Khosous,Tukh,Shibin El Qanater|Sharqia:Zagazig,10th of Ramadan,Belbeis,Minya El Qamh,Abu Hammad,Faqous,Hihya|Dakahlia:Mansoura,Talkha,Mit Ghamr,Dikirnis,Sherbin,Belqas,Aga,Manzala|Beheira:Damanhour,Kafr El Dawwar,Rashid,Edku,Abu Hummus,Kom Hamada,Itay El Barud,Wadi El Natrun|Gharbia:Tanta,El Mahalla El Kubra,Kafr El Zayat,Zefta,Samannoud,Basyoun,Qutur|Monufia:Shebin El Kom,Menouf,Ashmoun,Sadat City,Quweisna,Tala,Berket El Sab,Al Bagour|Kafr El Sheikh:Kafr El Sheikh,Desouk,Fuwwah,Baltim,Metoubes,Sidi Salem,Biyala,Qallin|Damietta:Damietta,New Damietta,Ras El Bar,Faraskur,Kafr Saad,Zarqa|Port Said:Port Said,Port Fouad,El Arab,El Zohour,El Manakh|Ismailia:Ismailia,Fayed,Qantara,Tell El Kebir,Abu Suwir|Suez:Suez,Ain Sokhna,Arbaeen,Ganayen,Attaka|North Sinai:Arish,Sheikh Zuweid,Rafah,Bir al-Abd,Nakhl|South Sinai:Sharm El Sheikh,Dahab,Nuweiba,Taba,Saint Catherine,El Tor|Red Sea:Hurghada,Safaga,Marsa Alam,El Quseir,Ras Gharib,Shalateen|Fayoum:Fayoum,Sennuris,Ibsheway,Tamiya,Itsa,Youssef El Seddik|Beni Suef:Beni Suef,New Beni Suef,Nasser,Ihnasya,Biba,Samasta,Fashn|Minya:Minya,Mallawi,Samalut,Maghagha,Beni Mazar,Abu Qirqas,Deir Mawas|Asyut:Asyut,Dairut,Manfalut,Abnub,Abu Tig,El Qusiya,Sahel Selim|Sohag:Sohag,Akhmim,Girga,Tahta,El Maragha,Juhayna,El Balyana|Qena:Qena,Nag Hammadi,Qus,Dishna,Farshut,Abu Tesht,Naqada|Luxor:Luxor,Esna,Armant,Tod,Qurna,Bayadiya|Aswan:Aswan,Kom Ombo,Edfu,Daraw,Nasr El Nuba,Abu Simbel|New Valley:Kharga,Dakhla,Farafra,Paris,Balat|Matrouh:Marsa Matrouh,El Alamein,El Hammam,Siwa,Sidi Barrani,Salloum,Dabaa",GA_S="القاهرة:مدينة نصر,مصر الجديدة,المعادي,القاهرة الجديدة,شبرا,حلوان,الزمالك,وسط البلد,المرج,عين شمس,المقطم,الشروق,مدينة بدر|الجيزة:الدقي,المهندسين,العجوزة,الهرم,فيصل,السادس من أكتوبر,الشيخ زايد,إمبابة,الجيزة,بولاق الدكرور,البدرشين|الإسكندرية:المنتزه,سيدي جابر,سموحة,ميامي,العجمي,برج العرب,المندرة,جليم,ستانلي,العطارين|القليوبية:بنها,شبرا الخيمة,قليوب,الخانكة,العبور,الخصوص,طوخ,شبين القناطر|الشرقية:الزقازيق,العاشر من رمضان,بلبيس,منيا القمح,أبو حماد,فاقوس,ههيا|الدقهلية:المنصورة,طلخا,ميت غمر,دكرنس,شربين,بلقاس,أجا,المنزلة|البحيرة:دمنهور,كفر الدوار,رشيد,إدكو,أبو حمص,كوم حمادة,إيتاي البارود,وادي النطرون|الغربية:طنطا,المحلة الكبرى,كفر الزيات,زفتى,سمنود,بسيون,قطور|المنوفية:شبين الكوم,منوف,أشمون,مدينة السادات,قويسنا,تلا,بركة السبع,الباجور|كفر الشيخ:كفر الشيخ,دسوق,فوه,بلطيم,مطوبس,سيدي سالم,بيلا,قلين|دمياط:دمياط,دمياط الجديدة,رأس البر,فارسكور,كفر سعد,الزرقا|بورسعيد:بورسعيد,بورفؤاد,العرب,الزهور,المناخ|الإسماعيلية:الإسماعيلية,فايد,القنطرة,التل الكبير,أبو صوير|السويس:السويس,العين السخنة,الأربعين,الجناين,عتاقة|شمال سيناء:العريش,الشيخ زويد,رفح,بئر العبد,نخل|جنوب سيناء:شرم الشيخ,دهب,نويبع,طابا,سانت كاترين,الطور|البحر الأحمر:الغردقة,سفاجا,مرسى علم,القصير,رأس غارب,شلاتين|الفيوم:الفيوم,سنورس,إبشواي,طامية,إطسا,يوسف الصديق|بني سويف:بني سويف,بني سويف الجديدة,ناصر,إهناسيا,ببا,سمسطا,الفشن|المنيا:المنيا,ملوي,سمالوط,مغاغة,بني مزار,أبو قرقاص,دير مواس|أسيوط:أسيوط,ديروط,منفلوط,أبنوب,أبو تيج,القوصية,ساحل سليم|سوهاج:سوهاج,أخميم,جرجا,طهطا,المراغة,جهينة,البلينا|قنا:قنا,نجع حمادي,قوص,دشنا,فرشوط,أبو تشت,نقادة|الأقصر:الأقصر,إسنا,أرمنت,طود,القرنة,البياضية|أسوان:أسوان,كوم أمبو,إدفو,دراو,نصر النوبة,أبو سمبل|الوادي الجديد:الخارجة,الداخلة,الفرافرة,باريس,بلاط|مطروح:مرسى مطروح,العلمين,الحمام,سيوة,سيدي براني,السلوم,الضبعة";
+/* it7ad molak | إتحاد ملاك — real app (manager + resident) */
+var CFG={mfaEveryone:false,emailDays:7,supportEmail:'support@it7admolak.com',supportWa:'',url:'https://ptdzfgfjnsegnayvjman.supabase.co',key:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB0ZHpmZ2ZqbnNlZ25heXZqbWFuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzNTg1MDIsImV4cCI6MjEwNzkzNDUwMn0.6xTOja5JJ2qMTkWhHXuFTcgZlLT5DwGzrhKid0gmKYo'};
+var sb=window.__sb||window.supabase.createClient(CFG.url,CFG.key);
 var lang='ar';try{lang=localStorage.getItem('lang')||'ar'}catch(e){}
 var D={en:{
-cta:'Start free trial',
-h1:'Your building’s money, clear to everyone.',heroP:'Record what residents pay and what the building spends. Every resident can see where the money goes, with a photo of each invoice.',cta1:'Start 30-day free trial',cta2:'See how it works',fine:'No card needed. Works on any phone.',
-egp:'EGP',lLbl:'Example building · fund balance',lPct:'62% of yearly fees collected',r1:'Electricity',r2:'Elevator maintenance',r3:'Cleaning',photo:'Photo',
-s1h:'No more arguments about money',s1p:'Everyone sees the same numbers, so there is nothing to explain twice.',
-f1t:'For the treasurer',f1p:'Record any payment: part of the year, split in pieces, or the full amount. Save a photo of each invoice in seconds.',
-f2t:'For residents',f2p:'View only. Each resident sees what they paid, what is left, and every expense with its invoice photo.',
-f3t:'Month by month',f3p:'Pick any month from a menu and see the money in, the money out, and every receipt.',
-f4t:'Nothing is hidden',f4p:'Every change is saved in a history that cannot be erased, so everyone can trust the numbers.',
-f5t:'Easy to share',f5p:'Send receipts and payment reminders to residents, and share the monthly statement in your building group.',
-f6t:'Safe sign-in',f6p:'Managers sign in with an email code plus a second step, so only the right person can change the accounts.',
-hwh:'Ready in one afternoon',hwp:'You do not need to be good with technology.',
-w1t:'Sign up for the free trial',w1p:'Tell us about your building. It takes two minutes.',
-w2t:'Add your apartments',w2p:'Enter the number of floors and apartments. Every apartment gets a code like 102, and you invite residents with a link.',
-w3t:'Start recording',w3p:'Save payments and expenses. Residents can now see everything.',
-ph:'One simple price per year',pp:'Free for 30 days. After that, you pay once a year, based on the size of your building.',
-t1:'Small',t1d:'Up to 20 apartments',t2:'Medium',t2d:'21 to 50 apartments',t3:'Large',t3d:'51 apartments or more',perY:'EGP / year',
-sh:'Start your free trial',sp:'Create your account in two minutes. You only need your email.',
-lb:'Building name',lc:'City or area',ln:'Your name',lu:'Number of apartments',lm:'Mobile number',le:'Email',
-pb:'e.g. Lotus Tower',pc:'e.g. Maadi',pn:'Building manager or treasurer',
-est:'After the free trial, your price would be {p} per year.',sbtn:'Start my free trial',sfine:'30 days free. No card needed. Cancel any time.',
-e1:'Please type the building name and your name.',e2:'Please type the number of apartments.',e3:'Please type a valid mobile number, like 01012345678.',e4:'Please type a valid email, like name@example.com.',
-thanks:'Thank you, {n}.',doneP:'We received the free trial request for {b}{a}. We will contact you on {m} to set up your building.',inA:' in {a}',
-next:'What happens next',nextP:'1. We message you. 2. We add your {u} apartments together. 3. You start your 30 free days.',afterT:'After the trial: {p} per year.',
-qh:'Common questions',
-q1:'What happens after the 30 days?',a1:'We message you before the trial ends. If you want to continue, you pay the yearly price for your building size. If you do not pay, the account is locked and your records are kept safe until you do.',
-q2:'Can residents pay in parts?',a2:'Yes. The treasurer records any amount at any time, so residents can pay monthly, in pieces, or all at once.',
-q3:'Can residents change the numbers?',a3:'No. Residents can only view. Only the treasurer can add payments and expenses, and every change is saved in the history.',
-q4:'Is our information private?',a4:'Each building only sees its own records. Residents see their own account and the building’s expenses, not other residents’ payments.',
-foot:'© 2026 it7ad molak | إتحاد ملاك · it7admolak.com. Made for residents who want clear accounts.'
+langBtn:'العربية',bk:'‹',loading:'Loading…',errG:'Something went wrong. Please try again.',errLock:'This building is locked. Contact us to renew the license.',errOver:'The amount is more than what is outstanding.',errPlan:'Set the fee plan first.',errNoB:'We could not find this building. Check the code with your manager.',errNoA:'This apartment code does not exist in this building.',errLinked:'This apartment is already linked to a resident.',errLim:'Your license has no buildings left.',errNet:'No internet connection. Please try again.',
+limTrial:'Your free trial includes 1 building, and you have already created it. To manage more buildings you need the paid license. Contact support.',limPaid:'Your license includes 3 buildings, and you have created them all. Contact support to add more.',noteReq:'Name of the expense (required for Other)',eOth:'Please type a name for this expense. It is saved in the history.',histNote:'The history is a permanent record and cannot be edited. To fix a mistake, cancel the payment or remove the fees in their tab. The correction is added here as a new line.',planNote:'A new plan applies only to fees you add from now on. Fees already added keep their amount.',feePeriods:'Fees already added',tagMgr:'Tags',tagP:'Create your own tags (for example Shop, Closed, Owner abroad) and give them to apartments. Tags are only labels.',tagNew:'New tag name',tagAdd:'Add tag',tagNone:'No tag',tagAll:'All apartments',noTags:'No tags yet.',tagLbl:'Tag',tagSaved:'Tag saved',tagAdded:'Tag added',tagGone:'Tag deleted',errTagDup:'This tag already exists.',errTagLim:'Too many tags (maximum 20).',feeRem:'Remaining {a}',lastPay:'Last payment {d}',st_part:'Partly paid',feeByP:'Fees by period',feeLine:'Fee {f} · Paid {p}',sxMark:'Mark settled',aptDet:'Details',feeCol:'Collected {a}',aptsN:'{n} apartments',removeFees:'Remove these fees',feesRemoved:'Fees removed',errFeesPaid:'Some apartments have already paid more than the remaining fees. Cancel those payments first, then remove the fees.',payList:'Payments',cancelPay:'Cancel payment',cancelledTag:'Cancelled',h_plan2:'Fee plan changed from {o} to {a} {u}',h_edit:'Building details edited',h_unfees:'Fees removed for {p} ({n} apartments)',
+editB:'Edit',delB:'Delete',editBT:'Edit building',saveB:'Save changes',bSaved:'Building updated',apFloorsNote:'Floors and apartments can only be changed while no resident has joined and no fee or payment exists.',errFloorData:'Some of the apartments you are removing have a resident, fees or payments. Only empty apartments can be removed.',errHasData:'This building already has residents, fees or payments, so floors and apartments cannot be changed. You can still change the name and place.',errPaidDel:'A paid building cannot be deleted. Contact support.',errNameMatch:'The name you typed does not match the building name.',delT:'Delete this building?',delP:'The building {b} will be removed from your account and hidden from its residents. The app owner keeps a copy for 30 days and can restore it if you contact support.',delType:'Type the building name to confirm',delBtn:'Delete building',bDeleted:'Building deleted',
+instT:'Add to home screen',instBtn:'Install the app',instIos:'iPhone: open this page in Safari, tap the Share button, then Add to Home Screen.',instAnd:'Android: tap the Chrome menu (three dots), then Install app or Add to Home screen. If you opened this link inside WhatsApp or another app, open it in Chrome first.',supT:'Contact support',supSub:'Tell us anything: a question, a problem, or an idea to improve the app.',supKind:'What is it about?',k_question:'Question',k_complaint:'Complaint',k_feature:'New feature idea',k_other:'Something else',supMsg:'Your message',supSend:'Send to support',supSent:'Sent. We will reply here.',supMine:'Your requests',supNone:'You have not sent anything yet.',supReply:'Our reply',supEmail:'Or email us:',eMsg:'Please write at least 5 characters.',errMsgShort:'Please write at least 5 characters.',errTooMany:'You sent many requests today. Please try again tomorrow.',st_new:'Received',st_seen:'Seen',st_done:'Done',
+ownT:'Owner dashboard',ownBtn:'Owner dashboard',ownReq:'Requests',ownBld:'Buildings',ownNoReq:'No requests.',ownNoBld:'No buildings yet.',ownFrom:'From',ownReplyL:'Your reply (the user sees it)',ownSeen:'Mark as seen',ownDone:'Reply and mark done',ownSaved:'Saved',ownNew:'{n} new',
+sumTrial:'On trial',sumActive:'Paid',sumLocked:'Locked / paused',ownMgr:'Manager',ownApts:'{a} apartments, {j} joined',ownSuggest:'Suggested price: {p} EGP per year',ownEnds:'Ends',ownNote:'Private note (payment, phone call...)',ownSaveNote:'Save note',ownAct:'Activate for 1 year',ownExt:'Add 14 days trial',ownPause:'Pause',ownResume:'Resume',ownLock:'Lock',ownResetMfa:'Reset manager authenticator',ownConfirm:'Tap again to confirm',ownDone2:'Updated',ownResetOk:'Authenticator reset. The manager sets up a new one at next sign-in.',errSelf:'You cannot reset your own authenticator here.',b_trial:'Trial',b_active:'Paid',b_paused:'Paused',b_locked:'Locked',h_license:'Subscription changed to {s}',nT:'Notifications',nNone:'No notifications yet.',nNewTag:'New',nOwner:'Message from the app owner',nFromB:'Message from your building manager ({b})',nToApt:'For apartment {a}',nPay:'Payment received: {a} (receipt {r})',nPayC:'Payment cancelled: {a} (receipt {r})',nFee:'New fee for {p}: {a}',nReply:'We replied to your support request. Open Contact support to read it.',nLic:'Subscription of {b}: {s}',nBell:'Notifications',
+nSettled:'Your fee for {p} was marked as settled by the building manager.',nExempt:'Your apartment was marked as exempt from fees by the building manager.',rmRes:'Remove resident',rmResP:'Use this if the apartment was sold or the resident moved. Their access to this building stops, old payments stay in the history, and you can invite the new resident with the apartment code.',rmDone:'Resident removed. You can invite the new resident now.',h_unlink:'Apartment {c}: resident removed',nUnlinked:'You were removed from apartment {c} in {b} by the building manager.',ownFee:'Own fee for this apartment',ownFeeP:'For an apartment that pays a different amount than the building plan (for example a closed apartment). Used for all new fees, and for fee periods with no payment yet. This overrides the category and the plan. Leave empty for everyone else.',ownFeeOff:'Back to the building plan fee',ownFeeOk:'Saved. {n} existing fee period(s) updated.',ownFeeTag:'Own fee {a}',h_aptfee:'Apartment {c}: own fee set to {a}',h_aptfee0:'Apartment {c}: back to the building plan fee',nSendT:'Send a notification',nTo:'Send to',nAll:'All residents',nMsg:'Message',nSend:'Send',nSent:'Sent to {n}',errNoRes:'No resident has joined yet, so there is nobody to notify.',annT:'Announcement',annTarget:'Send to',annMgrs:'All building managers',annAll:'Everyone',annHint:'Everyone who signs in sees it in their notifications.',b_deleted:'Deleted',ownRestore:'Restore building',ownPurge:'Erase for good',ownDelOn:'Deleted on {d}. Kept as a copy.',ownRestored:'Building restored',ownPurged:'Erased',nRestored:'Your building {b} was restored.',h_deleted:'Building deleted (hidden)',h_restored:'Building restored by the app owner',weeklyN:'For your safety we ask for the email code once a week. Please sign in again.',delPaid:'This building has an active subscription. Deleting it does not refund or move the subscription.',planLockN:'Choose carefully: after the first fees are added, the plan type (monthly or yearly) can no longer be changed.',planLocked:'The plan type is locked because fees were already added. To switch, cancel the payments, remove all fees, then change the plan. You can still change the amount for future fees.',errPlanLocked:'The plan type is locked because fees already exist. Cancel the payments and remove all fees first.',errPeriod:'This period does not match the building fee plan.',rPlan:'Building fee plan',payForM:'Payment for (month)',payForY:'Payment for (year)',chPer:'Choose the period',noOut:'This apartment has nothing outstanding. Add the fees for the period first.',ePer:'Please choose which period this payment is for.',errNoFee:'There is no fee for this period for this apartment. Add the fees first.',paidFor:'For {p}',forP:'For: {p}',h_pay2:'Payment {r}: {a} from apartment {c} for {p}',h_cancel2:'Payment {r} cancelled: {a} from apartment {c} for {p}',xfApt:'Your apartment',xfAptP:'Choose the apartment you will live in. After the transfer you stop being a manager and become the resident of this apartment.',xfChApt:'Choose your apartment',xfNoApt:'There is no free apartment to choose. Add one in Edit building first.',eXApt:'Choose your apartment first.',xfWaitApt:'You will become the resident of apartment {c}.',xIn2:'{f} wants to hand you the building {b}. {f} will become a resident of apartment {c}.',nXfer2:'{f} wants to hand you the building {b}. {f} will become a resident of apartment {c}. Open the home page to accept.',nXferDone2:'{n} accepted the building {b}. You are now a resident of apartment {c}.',h_xfer2:'Building manager changed from {a} to {b}; {a} is now resident of apartment {c}',errXOther:'You manage another building. Move or delete it first, because a manager cannot also be a resident.',st_ex:'Exempt',sxSettled:'Settled',sxBtn:'Mark this period settled',sxNote:'Note (optional, for example: shop)',sxOk:'Marked as settled',sxUndo:'Undo settled',sxUndone:'Settled mark removed',exBtn:'Mark apartment exempt (shop)',exUndo:'Remove exemption',exOk:'Apartment marked exempt',exUndone:'Exemption removed',exHint:'Exempt apartments (for example shops) are shown as settled, with no outstanding amount. They can still pay any amount you record.',payFlex:'You can enter any amount, more or less than the fee. Extra money stays as credit.',h_settle:'Apartment {c}: {p} marked settled {n}',h_unsettle:'Apartment {c}: {p} settled mark removed',h_exempt:'Apartment {c} marked exempt',h_unexempt:'Apartment {c} exemption removed',payDue:'Due {a}',payDone:'Fully paid',payCredit:'Credit {a}',xfBtn:'Transfer',xfT:'Hand over this building',xfP:'The new manager must already have an account in the app (signed in at least once) and must not be a resident. They will get a notification and must accept. After they accept you lose access to this building.',xfEmail:'New manager email',xfSend:'Send transfer request',xfSent:'Request sent',xfWait:'Waiting for {e} to accept',xfCancel:'Cancel request',xfCancelled:'Request cancelled',xIn:'{f} wants to hand you the building {b}.',xAcc:'Accept',xDec:'Decline',xDone:'You are now the manager of this building',xNo:'Declined',errNoUser:'No account with this email. Ask the person to sign in to the app once, then try again.',errTgtRes:'This person is a resident, so they cannot manage a building.',errTgtLim:'This person cannot take another building (license limit).',errSelfX:'You cannot transfer to yourself.',errNoX:'This request is no longer available.',ownXfer:'Transfer manager',ownXferP:'New manager email',h_xfer:'Building manager changed from {a} to {b}',h_xfer_req:'Transfer requested to {e}',nXfer:'{f} wants to hand you the building {b}. Open the home page to accept.',nXferDone:'{n} accepted the building {b}. It is no longer in your account.',nXferNo:'The transfer of {b} was declined.',nXferYou:'You are now the manager of {b}.',nXferOut:'The manager of {b} was changed by the app owner.',setT:'Settings',setProfile:'Your details',lang:'Language',theme:'Appearance',th_system:'Same as phone',th_light:'Light',th_dark:'Dark',saveSet:'Save settings',setSaved:'Settings saved',emailNote:'Your email cannot be changed here. To change it, contact support.',needHelp:'Need help?',helpP:'Contact us for any problem, to change your email, or to reset your authenticator app.',mailUs:'Email support',waUs:'Chat with us',bCodes:'Your building codes',copyCode:'Copy code',codeCopied:'Code copied',settingsBtn:'Settings',
+errAal:'Please confirm with your authenticator app first, then try again.',errResMgr:'A resident account cannot create a building. Contact support if this is a mistake.',errMgrJoin:'A building manager cannot join as a resident.',errDet:'Technical details',
+mfaForceT:'Set up your authenticator app',mfaForceP:'Everyone opens the app with an authenticator app code every time. This keeps the money records safe. It cannot be turned off. If you lose your phone, contact support and the owner will reset it.',mfaNoOff:'Required for everyone. Cannot be turned off. Lost your phone? Contact support.',
+joinFirst:'I have a join code',joinFirstP:'Join code (only if your manager gave you one)',joiningWith:'You are joining with code {c}. Sign in or create your account and you will join automatically.',noMgrJoin:'Residents cannot create buildings.',mfaCreateP:'To create a building you first set up the authenticator app.',sTitle:'Sign in or create your account',sSub:'Type your email and press Login. We will send a 6-digit code to your email. No password needed. To join a building with a code from your manager, log in first, then choose "Join a building".',email:'Email',sendC:'Login',eEml:'Please type a valid email, like name@example.com.',
+cTitle:'Enter the code',cSub:'We sent a 6-digit code to {m}. Check your inbox and spam.',code:'6-digit code',conf:'Confirm and continue',eCode:'Type the 6-digit code.',eWrongC:'That code is not correct or has expired.',resend:'Send a new code',sent:'Code sent',chg:'Change email',
+pTitle:'Tell us about you',pSub:'The building manager can see your name and mobile number.',yName:'Your name',fName:'Full name',mob:'Mobile number',eName:'Please type your name.',eMob:'Please type a valid mobile number, like 01012345678.',save:'Save and continue',
+mTitle:'Second step',mSub:'Type the 6-digit code from your authenticator app.',eMfa:'That code is not correct.',
+welcome:'Welcome',signOut:'Sign out',yBuildings:'My buildings',createB:'Create a building',joinB:'Join a building with a code',manager:'Manager',resident:'Resident',aptN:'Apartment {c}',none:'You are not in any building yet.',
+joinT:'Join a building',joinP:'Type the code you received from your building manager.',joinCode:'Join code',joinBtn:'Join building',youJoined:'You joined the building',
+bDet:'Building details',bName:'Building name',bNameP:'e.g. Lotus Tower',gov:'Governorate',chGov:'Choose governorate',city:'City',chCity:'Choose city',chGovFirst:'Choose governorate first',area:'Area name',areaP:'e.g. Street name or neighborhood',floors:'How many floors?',apFl:'Apartments on each floor',floorN:'Floor {n}',renT:'Apartment names',renP:'Change the names of the apartments on one floor (for example 101 to 1A). Residents, fees and payments stay with the same apartment. Use letters and numbers only (up to 8). If someone has not joined yet, send them the new code.',renOld:'Apartment {c}',renOk:'Names saved',errAptName:'Use letters and numbers only, up to 8 characters, for every name.',errAptDup:'Two apartments cannot have the same name.',h_rename:'Apartment names changed ({n} apartments)',oneFloorT:'Change one floor',oneFloorP:'Add or remove apartments on a single floor without touching the others. This is safe for a running building: apartments that have a resident, fees or payments are never removed. Removal starts from the highest number.',oneFloorN:'Number of apartments on this floor',floorSel:'Floor',newFloor:'{n} (new floor)',floorSaved:'Floor updated',h_floor:'{f}: now {n} apartments',ground:'Ground floor (G)',groundN:'Ground floor apartments (G1, G2, …). Use 0 if there is none',groundP:'Ground floor apartments are named G1, G2, … and then the floors start from 1.',same:'Same number on every floor',apply:'Apply',createBtn:'Create building',eB1:'Please fill in the building name, governorate, city and area.',codesNote:'Apartment codes: floor 1, apartment 2 is 102. Ground floor apartments are G1, G2, …',bCreated:'Building created. Your building code is {c}',
+tOverview:'Overview',tPay:'Fees & payments',catT:'Fee categories',catP:'Each type of apartment has its own fee, the same for every apartment in that category. Give a category to each apartment in Income Records. An apartment with no category pays the plan amount above.',catN1:'Not furnished',catN2:'Furnished, not used',catN3:'In use',catName:'Category name',catAmt:'Amount',catCreate:'Create categories',catAdd:'Add',catUpd:'Also update fee periods that have no payment yet',catAdded:'Category added',catGone:'Category deleted',catNone:'No category',catLbl:'Category',catBulk:'Set category for many',catBulkP:'Choose a floor and a category, then press Apply. Fee periods with no payment yet change to the new amount. Periods that already have payments keep their amount.',catAll:'All apartments',catApply:'Apply',catOk:'Saved. {n} fee period(s) updated.',rCat:'Category: {c}',errCatLim:'Too many categories (maximum 10).',h_catadd:'Category {n} added ({a})',h_catedit:'Category {n} set to {a}',h_catdel:'Category {n} deleted',h_catset:'{a} apartments set to category {n}',tFees:'Fees Plans',rFee:'Your fee',tInc:'Income Records',tExp:'Expenses',tRes:'Residents',tHist:'History',tMine:'My account',tBld:'Building',
+trial:'Free trial',daysLeft:'{n} days left',paidL:'Paid license',until:'until {d}',locked:'Locked',paused:'Paused',lockT:'The license has ended',lockP:'Your records are safe and nothing is deleted. All tabs stay locked until the license is renewed. Contact us to renew.',pausedP:'This building is paused. Contact us.',
+fundBal:'Cash balance',cashIn:'Money in',spent:'Spent',outst:'Outstanding',aptsC:'Apartments',joinedC:'Residents joined',
+plan:'Plan Fees',monthly:'Monthly',yearly:'Yearly',amt:'Amount per apartment',savePlan:'Save plan',planSaved:'Plan saved',planText:'{a} per {u}',perMonth:'month',perYear:'year',noPlan:'No fee plan yet. Set it first.',
+addFees:'Add fees',period:'Period',addFeesBtn:'Add fees for this period',feesAdded:'Fees added to {n} apartments',feesNone:'These fees were already added.',
+recPay:'Record a payment',apt:'Apartment',chApt:'Choose apartment',payAmt:'Amount paid',payBtn:'Save payment',paySaved:'Payment saved. Receipt {r}',eApt:'Choose an apartment.',eAmt:'Type an amount.',
+st_paid:'Paid',st_out:'Outstanding',st_none:'No fees yet',due:'Due {a}',cancelLast:'Cancel last payment',cancelled:'Last payment cancelled',remind:'Send reminder',receipt:'Share receipt',
+rcTxt:'Receipt {r}\n{b}\nApartment {n}\nAmount: {a}\nStill outstanding: {d}',rmTxt:'Hello {w}, a friendly reminder from the building treasurer: {d} in building fees is outstanding for apartment {n}. Thank you.\n{b}',copied:'Message copied. Paste it in any app.',
+addExp:'Add an expense',cat:'Category',note:'Note (optional)',photo:'Invoice photo',photoAdd:'Take or choose a photo',month:'Month',saveExp:'Save expense',expSaved:'Expense saved',eExp:'Type an amount for the expense.',total:'Total',noExp:'No expenses in this month.',delExp:'Delete expense',delConf:'Tap again to confirm',expDel:'Expense deleted (kept in history)',viewInv:'View invoice',noInv:'No photo',shareM:'Share this month',stHead:'Monthly statement {m}\n{b}',
+c_elec:'Electricity',c_water:'Water',c_lift:'Elevator',c_clean:'Cleaning',c_sec:'Security',c_rep:'Repairs',c_oth:'Other',
+rTitle:'Residents',bCode:'Building code',invite:'Share invitation',invited:'Invited',joined:'Joined',notInv:'Not invited',invTxt:'Hello! You are invited to join {b} on it7ad molak (إتحاد ملاك).\nYour apartment code: {c}\nJoin code: {k}-{c}\nOpen this link to join: {l}',legend:'Grey: not invited. Amber: invited. Green: joined.',
+h_plan:'Fee plan set: {a} {u}',h_fees:'Fees added for {p}: {a} each, {n} apartments',h_pay:'Payment {r}: {a} from apartment {c}',h_cancel:'Payment {r} cancelled: {a} from apartment {c}',h_exp:'Expense: {k} {a} ({p})',h_delexp:'Expense deleted: {k} {a}',h_building:'Building created',h_join:'Apartment {c} joined',noH:'Nothing here yet.',myPays:'My payments',myFees:'My fees',partPaid:'Paid {a} of {b}',fee:'Fee {p}',
+cashM:'Money in this month',secT:'Account security',mfaOff:'Two-step sign-in is off',mfaOffP:'Managers handle money records. Turn on a second step with an authenticator app.',mfaOn:'Two-step sign-in is on',mfaTurnOn:'Turn on',mfaTurnOff:'Turn off',mfaScan:'Scan this code with Google Authenticator or Microsoft Authenticator, or type the key.',mfaConfirm:'Type the 6-digit code from the app',mfaDone:'Two-step sign-in is on',mfaOffDone:'Two-step sign-in is off',
+replay:'Replay the tour',tStep:'Step {i} of {n}',skipT:'Skip',backT:'Back',next:'Next',done:'Done',close:'Close',
+tp1:'See the building’s money at a glance: how much came in, how much was spent, and what is left.',tp2:'Set the fee plan, add the fees for a period, and record every payment. Part payments are fine.',tp3:'Save each bill with a photo of the invoice. Residents see it, month by month.',tp4:'Every apartment has a code. Pick one and share the invitation with the resident.',tp5:'Every change is saved here and cannot be erased.',tp6:'See what you paid, what is left, and your receipts.',tp7:'See every expense of the building, month by month, with invoice photos. You can look, but not change anything.',tp8:'Your own payments are listed here.'
 },ar:{
-cta:'ابدأ التجربة المجانية',
-h1:'فلوس عمارتك واضحة لكل السكان.',heroP:'سجّل ما يدفعه السكان وما تصرفه العمارة. كل ساكن يرى أين تذهب الأموال، مع صورة لكل فاتورة.',cta1:'ابدأ تجربة مجانية 30 يوماً',cta2:'شاهد طريقة العمل',fine:'بدون بطاقة بنكية. يعمل على أي موبايل.',
-egp:'ج.م',lLbl:'عمارة تجريبية · رصيد الصندوق',lPct:'تم تحصيل 62% من الرسوم السنوية',r1:'كهرباء',r2:'صيانة الأسانسير',r3:'نظافة',photo:'صورة',
-s1h:'لا مزيد من الخلافات حول الفلوس',s1p:'الكل يرى نفس الأرقام، فلا حاجة للشرح مرتين.',
-f1t:'لأمين الصندوق',f1p:'سجّل أي دفعة: جزء من السنة أو على أقساط أو المبلغ كاملاً. احفظ صورة كل فاتورة في ثوانٍ.',
-f2t:'للسكان',f2p:'للعرض فقط. يرى كل ساكن ما دفعه وما تبقى عليه وكل مصروف مع صورة فاتورته.',
-f3t:'شهراً بشهر',f3p:'اختر أي شهر من القائمة وشاهد الوارد والمصروف وكل الإيصالات.',
-f4t:'لا شيء مخفي',f4p:'كل تغيير يُحفظ في سجل لا يمكن مسحه، فيثق الجميع في الأرقام.',
-f5t:'سهل المشاركة',f5p:'أرسل الإيصالات وتذكيرات الدفع للسكان، وشارك الكشف الشهري في جروب العمارة.',
-f6t:'دخول آمن',f6p:'يدخل المدير بكود بالبريد الإلكتروني وخطوة ثانية، حتى لا يعدّل الحسابات إلا الشخص المناسب.',
-hwh:'جاهز في عصر يوم واحد',hwp:'لا تحتاج أن تكون خبيراً بالتكنولوجيا.',
-w1t:'سجّل في التجربة المجانية',w1p:'أخبرنا عن عمارتك. يستغرق الأمر دقيقتين.',
-w2t:'أضف شققك',w2p:'أدخل عدد الأدوار والشقق. كل شقة تأخذ كوداً مثل 102، وتدعو السكان برابط.',
-w3t:'ابدأ التسجيل',w3p:'سجّل الدفعات والمصروفات. يستطيع السكان الآن رؤية كل شيء.',
-ph:'سعر واحد بسيط في السنة',pp:'مجاناً لمدة 30 يوماً. بعدها تدفع مرة واحدة في السنة حسب حجم عمارتك.',
-t1:'صغيرة',t1d:'حتى 20 شقة',t2:'متوسطة',t2d:'من 21 إلى 50 شقة',t3:'كبيرة',t3d:'51 شقة أو أكثر',perY:'ج.م / سنة',
-sh:'ابدأ تجربتك المجانية',sp:'أنشئ حسابك في دقيقتين. كل ما تحتاجه بريدك الإلكتروني.',
-lb:'اسم العمارة',lc:'المدينة أو المنطقة',ln:'اسمك',lu:'عدد الشقق',lm:'رقم الموبايل',le:'البريد الإلكتروني',
-pb:'مثال: برج اللوتس',pc:'مثال: المعادي',pn:'مدير العمارة أو أمين الصندوق',
-est:'بعد التجربة المجانية سيكون سعرك {p} في السنة.',sbtn:'ابدأ تجربتي المجانية',sfine:'30 يوماً مجاناً. بدون بطاقة بنكية. يمكنك الإلغاء في أي وقت.',
-e1:'اكتب اسم العمارة واسمك من فضلك.',e2:'اكتب عدد الشقق من فضلك.',e3:'اكتب رقم موبايل صحيحاً مثل 01012345678.',e4:'اكتب بريداً إلكترونياً صحيحاً مثل name@example.com.',
-thanks:'شكراً لك يا {n}.',doneP:'استلمنا طلب التجربة المجانية لعمارة {b}{a}. سنتواصل معك على الرقم {m} لإعداد عمارتك.',inA:' في {a}',
-next:'ماذا بعد؟',nextP:'1. نراسلك. 2. ندخل شققك الـ {u} معاً. 3. تبدأ أيام التجربة الثلاثين.',afterT:'بعد التجربة: {p} في السنة.',
-qh:'أسئلة شائعة',
-q1:'ماذا يحدث بعد 30 يوماً؟',a1:'نراسلك قبل انتهاء التجربة. إذا أردت الاستمرار تدفع السعر السنوي حسب حجم عمارتك. وإذا لم تدفع يُقفل الحساب وتبقى سجلاتك محفوظة حتى تدفع.',
-q2:'هل يستطيع السكان الدفع على أقساط؟',a2:'نعم. يسجّل أمين الصندوق أي مبلغ في أي وقت، فيمكن للسكان الدفع شهرياً أو على أجزاء أو دفعة واحدة.',
-q3:'هل يستطيع السكان تغيير الأرقام؟',a3:'لا. السكان يشاهدون فقط. أمين الصندوق وحده يضيف الدفعات والمصروفات، وكل تغيير يُحفظ في السجل.',
-q4:'هل بياناتنا خاصة؟',a4:'كل عمارة ترى سجلاتها فقط. يرى السكان حسابهم ومصروفات العمارة، ولا يرون دفعات السكان الآخرين.',
-foot:'© 2026 it7ad molak | إتحاد ملاك · it7admolak.com. صُنع لسكان يريدون حسابات واضحة.'
+langBtn:'English',bk:'›',loading:'جارٍ التحميل…',errG:'حدث خطأ. حاول مرة أخرى من فضلك.',errLock:'هذه العمارة مقفلة. تواصل معنا لتجديد الترخيص.',errOver:'المبلغ أكبر من المستحق.',errPlan:'حدد خطة الرسوم أولاً.',errNoB:'لم نجد هذه العمارة. راجع الكود مع المدير.',errNoA:'كود الشقة غير موجود في هذه العمارة.',errLinked:'هذه الشقة مرتبطة بساكن بالفعل.',errLim:'لم يعد في ترخيصك عمارات متاحة.',errNet:'لا يوجد اتصال بالإنترنت. حاول مرة أخرى.',
+limTrial:'تجربتك المجانية تشمل عمارة واحدة وقد أنشأتها بالفعل. لإدارة عمارات أخرى تحتاج الترخيص المدفوع. تواصل مع الدعم.',limPaid:'ترخيصك يشمل 3 عمارات وقد أنشأتها كلها. تواصل مع الدعم لإضافة المزيد.',noteReq:'اسم المصروف (مطلوب عند اختيار أخرى)',eOth:'اكتب اسماً لهذا المصروف من فضلك. سيُحفظ في السجل.',histNote:'السجل ثابت ولا يمكن تعديله. لتصحيح خطأ ألغِ الدفعة أو احذف الرسوم من صفحتها، وسيُضاف التصحيح هنا كسطر جديد.',planNote:'الخطة الجديدة تسري فقط على الرسوم التي تضيفها من الآن. الرسوم المضافة سابقاً تبقى كما هي.',feePeriods:'الرسوم المضافة',tagMgr:'الوسوم',tagP:'أنشئ وسومك الخاصة (مثل محل، مغلقة، المالك مسافر) وأعطها للشقق. الوسوم مجرد علامات.',tagNew:'اسم وسم جديد',tagAdd:'إضافة وسم',tagNone:'بدون وسم',tagAll:'كل الشقق',noTags:'لا توجد وسوم بعد.',tagLbl:'الوسم',tagSaved:'تم حفظ الوسم',tagAdded:'تمت إضافة الوسم',tagGone:'تم حذف الوسم',errTagDup:'هذا الوسم موجود بالفعل.',errTagLim:'عدد الوسوم كبير (الحد الأقصى 20).',feeRem:'المتبقي {a}',lastPay:'آخر دفعة {d}',st_part:'مدفوع جزئياً',feeByP:'الرسوم حسب الفترة',feeLine:'الرسوم {f} · المدفوع {p}',sxMark:'اعتبرها مسددة',aptDet:'التفاصيل',feeCol:'تم تحصيل {a}',aptsN:'{n} شقة',removeFees:'حذف هذه الرسوم',feesRemoved:'تم حذف الرسوم',errFeesPaid:'بعض الشقق دفعت أكثر من الرسوم المتبقية. ألغِ هذه الدفعات أولاً ثم احذف الرسوم.',payList:'الدفعات',cancelPay:'إلغاء الدفعة',cancelledTag:'ملغاة',h_plan2:'تغيير خطة الرسوم من {o} إلى {a} {u}',h_edit:'تعديل بيانات العمارة',h_unfees:'حذف رسوم {p} ({n} شقة)',
+editB:'تعديل',delB:'حذف',editBT:'تعديل العمارة',saveB:'حفظ التغييرات',bSaved:'تم تحديث العمارة',apFloorsNote:'يمكن تغيير الأدوار والشقق فقط قبل انضمام أي ساكن وقبل وجود أي رسوم أو دفعات.',errFloorData:'بعض الشقق التي تريد حذفها بها ساكن أو رسوم أو دفعات. يمكن حذف الشقق الفارغة فقط.',errHasData:'في هذه العمارة سكان أو رسوم أو دفعات، لذلك لا يمكن تغيير الأدوار والشقق. يمكنك تغيير الاسم والموقع.',errPaidDel:'لا يمكن حذف عمارة مدفوعة. تواصل مع الدعم.',errNameMatch:'الاسم الذي كتبته لا يطابق اسم العمارة.',delT:'حذف هذه العمارة؟',delP:'ستُزال عمارة {b} من حسابك وتُخفى عن سكانها. يحتفظ مالك التطبيق بنسخة لمدة 30 يوماً ويمكنه استرجاعها إذا تواصلت مع الدعم.',delType:'اكتب اسم العمارة للتأكيد',delBtn:'احذف العمارة',bDeleted:'تم حذف العمارة',
+instT:'إضافة إلى الشاشة الرئيسية',instBtn:'تثبيت التطبيق',instIos:'آيفون: افتح هذه الصفحة في Safari، اضغط زر المشاركة، ثم «إضافة إلى الشاشة الرئيسية».',instAnd:'أندرويد: اضغط قائمة Chrome (النقاط الثلاث) ثم «تثبيت التطبيق» أو «إضافة إلى الشاشة الرئيسية». لو فتحت الرابط داخل واتساب أو تطبيق آخر فافتحه في Chrome أولاً.',supT:'تواصل مع الدعم',supSub:'اكتب لنا أي شيء: سؤال، مشكلة، أو فكرة لتحسين التطبيق.',supKind:'بخصوص ماذا؟',k_question:'استفسار',k_complaint:'شكوى',k_feature:'اقتراح ميزة جديدة',k_other:'شيء آخر',supMsg:'رسالتك',supSend:'أرسل للدعم',supSent:'تم الإرسال. سنرد عليك هنا.',supMine:'طلباتك',supNone:'لم ترسل أي شيء بعد.',supReply:'ردنا',supEmail:'أو راسلنا:',eMsg:'اكتب 5 أحرف على الأقل من فضلك.',errMsgShort:'اكتب 5 أحرف على الأقل من فضلك.',errTooMany:'أرسلت طلبات كثيرة اليوم. حاول غداً من فضلك.',st_new:'تم الاستلام',st_seen:'تمت القراءة',st_done:'تم',
+ownT:'لوحة المالك',ownBtn:'لوحة المالك',ownReq:'الطلبات',ownBld:'العمارات',ownNoReq:'لا توجد طلبات.',ownNoBld:'لا توجد عمارات بعد.',ownFrom:'من',ownReplyL:'ردك (يراه المستخدم)',ownSeen:'تحديد كمقروء',ownDone:'رد وتحديد كمنتهي',ownSaved:'تم الحفظ',ownNew:'{n} جديد',
+sumTrial:'تجريبي',sumActive:'مدفوع',sumLocked:'مقفل / موقوف',ownMgr:'المدير',ownApts:'{a} شقة، انضم {j}',ownSuggest:'السعر المقترح: {p} جنيه في السنة',ownEnds:'ينتهي',ownNote:'ملاحظة خاصة (دفع، مكالمة...)',ownSaveNote:'حفظ الملاحظة',ownAct:'تفعيل لمدة سنة',ownExt:'إضافة 14 يوم تجربة',ownPause:'إيقاف مؤقت',ownResume:'استئناف',ownLock:'قفل',ownResetMfa:'إعادة ضبط المصادقة للمدير',ownConfirm:'اضغط مرة أخرى للتأكيد',ownDone2:'تم التحديث',ownResetOk:'تمت إعادة الضبط. سيُعد المدير مصادقاً جديداً عند الدخول القادم.',errSelf:'لا يمكنك إعادة ضبط مصادقتك من هنا.',b_trial:'تجريبي',b_active:'مدفوع',b_paused:'موقوف',b_locked:'مقفل',h_license:'تم تغيير الاشتراك إلى {s}',nT:'الإشعارات',nNone:'لا توجد إشعارات بعد.',nNewTag:'جديد',nOwner:'رسالة من مالك التطبيق',nFromB:'رسالة من مدير عمارتك ({b})',nToApt:'للشقة {a}',nPay:'تم استلام دفعة: {a} (إيصال {r})',nPayC:'تم إلغاء دفعة: {a} (إيصال {r})',nFee:'رسوم جديدة عن {p}: {a}',nReply:'رددنا على طلبك للدعم. افتح «تواصل مع الدعم» لقراءة الرد.',nLic:'اشتراك {b}: {s}',nBell:'الإشعارات',
+nSettled:'اعتبر مدير العمارة رسوم {p} مسددة.',nExempt:'اعتبر مدير العمارة شقتك معفاة من الرسوم.',rmRes:'إزالة الساكن',rmResP:'استخدم هذا إذا بيعت الشقة أو انتقل الساكن. يتوقف وصوله لهذه العمارة، وتبقى المدفوعات القديمة في السجل، ويمكنك دعوة الساكن الجديد بكود الشقة.',rmDone:'تمت إزالة الساكن. يمكنك الآن دعوة الساكن الجديد.',h_unlink:'الشقة {c}: تمت إزالة الساكن',nUnlinked:'أزال مدير العمارة ربطك بالشقة {c} في {b}.',ownFee:'رسوم خاصة بهذه الشقة',ownFeeP:'لشقة تدفع مبلغاً مختلفاً عن خطة العمارة (مثل شقة مغلقة). تُستخدم في كل الرسوم الجديدة وفي الفترات التي لم تُدفع فيها أي مبالغ بعد. هذا يتجاوز الفئة والخطة. اتركه فارغاً لباقي الشقق.',ownFeeOff:'العودة إلى رسوم خطة العمارة',ownFeeOk:'تم الحفظ. تم تحديث {n} من فترات الرسوم الحالية.',ownFeeTag:'رسوم خاصة {a}',h_aptfee:'الشقة {c}: تحديد رسوم خاصة {a}',h_aptfee0:'الشقة {c}: العودة إلى رسوم خطة العمارة',nSendT:'إرسال إشعار',nTo:'إرسال إلى',nAll:'كل السكان',nMsg:'الرسالة',nSend:'إرسال',nSent:'تم الإرسال إلى {n}',errNoRes:'لم ينضم أي ساكن بعد، فلا يوجد من نرسل له.',annT:'إعلان',annTarget:'إرسال إلى',annMgrs:'كل مديري العمارات',annAll:'الجميع',annHint:'كل من يدخل التطبيق سيراه في إشعاراته.',b_deleted:'محذوفة',ownRestore:'استرجاع العمارة',ownPurge:'مسح نهائي',ownDelOn:'تم الحذف في {d}. محفوظة كنسخة.',ownRestored:'تم استرجاع العمارة',ownPurged:'تم المسح',nRestored:'تم استرجاع عمارتك {b}.',h_deleted:'تم حذف العمارة (مخفية)',h_restored:'استرجع مالك التطبيق العمارة',weeklyN:'لأمانك نطلب كود البريد مرة كل أسبوع. سجّل دخولك من جديد من فضلك.',delPaid:'هذه العمارة لها اشتراك فعّال. الحذف لا يسترد الاشتراك ولا ينقله.',planLockN:'اختر بعناية: بعد إضافة أول رسوم لا يمكن تغيير نوع الخطة (شهرية أو سنوية).',planLocked:'نوع الخطة مقفل لأنه تمت إضافة رسوم. للتغيير: ألغِ الدفعات، احذف كل الرسوم، ثم غيّر الخطة. يمكنك تغيير المبلغ للرسوم القادمة.',errPlanLocked:'نوع الخطة مقفل لوجود رسوم. ألغِ الدفعات واحذف كل الرسوم أولاً.',errPeriod:'هذه الفترة لا تناسب خطة رسوم العمارة.',rPlan:'خطة رسوم العمارة',payForM:'الدفعة عن (الشهر)',payForY:'الدفعة عن (السنة)',chPer:'اختر الفترة',noOut:'لا يوجد مستحق على هذه الشقة. أضف رسوم الفترة أولاً.',ePer:'اختر الفترة التي تخصها هذه الدفعة.',errNoFee:'لا توجد رسوم لهذه الفترة على هذه الشقة. أضف الرسوم أولاً.',paidFor:'عن {p}',forP:'عن: {p}',h_pay2:'دفعة {r}: {a} من شقة {c} عن {p}',h_cancel2:'إلغاء دفعة {r}: {a} من شقة {c} عن {p}',xfApt:'شقتك',xfAptP:'اختر الشقة التي ستسكن فيها. بعد النقل لن تكون مديراً وستصبح ساكن هذه الشقة.',xfChApt:'اختر شقتك',xfNoApt:'لا توجد شقة فارغة لتختارها. أضف شقة من تعديل العمارة أولاً.',eXApt:'اختر شقتك أولاً.',xfWaitApt:'ستصبح ساكن الشقة {c}.',xIn2:'{f} يريد تسليمك عمارة {b}. و{f} سيصبح ساكن الشقة {c}.',nXfer2:'{f} يريد تسليمك عمارة {b}. و{f} سيصبح ساكن الشقة {c}. افتح الصفحة الرئيسية للقبول.',nXferDone2:'قبل {n} عمارة {b}. أصبحت الآن ساكن الشقة {c}.',h_xfer2:'تغيير مدير العمارة من {a} إلى {b}؛ و{a} أصبح ساكن الشقة {c}',errXOther:'أنت تدير عمارة أخرى. انقلها أو احذفها أولاً، لأن المدير لا يمكن أن يكون ساكناً.',st_ex:'معفى',sxSettled:'تمت التسوية',sxBtn:'اعتبر هذه الفترة مسددة',sxNote:'ملاحظة (اختياري، مثال: محل)',sxOk:'تم اعتبارها مسددة',sxUndo:'إلغاء التسوية',sxUndone:'تم إلغاء التسوية',exBtn:'اجعل الشقة معفاة (محل)',exUndo:'إلغاء الإعفاء',exOk:'تم جعل الشقة معفاة',exUndone:'تم إلغاء الإعفاء',exHint:'الشقق المعفاة (مثل المحلات) تظهر كمسددة بدون مبلغ مستحق، ويمكنك تسجيل أي مبلغ تدفعه.',payFlex:'يمكنك كتابة أي مبلغ، أكثر أو أقل من الرسوم. المبلغ الزائد يبقى رصيداً للشقة.',h_settle:'الشقة {c}: {p} اعتُبرت مسددة {n}',h_unsettle:'الشقة {c}: أُلغيت تسوية {p}',h_exempt:'الشقة {c} أصبحت معفاة',h_unexempt:'أُلغي إعفاء الشقة {c}',payDue:'المستحق {a}',payDone:'مدفوع بالكامل',payCredit:'رصيد {a}',xfBtn:'نقل',xfT:'تسليم هذه العمارة',xfP:'يجب أن يكون لدى المدير الجديد حساب في التطبيق (دخل مرة واحدة على الأقل) وألا يكون ساكناً. سيصله إشعار ويجب أن يقبل. بعد قبوله تفقد أنت الوصول لهذه العمارة.',xfEmail:'بريد المدير الجديد',xfSend:'أرسل طلب النقل',xfSent:'تم إرسال الطلب',xfWait:'بانتظار موافقة {e}',xfCancel:'إلغاء الطلب',xfCancelled:'تم إلغاء الطلب',xIn:'{f} يريد تسليمك عمارة {b}.',xAcc:'قبول',xDec:'رفض',xDone:'أصبحت الآن مدير هذه العمارة',xNo:'تم الرفض',errNoUser:'لا يوجد حساب بهذا البريد. اطلب من الشخص الدخول للتطبيق مرة ثم حاول من جديد.',errTgtRes:'هذا الشخص ساكن ولا يمكنه إدارة عمارة.',errTgtLim:'لا يمكن لهذا الشخص استلام عمارة أخرى (حد الترخيص).',errSelfX:'لا يمكنك النقل لنفسك.',errNoX:'هذا الطلب لم يعد متاحاً.',ownXfer:'نقل المدير',ownXferP:'بريد المدير الجديد',h_xfer:'تغيير مدير العمارة من {a} إلى {b}',h_xfer_req:'طلب نقل العمارة إلى {e}',nXfer:'{f} يريد تسليمك عمارة {b}. افتح الصفحة الرئيسية للقبول.',nXferDone:'قبل {n} عمارة {b}. لم تعد في حسابك.',nXferNo:'تم رفض نقل عمارة {b}.',nXferYou:'أصبحت الآن مدير عمارة {b}.',nXferOut:'غيّر مالك التطبيق مدير عمارة {b}.',setT:'الإعدادات',setProfile:'بياناتك',lang:'اللغة',theme:'المظهر',th_system:'مثل الموبايل',th_light:'فاتح',th_dark:'داكن',saveSet:'حفظ الإعدادات',setSaved:'تم حفظ الإعدادات',emailNote:'لا يمكن تغيير بريدك الإلكتروني من هنا. لتغييره تواصل مع الدعم.',needHelp:'تحتاج مساعدة؟',helpP:'تواصل معنا لأي مشكلة، أو لتغيير بريدك، أو لإعادة ضبط تطبيق المصادقة.',mailUs:'راسل الدعم',waUs:'تحدث معنا',bCodes:'أكواد عماراتك',copyCode:'نسخ الكود',codeCopied:'تم نسخ الكود',settingsBtn:'الإعدادات',
+errAal:'أكّد أولاً بتطبيق المصادقة ثم حاول مرة أخرى.',errResMgr:'حساب الساكن لا يستطيع إنشاء عمارة. تواصل مع الدعم لو كان هذا خطأ.',errMgrJoin:'مدير العمارة لا يستطيع الانضمام كساكن.',errDet:'تفاصيل فنية',
+mfaForceT:'جهّز تطبيق المصادقة',mfaForceP:'الجميع يفتحون التطبيق بكود تطبيق المصادقة في كل مرة. هذا يحمي سجلات الأموال، ولا يمكن إيقافه. لو فقدت موبايلك تواصل مع الدعم وسيعيد المالك ضبطه.',mfaNoOff:'مطلوب للجميع ولا يمكن إيقافه. فقدت موبايلك؟ تواصل مع الدعم.',
+joinFirst:'لدي كود انضمام',joinFirstP:'كود الانضمام (فقط لو أعطاك المدير كوداً)',joiningWith:'أنت تنضم بالكود {c}. سجّل الدخول أو أنشئ حسابك وستنضم تلقائياً.',noMgrJoin:'السكان لا يستطيعون إنشاء عمارات.',mfaCreateP:'لإنشاء عمارة جهّز تطبيق المصادقة أولاً.',sTitle:'سجّل الدخول أو أنشئ حسابك',sSub:'اكتب بريدك الإلكتروني واضغط تسجيل الدخول. سنرسل كوداً من 6 أرقام إلى بريدك. لا حاجة لكلمة مرور. للانضمام إلى عمارة بكود من المدير، سجّل الدخول أولاً ثم اختر "الانضمام إلى عمارة".',email:'البريد الإلكتروني',sendC:'تسجيل الدخول',eEml:'اكتب بريداً إلكترونياً صحيحاً مثل name@example.com.',
+cTitle:'أدخل الكود',cSub:'أرسلنا كوداً من 6 أرقام إلى {m}. راجع الوارد والبريد المزعج.',code:'الكود (6 أرقام)',conf:'تأكيد ومتابعة',eCode:'اكتب الكود المكوّن من 6 أرقام.',eWrongC:'الكود غير صحيح أو انتهت صلاحيته.',resend:'أرسل كوداً جديداً',sent:'تم إرسال الكود',chg:'تغيير البريد',
+pTitle:'عرّفنا بنفسك',pSub:'يستطيع مدير العمارة رؤية اسمك ورقم موبايلك.',yName:'اسمك',fName:'الاسم بالكامل',mob:'رقم الموبايل',eName:'اكتب اسمك من فضلك.',eMob:'اكتب رقم موبايل صحيحاً مثل 01012345678.',save:'حفظ ومتابعة',
+mTitle:'الخطوة الثانية',mSub:'اكتب الكود المكوّن من 6 أرقام من تطبيق المصادقة.',eMfa:'الكود غير صحيح.',
+welcome:'أهلاً',signOut:'تسجيل الخروج',yBuildings:'عماراتي',createB:'إنشاء عمارة',joinB:'الانضمام إلى عمارة بالكود',manager:'مدير',resident:'ساكن',aptN:'شقة {c}',none:'لست في أي عمارة بعد.',
+joinT:'الانضمام إلى عمارة',joinP:'اكتب الكود الذي وصلك من مدير عمارتك.',joinCode:'كود الانضمام',joinBtn:'انضم إلى العمارة',youJoined:'انضممت إلى العمارة',
+bDet:'بيانات العمارة',bName:'اسم العمارة',bNameP:'مثال: برج اللوتس',gov:'المحافظة',chGov:'اختر المحافظة',city:'المدينة',chCity:'اختر المدينة',chGovFirst:'اختر المحافظة أولاً',area:'اسم المنطقة',areaP:'مثال: اسم الشارع أو الحي',floors:'كم دوراً؟',apFl:'الشقق في كل دور',floorN:'الدور {n}',renT:'أسماء الشقق',renP:'غيّر أسماء الشقق في دور واحد (مثل 101 إلى 1A). يبقى السكان والرسوم والدفعات مع نفس الشقة. استخدم حروفاً وأرقاماً فقط (حتى 8). إن لم ينضم شخص بعد فأرسل له الكود الجديد.',renOld:'الشقة {c}',renOk:'تم حفظ الأسماء',errAptName:'استخدم حروفاً وأرقاماً فقط، حتى 8 خانات، لكل اسم.',errAptDup:'لا يمكن أن تحمل شقتان نفس الاسم.',h_rename:'تم تغيير أسماء الشقق ({n} شقة)',oneFloorT:'تعديل دور واحد',oneFloorP:'أضف أو احذف شققاً في دور واحد دون المساس بباقي الأدوار. آمن للعمارة الشغّالة: الشقق التي بها ساكن أو رسوم أو دفعات لا تُحذف أبداً. الحذف يبدأ من أعلى رقم.',oneFloorN:'عدد الشقق في هذا الدور',floorSel:'الدور',newFloor:'{n} (دور جديد)',floorSaved:'تم تحديث الدور',h_floor:'{f}: أصبح فيه {n} شقة',ground:'الدور الأرضي (G)',groundN:'عدد شقق الدور الأرضي (G1 وG2 …). اكتب 0 إن لم يوجد',groundP:'شقق الدور الأرضي تُسمّى G1 وG2 … ثم تبدأ الأدوار من 1.',same:'نفس العدد في كل دور',apply:'تطبيق',createBtn:'إنشاء العمارة',eB1:'من فضلك املأ اسم العمارة والمحافظة والمدينة والمنطقة.',codesNote:'أكواد الشقق: الدور 1 الشقة 2 كودها 102. شقق الدور الأرضي G1 وG2 …',bCreated:'تم إنشاء العمارة. كود عمارتك هو {c}',
+tOverview:'نظرة عامة',tPay:'الرسوم والمدفوعات',catT:'فئات الرسوم',catP:'لكل نوع من الشقق رسومه، وهي نفسها لكل شقق الفئة. حدد فئة لكل شقة من سجل الإيرادات. الشقة بدون فئة تدفع مبلغ الخطة أعلاه.',catN1:'غير مفروشة',catN2:'مفروشة وغير مستخدمة',catN3:'مستخدمة',catName:'اسم الفئة',catAmt:'المبلغ',catCreate:'إنشاء الفئات',catAdd:'إضافة',catUpd:'حدّث أيضاً فترات الرسوم التي لم تُدفع بعد',catAdded:'تمت إضافة الفئة',catGone:'تم حذف الفئة',catNone:'بدون فئة',catLbl:'الفئة',catBulk:'تحديد الفئة لعدة شقق',catBulkP:'اختر دوراً وفئة ثم اضغط تطبيق. فترات الرسوم التي لم تُدفع بعد تتغير إلى المبلغ الجديد، والفترات التي بها دفعات تبقى كما هي.',catAll:'كل الشقق',catApply:'تطبيق',catOk:'تم الحفظ. تم تحديث {n} من فترات الرسوم.',rCat:'الفئة: {c}',errCatLim:'عدد الفئات كبير (الحد الأقصى 10).',h_catadd:'تمت إضافة الفئة {n} ({a})',h_catedit:'تم تحديد الفئة {n} بمبلغ {a}',h_catdel:'تم حذف الفئة {n}',h_catset:'تم تحديد الفئة {n} لعدد {a} شقة',tFees:'خطط الرسوم',rFee:'رسوم شقتك',tInc:'سجل الإيرادات',tExp:'المصروفات',tRes:'السكان',tHist:'السجل',tMine:'حسابي',tBld:'العمارة',
+trial:'تجربة مجانية',daysLeft:'باقي {n} يوماً',paidL:'ترخيص مدفوع',until:'حتى {d}',locked:'مقفل',paused:'متوقف',lockT:'انتهى الترخيص',lockP:'سجلاتك في أمان ولم يُحذف شيء. تبقى كل الصفحات مقفلة حتى يتم تجديد الترخيص. تواصل معنا للتجديد.',pausedP:'هذه العمارة متوقفة. تواصل معنا.',
+fundBal:'رصيد الصندوق',cashIn:'الوارد',spent:'المصروف',outst:'المستحق',aptsC:'الشقق',joinedC:'السكان المنضمون',
+plan:'رسوم الخطة',monthly:'شهرية',yearly:'سنوية',amt:'المبلغ لكل شقة',savePlan:'حفظ الخطة',planSaved:'تم حفظ الخطة',planText:'{a} كل {u}',perMonth:'شهر',perYear:'سنة',noPlan:'لا توجد خطة رسوم بعد. حددها أولاً.',
+addFees:'إضافة الرسوم',period:'الفترة',addFeesBtn:'أضف الرسوم لهذه الفترة',feesAdded:'تمت إضافة الرسوم إلى {n} شقة',feesNone:'هذه الرسوم أضيفت من قبل.',
+recPay:'تسجيل دفعة',apt:'الشقة',chApt:'اختر الشقة',payAmt:'المبلغ المدفوع',payBtn:'حفظ الدفعة',paySaved:'تم حفظ الدفعة. إيصال {r}',eApt:'اختر شقة.',eAmt:'اكتب مبلغاً.',
+st_paid:'مدفوع',st_out:'مستحق',st_none:'لا رسوم بعد',due:'المستحق {a}',cancelLast:'إلغاء آخر دفعة',cancelled:'تم إلغاء آخر دفعة',remind:'إرسال تذكير',receipt:'مشاركة الإيصال',
+rcTxt:'إيصال {r}\n{b}\nشقة {n}\nالمبلغ: {a}\nالمتبقي: {d}',rmTxt:'مرحباً {w}، تذكير ودّي من أمين صندوق العمارة: يوجد {d} من رسوم العمارة مستحقة على شقة {n}. شكراً لك.\n{b}',copied:'تم نسخ الرسالة. الصقها في أي تطبيق.',
+addExp:'إضافة مصروف',cat:'النوع',note:'ملاحظة (اختياري)',photo:'صورة الفاتورة',photoAdd:'التقط أو اختر صورة',month:'الشهر',saveExp:'حفظ المصروف',expSaved:'تم حفظ المصروف',eExp:'اكتب مبلغ المصروف.',total:'الإجمالي',noExp:'لا توجد مصروفات في هذا الشهر.',delExp:'حذف المصروف',delConf:'اضغط مرة أخرى للتأكيد',expDel:'تم حذف المصروف (محفوظ في السجل)',viewInv:'عرض الفاتورة',noInv:'بدون صورة',shareM:'مشاركة ملخص الشهر',stHead:'كشف شهر {m}\n{b}',
+c_elec:'كهرباء',c_water:'مياه',c_lift:'أسانسير',c_clean:'نظافة',c_sec:'حراسة',c_rep:'إصلاحات',c_oth:'أخرى',
+rTitle:'السكان',bCode:'كود العمارة',invite:'مشاركة الدعوة',invited:'تمت الدعوة',joined:'انضم',notInv:'لم تتم الدعوة',invTxt:'مرحباً! تمت دعوتك للانضمام إلى عمارة {b} على إتحاد ملاك (it7ad molak).\nكود شقتك: {c}\nكود الانضمام: {k}-{c}\nافتح هذا الرابط للانضمام: {l}',legend:'رمادي: لم تتم الدعوة. أصفر: تمت الدعوة. أخضر: انضم.',
+h_plan:'تحديد خطة الرسوم: {a} {u}',h_fees:'إضافة رسوم {p}: {a} لكل شقة، {n} شقة',h_pay:'دفعة {r}: {a} من شقة {c}',h_cancel:'إلغاء دفعة {r}: {a} من شقة {c}',h_exp:'مصروف: {k} {a} ({p})',h_delexp:'حذف مصروف: {k} {a}',h_building:'إنشاء العمارة',h_join:'انضمت الشقة {c}',noH:'لا شيء هنا بعد.',myPays:'دفعاتي',myFees:'رسومي',partPaid:'دفعت {a} من {b}',fee:'رسوم {p}',
+cashM:'الوارد هذا الشهر',secT:'أمان الحساب',mfaOff:'الدخول بخطوتين متوقف',mfaOffP:'المديرون يتعاملون مع سجلات الأموال. فعّل خطوة ثانية بتطبيق المصادقة.',mfaOn:'الدخول بخطوتين مفعّل',mfaTurnOn:'تفعيل',mfaTurnOff:'إيقاف',mfaScan:'امسح هذا الكود بتطبيق Google Authenticator أو Microsoft Authenticator، أو اكتب المفتاح.',mfaConfirm:'اكتب الكود المكوّن من 6 أرقام من التطبيق',mfaDone:'تم تفعيل الدخول بخطوتين',mfaOffDone:'تم إيقاف الدخول بخطوتين',
+replay:'أعد الجولة التعريفية',tStep:'الخطوة {i} من {n}',skipT:'تخطَّ',backT:'رجوع',next:'التالي',done:'تم',close:'إغلاق',
+tp1:'شاهد فلوس العمارة بنظرة واحدة: كم دخل وكم صُرف وكم تبقى.',tp2:'حدد خطة الرسوم، أضف رسوم الفترة، وسجّل كل دفعة. الدفع الجزئي مقبول.',tp3:'احفظ كل فاتورة مع صورتها. يراها السكان شهراً بشهر.',tp4:'لكل شقة كود. اختر شقة وشارك الدعوة مع الساكن.',tp5:'كل تغيير يُحفظ هنا ولا يمكن مسحه.',tp6:'شاهد ما دفعته وما تبقى عليك وإيصالاتك.',tp7:'شاهد كل مصروفات العمارة شهراً بشهر مع صور الفواتير. تستطيع المشاهدة فقط دون تغيير أي شيء.',tp8:'دفعاتك الخاصة تظهر هنا.'
 }};
-function t(k,v){var s=D[lang][k];if(s===undefined)s=D.en[k];if(v)s=s.replace(/\{(\w+)\}/g,function(m,x){return v[x]!==undefined?v[x]:m});return s}
-var tiers=[[20,3000],[50,6000],[1e9,10000]],fv={bn:'',ar:'',nm:'',un:'',mb:'',em:''},sent=null,err='';
-function price(u){for(var i=0;i<tiers.length;i++)if(u<=tiers[i][0])return tiers[i][1]}
-function fmt(n){return n.toLocaleString('en-US')+' '+t('egp')}
-function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-function $(i){return document.getElementById(i)}
-function readForm(){if(!$('bn'))return;['bn','ar','nm','un','mb','em'].forEach(function(k){fv[k]=$(k).value})}
-function setLang(l){readForm();lang=l;try{localStorage.setItem('lang',l)}catch(e){}render()}
-function card(i){return '<div class="card"><h3>'+t('f'+i+'t')+'</h3><p>'+t('f'+i+'p')+'</p></div>'}
-function tierCard(i){return '<div class="card"><h3>'+t('t'+i)+'</h3><p>'+t('t'+i+'d')+'</p><div class="price" style="margin-top:10px">'+tiers[i-1][1].toLocaleString('en-US')+' <small>'+t('perY')+'</small></div></div>'}
-function estText(){var u=parseInt(fv.un,10);return u>0?t('est',{p:fmt(price(u))}):''}
-function est(){var u=parseInt($('un').value,10),e=$('est');fv.un=$('un').value;if(u>0){e.style.display='block';e.textContent=t('est',{p:fmt(price(u))})}else e.style.display='none'}
-function form(){
-  return '<div id="formBox"><h2>'+t('sh')+'</h2><p class="lead" style="margin-bottom:14px">'+t('sp')+'</p><a class="btn" style="display:block;text-align:center;padding:16px;font-size:18px" href="/app/">'+t('sbtn')+'</a><div class="fine">'+t('sfine')+'</div></div>';
+function t(k,v){var s=D[lang][k];if(s===undefined)s=D.en[k];if(s===undefined)return k;if(v)s=s.replace(/\{(\w+)\}/g,function(m,x){return v[x]!==undefined?v[x]:m});return s}
+var GEO={en:[],ar:[]};
+[[GE_S,'en'],[GA_S,'ar']].forEach(function(p){p[0].split('|').forEach(function(s){var q=s.split(':');GEO[p[1]].push({g:q[0],c:q[1].split(',')})})});
+function gnE(en){var i=GEO.en.map(function(x){return x.g}).indexOf(en);return i<0?en:GEO[lang][i].g}
+function cnE(gen,cen){var i=GEO.en.map(function(x){return x.g}).indexOf(gen);if(i<0)return cen;var j=GEO.en[i].c.indexOf(cen);return j<0?cen:GEO[lang][i].c[j]}
+var $=function(i){return document.getElementById(i)};
+var esc=function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var sep=function(){return lang=='ar'?'، ':', '};
+var money=function(n){return Number(n||0).toLocaleString('en-US')+' '+(lang=='ar'?'ج.م':'EGP')};
+var MO={en:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],ar:['يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر']};
+function ml(p){if(!p)return '';if(p.length==4)return p;var a=p.split('-');return MO[lang][parseInt(a[1],10)-1]+' '+a[0]}
+function nowP(){var d=new Date();return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)}
+function addM(p,k){var a=p.split('-'),d=new Date(parseInt(a[0],10),parseInt(a[1],10)-1+k,1);return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)}
+function ltr(s){return '<span dir="ltr">'+s+'</span>'}
+function ui(){return {}}
+
+var S={scr:'login',email:'',user:null,profile:null,blds:[],cur:null,role:null,tab:'overview',d:null,cd:0,msg:'',tour:null,toured:{},pre:'',draft:{name:'',gi:-1,ci:-1,area:'',floors:5,per:[2,2,2,2,2]},mfa:null,fsel:'',asel:'',busy:false,delk:'',selM:null,fperiod:''};
+function toast(m){var e=$('toast');e.textContent=m;e.classList.add('show');clearTimeout(window.tt);window.tt=setTimeout(function(){e.classList.remove('show')},3200)}
+function setErr(k){var e=$('err');if(e)e.textContent=k?t(k):''}
+function errKey(e){var m=String((e&&e.message)||e||'');if(/too many categories/.test(m))return 'errCatLim';if(/unable to validate email|invalid format/i.test(m))return 'eEml';if(/apartment name exists/.test(m))return 'errAptDup';if(/bad apartment name/.test(m))return 'errAptName';if(/tag exists/.test(m))return 'errTagDup';if(/too many tags/.test(m))return 'errTagLim';if(/manager has other buildings/.test(m))return 'errXOther';if(/user not found/.test(m))return 'errNoUser';if(/target is resident/.test(m))return 'errTgtRes';if(/target license limit/.test(m))return 'errTgtLim';if(/cannot transfer to yourself/.test(m))return 'errSelfX';if(/transfer not found/.test(m))return 'errNoX';if(/no fee for this period/.test(m))return 'errNoFee';if(/period required/.test(m))return 'ePer';if(/plan type locked/.test(m))return 'errPlanLocked';if(/period does not match/.test(m))return 'errPeriod';if(/no residents/.test(m))return 'errNoRes';if(/too many requests/.test(m))return 'errTooMany';if(/message too short/.test(m))return 'errMsgShort';if(/cannot reset yourself/.test(m))return 'errSelf';if(/license locked/.test(m)||/license/.test(m)&&/lock/.test(m))return 'errLock';if(/more than the outstanding/.test(m))return 'errOver';if(/fee plan first/.test(m))return 'errPlan';if(/building not found/.test(m))return 'errNoB';if(/apartment not found/.test(m))return 'errNoA';if(/already linked/.test(m))return 'errLinked';if(/license limit/.test(m))return 'errLim';if(/payments exist for these fees/.test(m))return 'errFeesPaid';if(/building has data/.test(m))return 'errHasData';if(/paid building cannot be deleted/.test(m))return 'errPaidDel';if(/name does not match/.test(m))return 'errNameMatch';if(/name required for other/.test(m))return 'eOth';if(/authenticator required/.test(m))return 'errAal';if(/residents cannot manage/.test(m))return 'errResMgr';if(/managers cannot join/.test(m))return 'errMgrJoin';if(/fetch|network/i.test(m))return 'errNet';return 'errG'}
+function showErr(m,detail){var b=$('banner');if(!b)return;b.innerHTML='<div class="errbox"><div><b>'+esc(m)+'</b>'+(detail?'<div class="sub" dir="ltr" style="margin-top:4px;word-break:break-word">'+esc(t('errDet'))+': '+esc(detail)+'</div>':'')+'</div><button class="btn small ghost" onclick="clearErr()">'+t('close')+'</button></div>';b.className='banner show';window.scrollTo(0,0)}
+function clearErr(){var b=$('banner');if(b){b.innerHTML='';b.className='banner'}}
+function fail(e){console.error(e);showErr(t(errKey(e)),String((e&&e.message)||e||''));S.busy=false}
+function go(s){S.scr=s;clearErr();render();window.scrollTo(0,0)}
+function applyTheme(th){var h=document.documentElement;if(th=='light'||th=='dark')h.setAttribute('data-theme',th);else h.removeAttribute('data-theme');try{localStorage.setItem('theme',th||'system')}catch(e){}}
+function setLang(l){snap();lang=l;try{localStorage.setItem('lang',l)}catch(e){}if(S.user&&S.profile){S.profile.lang=l;sb.rpc('set_prefs',{p_lang:l,p_theme:S.profile.theme||'system'})}render()}
+function snap(){var g=function(i){return $(i)?$(i).value:null};if(S.scr=='login'&&$('em')){S.email=g('em');if($('jc0')&&g('jc0'))S.pre=g('jc0').replace(/\s/g,'').toUpperCase()}if(S.scr=='create'&&$('bn')){S.draft.name=g('bn');S.draft.area=g('ar')}}
+function back(to){return '<button class="btn small ghost" style="margin:14px 0 0" onclick="go(\''+to+'\')">'+t('bk')+' '+t('backT')+'</button>'}
+
+/* ---------- data ---------- */
+function bstate(b){var n=Date.now();if(b.status=='paused')return 'paused';if(b.status=='locked')return 'locked';if(b.status=='trial')return new Date(b.trial_ends).getTime()>n?'trial':'locked';if(b.status=='active')return b.license_ends&&new Date(b.license_ends).getTime()>n?'active':'locked';return 'locked'}
+function bcur(){return S.blds.filter(function(b){return b.id==S.cur})[0]}
+async function loadHome(){
+  var r=await sb.from('buildings').select('*').order('created_at');if(r.error)throw r.error;var a=await sb.from('apartments').select('id,building_id,code,floor,resident_id,invited').eq('resident_id',S.user.id);if(a.error)throw a.error;S.myApts=a.data||[];
+  try{var xr=await sb.from('building_transfers').select('*').eq('status','pending');S.xfers=(xr.data||[]).filter(function(x){return Date.now()-new Date(x.created_at).getTime()<14*864e5})}catch(e){S.xfers=[]}
+  S.blds=(r.data||[]).filter(function(b){return !b.deleted_at&&(b.manager_id==S.user.id||S.myApts.some(function(x){return x.building_id==b.id}))});
 }
-function done(){
-  var u=parseInt(sent.u,10);
-  return '<div class="done" style="display:block"><h3>'+t('thanks',{n:esc(sent.n)})+'</h3><p class="lead" style="margin-bottom:12px">'+t('doneP',{b:'<b>'+esc(sent.b)+'</b>',a:sent.a?t('inA',{a:esc(sent.a)}):'',m:'<span dir="ltr">'+esc(sent.m)+'</span>'})+'</p><div class="card"><b>'+t('next')+'</b><p style="margin-top:6px">'+t('nextP',{u:u})+'</p></div><p class="fine">'+t('afterT',{p:fmt(price(u))})+'</p></div>';
+async function loadBuilding(){
+  var b=bcur(),id=b.id,q=function(x){if(x.error)throw x.error;return x.data||[]};
+  var arr=await Promise.all([
+    sb.from('apartments').select('id,code,floor,resident_id,invited,exempt,exempt_note,custom_fee,tag_id,category_id').eq('building_id',id).order('floor').order('code'),
+    sb.from('charges').select('apartment_id,period,amount,settled,settled_note').eq('building_id',id),
+    sb.from('payments').select('id,apartment_id,amount,receipt_no,cancelled,created_at,period').eq('building_id',id).order('created_at'),
+    sb.from('expenses').select('id,category,amount,period,note,invoice_path,created_at').eq('building_id',id).eq('deleted',false).order('created_at'),
+    S.role=='manager'?sb.from('audit_log').select('kind,detail,created_at').eq('building_id',id).order('created_at',{ascending:false}).limit(200):Promise.resolve({data:[]}),
+    S.role=='manager'?sb.from('profiles').select('id,name,mobile'):Promise.resolve({data:[]}),
+    sb.rpc('monthly_cash',{p_building:id}),
+    S.role=='manager'?sb.from('apartment_tags').select('id,name').eq('building_id',id).order('name'):Promise.resolve({data:[]}),
+    sb.from('fee_categories').select('id,name,amount').eq('building_id',id).order('created_at')
+  ]);
+  S.d={apts:q(arr[0]),charges:q(arr[1]),pays:q(arr[2]),exps:q(arr[3]),log:q(arr[4]),people:q(arr[5]),cash:q(arr[6]),tags:(arr[7].data||[]),cats:(arr[8].data||[])};
 }
+function charged(aid){return S.d.charges.filter(function(c){return c.apartment_id==aid}).reduce(function(s,c){return s+(c.settled?paidIn(aid,c.period):Number(c.amount))},0)}
+function paidOf(aid){return S.d.pays.filter(function(p){return p.apartment_id==aid&&!p.cancelled}).reduce(function(s,p){return s+Number(p.amount)},0)}
+function dueOf(aid){return Math.max(charged(aid)-paidOf(aid),0)}
+function paidIn(aid,p){return S.d.pays.filter(function(x){return x.apartment_id==aid&&x.period==p&&!x.cancelled}).reduce(function(s,x){return s+Number(x.amount)},0)}
+function leftIn(aid,p){var c=S.d.charges.filter(function(x){return x.apartment_id==aid&&x.period==p&&!x.settled}).reduce(function(s,x){return s+Number(x.amount)},0);return Math.max(c-paidIn(aid,p),0)}
+function isSet(aid,p){return S.d.charges.some(function(x){return x.apartment_id==aid&&x.period==p&&x.settled})}
+function aptOf(aid){return S.d.apts.filter(function(a){return a.id==aid})[0]||{}}
+function openPeriods(aid){var seen={};S.d.charges.forEach(function(c){if(c.apartment_id==aid)seen[c.period]=1});return Object.keys(seen).sort().reverse()}
+function periodList(plan){var out=[],y=new Date().getFullYear();if(plan=='monthly'){var last=addM(nowP(),1);for(var p=last;p>='2000-01';p=addM(p,-1))out.push(p)}else{for(var i=y+1;i>=2000;i--)out.push(String(i))}return out}
+function payPick(){var v=$('pp').value;S.pper=v;if(v&&S.asel){$('am').value=leftIn(S.asel,v)}}
+function stOf(aid){return dueOf(aid)>0?'out':aptOf(aid).exempt?'ex':S.d.charges.some(function(c){return c.apartment_id==aid})?'paid':'none'}
+function personOf(a){var p=S.d.people.filter(function(x){return x.id==a.resident_id})[0];return p?p.name:''}
+function aptCode(id){var a=S.d.apts.filter(function(x){return x.id==id})[0];return a?a.code:'?'}
+
+/* ---------- auth ---------- */
+function cleanEmail(v){return String(v||'').replace(/[\u0600-\u06FF]/g,'').replace(/[^\x21-\x7E]/g,'').toLowerCase()}
+async function sendCode(){
+  var e=cleanEmail($('em')?$('em').value:S.email);
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)){setErr('eEml');return}
+  S.email=e;var jc=$('jc0')&&$('jc0').value.replace(/\s/g,'').toUpperCase();if(jc){S.pre=jc;try{localStorage.setItem('pre',jc)}catch(x){}}if(S.busy)return;S.busy=true;
+  try{var r=await sb.auth.signInWithOtp({email:e,options:{shouldCreateUser:true}});if(r.error)throw r.error;S.cd=Date.now()+30000;S.busy=false;go('code');toast(t('sent'));startCd()}catch(x){fail(x)}
+}
+var cdT=null;
+function startCd(){clearInterval(cdT);cdT=setInterval(function(){var b=$('rs');if(!b){clearInterval(cdT);return}var s=Math.ceil((S.cd-Date.now())/1000);if(s<=0){clearInterval(cdT);b.disabled=false;b.textContent=t('resend')}else b.textContent=t('resend')+' ('+s+')'},500)}
+async function verifyCode(){
+  var c=$('oc').value.replace(/\s/g,'');if(!/^\d{6,8}$/.test(c)){setErr('eCode');return}
+  if(S.busy)return;S.busy=true;
+  try{var r=await sb.auth.verifyOtp({email:S.email,token:c,type:'email'});if(r.error){S.busy=false;setErr('eWrongC');return}S.busy=false;lsSet('emailAt',String(Date.now()));await afterAuth()}catch(x){fail(x)}
+}
+function ssGet(k){try{return sessionStorage.getItem(k)}catch(e){return null}}
+function ssSet(k,v){try{if(v==null)sessionStorage.removeItem(k);else sessionStorage.setItem(k,v)}catch(e){}}
+function lsGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
+function lsSet(k,v){try{if(v==null)localStorage.removeItem(k);else localStorage.setItem(k,v)}catch(e){}}
+async function afterAuth(){
+  var s=await sb.auth.getSession();if(!s.data.session){go('login');return}
+  S.user=s.data.session.user;
+  var lv=await sb.auth.mfa.getAuthenticatorAssuranceLevel(),f=await sb.auth.mfa.listFactors(),vf=((f.data&&f.data.totp)||[]).filter(function(x){return x.status=='verified'})[0];
+    await enter();
+}
+async function enter(){
+  try{
+    var p=await sb.from('profiles').select('*').eq('id',S.user.id).single();if(p.error)throw p.error;S.profile=p.data;
+    if(S.profile.lang&&S.profile.lang!=lang){lang=S.profile.lang;try{localStorage.setItem('lang',lang)}catch(e){}}
+    applyTheme(S.profile.theme);
+    if(!S.profile.name||!S.profile.mobile){go('profile');return}
+    if(S.pre){var code=S.pre;S.pre='';try{localStorage.removeItem('pre')}catch(e){}try{var j=await sb.rpc('join_building',{p_code:code});if(j.error)throw j.error;toast(t('youJoined'))}catch(x){fail(x)}}
+    await loadHome();await mfaState();
+    try{await loadNotifs();if(!window.np&&setInterval)window.np=setInterval(function(){if(S.user&&!document.hidden)loadNotifs().catch(function(){})},60000)}catch(e){}
+    try{var ow=await sb.from('app_admins').select('user_id');S.owner=!!(ow.data&&ow.data.length)}catch(e){S.owner=false}
+    go('home');
+  }catch(x){fail(x)}
+}
+async function saveProfile(){
+  var n=$('pn').value.trim(),m=$('pm').value.replace(/[\s-]/g,'');
+  if(!n){setErr('eName');return}if(!/^01[0125]\d{8}$/.test(m)){setErr('eMob');return}
+  try{var r=await sb.rpc('set_profile',{p_name:n,p_mobile:m});if(r.error)throw r.error;await enter()}catch(x){fail(x)}
+}
+async function verifyMfa(){
+  var c=$('mc').value.replace(/\s/g,'');if(!/^\d{6}$/.test(c)){setErr('eMfa');return}
+  try{var ch=await sb.auth.mfa.challenge({factorId:S.mfaFactor});if(ch.error)throw ch.error;var v=await sb.auth.mfa.verify({factorId:S.mfaFactor,challengeId:ch.data.id,code:c});if(v.error){setErr('eMfa');return}ssSet('unlocked','1');var ao=S.afterMfa;S.afterMfa=null;await enter();if(ao=='owner')await openOwner()}catch(x){fail(x)}
+}
+async function signOut(){await sb.auth.signOut();S.user=null;S.profile=null;S.blds=[];S.myApts=[];S.cur=null;S.email='';S.mfaOn=false;S.force=false;S.afterMfa=null;S.owner=false;S.adm=null;S.reqs=[];S.notifs=[];ssSet('unlocked',null);lsSet('emailAt',null);applyTheme('system');go('login')}
+
+/* ---------- security (2-step with authenticator) ---------- */
+async function mfaState(){var f=await sb.auth.mfa.listFactors();var v=(f.data&&f.data.totp||[]).filter(function(x){return x.status=='verified'})[0];S.mfaOn=!!v;S.mfaId=v?v.id:null}
+async function mfaStart(){
+  try{var f0=await sb.auth.mfa.listFactors();var un=(f0.data&&f0.data.all||[]).filter(function(x){return x.status!='verified'});for(var i=0;i<un.length;i++){await sb.auth.mfa.unenroll({factorId:un[i].id})}var e=await sb.auth.mfa.enroll({factorType:'totp',friendlyName:'it7ad-'+Date.now()});if(e.error)throw e.error;S.mfa={id:e.data.id,qr:e.data.totp.qr_code,secret:e.data.totp.secret};go('mfaSetup')}catch(x){fail(x)}
+}
+async function mfaFinish(){
+  var c=$('mc').value.replace(/\s/g,'');if(!/^\d{6}$/.test(c)){setErr('eMfa');return}
+  try{var ch=await sb.auth.mfa.challenge({factorId:S.mfa.id});if(ch.error)throw ch.error;var v=await sb.auth.mfa.verify({factorId:S.mfa.id,challengeId:ch.data.id,code:c});if(v.error){setErr('eMfa');return}S.mfa=null;ssSet('unlocked','1');toast(t('mfaDone'));S.mfaOn=true;var af=S.afterMfa;S.afterMfa=null;S.force=false;await loadHome();if(af=='owner'){await loadOwner();S.owner=true}go(af||'home')}catch(x){fail(x)}
+}
+async function mfaOff_unused(){
+  try{var r=await sb.auth.mfa.unenroll({factorId:S.mfaId});if(r.error)throw r.error;toast(t('mfaOffDone'));await loadHome();go('home')}catch(x){fail(x)}
+}
+
+/* ---------- screens ---------- */
+function vLogin(){return (S.weekly?'<div class="warn">'+t('weeklyN')+'</div>':'')+'<h1 style="margin-top:18px">'+t('sTitle')+'</h1><div class="sub">'+t('sSub')+'</div><div class="card"><label for="em">'+t('email')+'</label><input id="em" type="email" dir="ltr" inputmode="email" autocomplete="email" value="'+esc(S.email)+'" placeholder="name@example.com">'+(S.pre?'<div class="warn" style="margin-top:12px">'+t('joiningWith',{c:ltr(esc(S.pre))})+'</div>':'')+'</div><div class="err" id="err"></div><button class="btn go full" style="margin-top:0" onclick="sendCode()">'+t('sendC')+'</button>'+installBox()+supportBox()}
+function vCode(){return '<button class="btn small ghost" style="margin:14px 0 0" onclick="go(\'login\')">'+t('bk')+' '+t('chg')+'</button><h1 style="margin-top:10px">'+t('cTitle')+'</h1><div class="sub">'+t('cSub',{m:ltr(esc(S.email))})+'</div><div class="card"><label for="oc">'+t('code')+'</label><input id="oc" dir="ltr" inputmode="numeric" autocomplete="one-time-code" maxlength="8" placeholder="000000" style="font-size:26px;letter-spacing:8px;text-align:center"></div><div class="err" id="err"></div><button class="btn go full" style="margin-top:0" onclick="verifyCode()">'+t('conf')+'</button><button class="btn ghost full" id="rs" disabled onclick="sendCode()">'+t('resend')+'</button>'}
+function vProfile(){return '<h1 style="margin-top:18px">'+t('pTitle')+'</h1><div class="sub">'+t('pSub')+'</div><div class="card"><label for="pn">'+t('yName')+'</label><input id="pn" autocomplete="name" placeholder="'+t('fName')+'"><label for="pm">'+t('mob')+'</label><input id="pm" type="tel" dir="ltr" inputmode="tel" autocomplete="tel" placeholder="01012345678"></div><div class="err" id="err"></div><button class="btn go full" style="margin-top:0" onclick="saveProfile()">'+t('save')+'</button>'}
+function vMfa(){return '<h1 style="margin-top:18px">'+t('mTitle')+'</h1><div class="sub">'+t('mSub')+'</div><div class="card"><input id="mc" dir="ltr" inputmode="numeric" maxlength="7" placeholder="000000" style="font-size:26px;letter-spacing:8px;text-align:center"></div><div class="err" id="err"></div><button class="btn go full" style="margin-top:0" onclick="verifyMfa()">'+t('conf')+'</button><button class="btn ghost full" onclick="signOut()">'+t('signOut')+'</button>'}
+function vMfaSetup(){return (S.force?'':back('home'))+'<h1 style="margin-top:10px">'+t(S.force?'mfaForceT':'secT')+'</h1><div class="sub">'+t(S.force?'mfaForceP':S.afterMfa=='create'||S.afterMfa=='owner'?'mfaCreateP':'mfaScan')+'</div><div class="sub" style="margin-top:6px">'+t('mfaScan')+'</div><div class="card" style="text-align:center"><img alt="QR" style="width:200px;height:200px;background:#fff;border-radius:8px" src="'+esc(S.mfa.qr)+'"><div dir="ltr" style="font-weight:800;letter-spacing:2px;word-break:break-all;margin-top:8px">'+esc(S.mfa.secret)+'</div></div><div class="card"><label for="mc">'+t('mfaConfirm')+'</label><input id="mc" dir="ltr" inputmode="numeric" maxlength="7" placeholder="000000" style="font-size:22px;letter-spacing:6px;text-align:center"></div><div class="err" id="err"></div><button class="btn go full" style="margin-top:0" onclick="mfaFinish()">'+t('mfaTurnOn')+'</button>'+(S.force?'<button class="btn ghost full" onclick="signOut()">'+t('signOut')+'</button>':'')}
+function vHome(){
+  var h='<h1 style="margin-top:14px">'+t('welcome')+(S.profile?(lang=='ar'?' ':', ')+esc(S.profile.name.split(' ')[0]):'')+'</h1><button class="btn small ghost" style="margin-top:8px" onclick="signOut()">'+t('signOut')+'</button>';
+  var mine=S.blds.filter(function(b){return b.manager_id==S.user.id}),hasB=S.blds.length>0,isRes=S.myApts.length>0;
+  var lim=mine.some(function(b){return b.status=='active'})?3:1,full=mine.length>=lim;
+  var me=(S.user.email||'').toLowerCase();(S.xfers||[]).filter(function(x){return x.to_email==me}).forEach(function(x){h+='<div class="warn"><b>'+t(x.from_apt?'xIn2':'xIn',{f:esc(x.from_name||'—'),b:esc(x.building_name),c:'<span dir="ltr">'+esc(x.from_apt||'')+'</span>'})+'</b><div class="acts" style="margin-top:8px"><button class="btn small go" onclick="answerX(\''+x.id+'\',true)">'+t('xAcc')+'</button><button class="btn small ghost" onclick="answerX(\''+x.id+'\',false)">'+t('xDec')+'</button></div></div>'});
+  h+=(full&&!isRes?'<div class="warn">'+t(lim==1?'limTrial':'limPaid')+'</div>':'')+'<div class="g2b">'+(isRes?'':'<button class="btn go" '+(full?'disabled':'')+' onclick="startCreate()">'+t('createB')+'</button>')+(mine.length?'':'<button class="btn ghost" onclick="go(\'join\')">'+t('joinB')+'</button>')+'</div>'+(isRes?'<div class="note">'+t('noMgrJoin')+'</div>':'');
+  h+='<h2>'+t('yBuildings')+'</h2>';
+  if(!hasB)h+='<div class="note">'+t('none')+'</div>';
+  else{h+='<div class="card" style="margin-top:0">';S.blds.forEach(function(b){var m=b.manager_id==S.user.id,ap=S.myApts.filter(function(a){return a.building_id==b.id})[0];h+='<div class="item click" onclick="openB(\''+b.id+'\',\''+(m?'manager':'resident')+'\')"><div><b>'+esc(b.name)+'</b><div class="sub">'+esc(cnE(b.gov,b.city))+sep()+esc(gnE(b.gov))+(m||!ap?'':sep()+t('aptN',{c:ap.code}))+'</div></div><span class="tag '+(m?'paid':'pic')+'">'+t(m?'manager':'resident')+'</span></div>'});h+='</div>'}
+  if(false){h+='<h2>'+t('secT')+'</h2><div class="card">'+'<span class="tag paid">'+t('mfaOn')+'</span><div class="sub" style="margin-top:10px;font-size:14px">'+t('mfaNoOff')+'</div>'+'</div>'}
+  return h;
+}
+function startCreate(){go('create')}
+function supportBox(){if(S.user&&S.profile)return '<div class="card"><b>'+t('needHelp')+'</b><div class="sub" style="margin:4px 0 10px">'+t('helpP')+'</div><button class="btn go" onclick="openSupport()">'+t('supT')+'</button></div>';return '<div class="card"><b>'+t('needHelp')+'</b><div class="sub" style="margin:4px 0 10px">'+t('helpP')+'</div><div class="acts"><a class="btn small ghost" style="text-decoration:none" href="mailto:'+CFG.supportEmail+'">'+t('mailUs')+'</a>'+(CFG.supportWa?'<a class="btn small ghost" style="text-decoration:none" target="_blank" rel="noopener" href="https://wa.me/'+CFG.supportWa+'">'+t('waUs')+'</a>':'')+'</div></div>'}
+var CP='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>';
+function vSettings(){
+  var p=S.profile,mine=S.blds.filter(function(b){return b.manager_id==S.user.id});
+  var h=back('home')+'<h1 style="margin-top:10px">'+t('setT')+'</h1><div class="card"><b>'+t('setProfile')+'</b><label for="sn">'+t('yName')+'</label><input id="sn" autocomplete="name" value="'+esc(p.name)+'"><label for="sp">'+t('mob')+'</label><input id="sp" type="tel" dir="ltr" inputmode="tel" value="'+esc(p.mobile)+'"><label>'+t('email')+'</label><div dir="ltr" style="padding:11px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--muted);text-align:start">'+esc(p.email||S.user.email)+'</div><div class="note">'+t('emailNote')+'</div></div>';
+  h+='<div class="card"><label for="sl" style="margin-top:0">'+t('lang')+'</label><select id="sl"><option value="ar"'+(lang=='ar'?' selected':'')+'>العربية</option><option value="en"'+(lang=='en'?' selected':'')+'>English</option></select><label for="sth">'+t('theme')+'</label><select id="sth">'+['system','light','dark'].map(function(k){return '<option value="'+k+'"'+((p.theme||'system')==k?' selected':'')+'>'+t('th_'+k)+'</option>'}).join('')+'</select></div><div class="err" id="err"></div><button class="btn go full" style="margin-top:0" onclick="saveSettings()">'+t('saveSet')+'</button>';
+  if(mine.length)h+='<h2>'+t('bCodes')+'</h2><div class="card" style="margin-top:0">'+mine.map(function(b){return '<div class="item"><div><b>'+esc(b.name)+'</b><div class="code" dir="ltr" style="font-size:26px;text-align:start">'+esc(b.code)+'</div></div><button class="btn small ghost" aria-label="'+t('copyCode')+'" onclick="copyCode(\''+b.code+'\')">'+CP+'</button></div><div class="acts" style="margin-bottom:10px"><button class="btn small ghost" onclick="openEdit(\''+b.id+'\')">'+t('editB')+'</button><button class="btn small ghost" onclick="openXfer(\''+b.id+'\')">'+t('xfBtn')+'</button><button class="btn small ghost" onclick="openDel(\''+b.id+'\')">'+t('delB')+'</button></div>'}).join('')+'</div>';
+  return h+(S.owner?'<button class="btn go full" onclick="openOwner()">'+t('ownBtn')+'</button>':'')+installBox()+supportBox()+'<button class="btn ghost full" onclick="signOut()">'+t('signOut')+'</button>';
+}
+async function saveSettings(){
+  var n=$('sn').value.trim(),m=$('sp').value.replace(/[\s-]/g,''),l=$('sl').value,th=$('sth').value;
+  if(!n){setErr('eName');return}if(!/^01[0125]\d{8}$/.test(m)){setErr('eMob');return}
+  try{var a=await sb.rpc('set_profile',{p_name:n,p_mobile:m});if(a.error)throw a.error;var b=await sb.rpc('set_prefs',{p_lang:l,p_theme:th});if(b.error)throw b.error;
+    S.profile.name=n;S.profile.mobile=m;S.profile.lang=l;S.profile.theme=th;lang=l;try{localStorage.setItem('lang',l)}catch(e){}applyTheme(th);render();toast(t('setSaved'))}catch(x){fail(x)}
+}
+function copyCode(c){try{navigator.clipboard.writeText(c).then(function(){toast(t('codeCopied'))},function(){toast(c)})}catch(e){toast(c)}}
+function vJoin(){return back('home')+'<h1 style="margin-top:10px">'+t('joinT')+'</h1><div class="sub">'+t('joinP')+'</div><div class="card"><label for="jc">'+t('joinCode')+'</label><input id="jc" dir="ltr" placeholder="ABCDE-102" autocapitalize="characters" style="font-size:20px;letter-spacing:1px"></div><div class="err" id="err"></div><button class="btn go full" style="margin-top:0" onclick="doJoin()">'+t('joinBtn')+'</button>'}
+async function doJoin(){var c=$('jc').value.trim();if(!c)return;try{var r=await sb.rpc('join_building',{p_code:c});if(r.error)throw r.error;toast(t('youJoined'));await loadHome();go('home')}catch(x){var k=errKey(x);if(k=='errG'){fail(x)}else setErr(k)}}
+function opt(list,v,ph){return '<option value="">'+ph+'</option>'+list.map(function(x,i){return '<option value="'+i+'"'+(i==v?' selected':'')+'>'+esc(x)+'</option>'}).join('')}
+function vCreate(){
+  var d=S.draft,govs=GEO[lang].map(function(x){return x.g});
+  var h=back('home')+'<h1 style="margin-top:10px">'+t('bDet')+'</h1><div class="card"><label for="bn">'+t('bName')+'</label><input id="bn" value="'+esc(d.name)+'" placeholder="'+t('bNameP')+'"><label for="gv">'+t('gov')+'</label><select id="gv" onchange="setGov(this.value)">'+opt(govs,d.gi,t('chGov'))+'</select><label for="ct">'+t('city')+'</label><select id="ct" '+(d.gi>=0?'':'disabled')+' onchange="S.draft.ci=this.value===\'\'?-1:parseInt(this.value,10)">'+opt(d.gi>=0?GEO[lang][d.gi].c:[],d.ci,d.gi>=0?t('chCity'):t('chGovFirst'))+'</select><label for="ar">'+t('area')+'</label><input id="ar" value="'+esc(d.area)+'" placeholder="'+t('areaP')+'"></div>';
+  h+='<div class="card"><label for="gn">'+t('groundN')+'</label><div class="note" style="margin-top:0">'+t('groundP')+'</div><input id="gn" type="number" dir="ltr" inputmode="numeric" min="0" max="99" value="'+(d.ground||0)+'" onchange="S.draft.ground=cl(this.value,0,99)"><label for="fl">'+t('floors')+'</label><input id="fl" type="number" dir="ltr" inputmode="numeric" min="1" max="40" value="'+d.floors+'" onchange="setFloors(this.value)"><label for="sm">'+t('same')+'</label><div class="row"><input id="sm" type="number" dir="ltr" inputmode="numeric" value="'+d.per[0]+'"><button class="btn" onclick="sameN()">'+t('apply')+'</button></div></div><h2>'+t('apFl')+'</h2><div class="card" style="margin-top:0"><div class="g2">';
+  d.per.forEach(function(n,i){h+='<div><label for="f'+i+'">'+t('floorN',{n:i+1})+'</label><input id="f'+i+'" type="number" dir="ltr" inputmode="numeric" min="1" max="99" value="'+n+'" onchange="S.draft.per['+i+']=cl(this.value,1,99)"></div>'});
+  return h+'</div></div><div class="note">'+t('codesNote')+'</div><div class="err" id="err"></div><button class="btn go full" style="margin-top:0" onclick="doCreate()">'+t('createBtn')+'</button>';
+}
+function flLbl(n){return n==0?t('ground'):t('floorN',{n:n})}
+function cl(v,a,b){v=parseInt(v,10);return isNaN(v)?a:Math.max(a,Math.min(b,v))}
+function setGov(v){snap();S.draft.gi=v===''?-1:parseInt(v,10);S.draft.ci=-1;render()}
+function setFloors(v){snap();var d=S.draft;d.floors=cl(v,1,40);while(d.per.length<d.floors)d.per.push(d.per[d.per.length-1]||2);d.per.length=d.floors;render()}
+function sameN(){snap();if($('gn'))S.draft.ground=cl($('gn').value,0,99);var v=cl($('sm').value,1,99);S.draft.per=S.draft.per.map(function(){return v});render()}
+async function doCreate(){
+  snap();var d=S.draft;if(!d.name.trim()||d.gi<0||d.ci<0||!d.area.trim()){setErr('eB1');return}
+  if(S.busy)return;S.busy=true;
+  try{var r=await sb.rpc('create_building',{p_name:d.name.trim(),p_gov:GEO.en[d.gi].g,p_city:GEO.en[d.gi].c[d.ci],p_area:d.area.trim(),p_per:d.per,p_ground:d.ground||0});if(r.error)throw r.error;
+    S.draft={name:'',gi:-1,ci:-1,area:'',floors:5,per:[2,2,2,2,2],ground:0};S.busy=false;await loadHome();var b=S.blds.filter(function(x){return x.id==r.data})[0];toast(t('bCreated',{c:b.code}));await openB(r.data,'manager')}catch(x){fail(x)}
+}
+
+/* ---------- building ---------- */
+var TABS={manager:[['overview','tOverview'],['fees','tFees'],['inc','tInc'],['exp','tExp'],['res','tRes'],['hist','tHist']],resident:[['mine','tMine'],['bld','tBld'],['hist','tHist']]};
+var TS={manager:[['overview','tOverview','tp1'],['fees','tFees','tp2'],['inc','tInc','tp2'],['exp','tExp','tp3'],['res','tRes','tp4'],['hist','tHist','tp5']],resident:[['mine','tMine','tp6'],['bld','tBld','tp7'],['hist','tHist','tp8']]};
+async function openB(id,role){
+  S.cur=id;S.role=role;S.tab=role=='manager'?'overview':'mine';S.fsel='';S.asel='';S.selM=null;S.delk='';
+  try{await loadBuilding();S.tour=null;go('dash')}catch(x){fail(x)}
+}
+async function refresh(){try{await loadBuilding();render()}catch(x){fail(x)}}
+function lockCard(b){var s=bstate(b);return '<div class="card" style="border-color:var(--bad)"><span class="tag late">'+t(s=='paused'?'paused':'locked')+'</span><h3 style="margin-top:10px">'+t('lockT')+'</h3><div class="sub" style="font-size:14px">'+t(s=='paused'?'pausedP':'lockP')+'</div></div>'}
+function send(text){try{if(navigator.share){navigator.share({text:text}).catch(function(){});return}}catch(e){}try{navigator.clipboard.writeText(text).then(function(){toast(t('copied'))},function(){toast(t('copied'))})}catch(e){toast(t('copied'))}}
+function totals(){var inn=S.d.pays.filter(function(p){return !p.cancelled}).reduce(function(s,p){return s+Number(p.amount)},0),out=S.d.exps.reduce(function(s,e){return s+Number(e.amount)},0),due=S.d.apts.reduce(function(s,a){return s+dueOf(a.id)},0);return {inn:inn,out:out,due:due}}
+function expName(e){return e.category=='oth'&&e.note?e.note:catName(e.category)}
+function catName(k){var m={elec:'c_elec',water:'c_water',lift:'c_lift',clean:'c_clean',sec:'c_sec',rep:'c_rep',oth:'c_oth'};return m[k]?t(m[k]):k}
+function licLine(b){var s=bstate(b);if(s=='trial')return t('trial')+' · '+t('daysLeft',{n:Math.max(0,Math.ceil((new Date(b.trial_ends)-Date.now())/86400000))});if(s=='active')return t('paidL')+' · '+t('until',{d:new Date(b.license_ends).toLocaleDateString('en-GB')});return t(s=='paused'?'paused':'locked')}
+function expMonths(){var ys={};ys[nowP().slice(0,4)]=1;S.d.charges.forEach(function(c){ys[String(c.period).slice(0,4)]=1});var out=[];Object.keys(ys).sort().reverse().forEach(function(y){for(var m=12;m>=1;m--)out.push(y+'-'+(m<10?'0':'')+m)});var sm=S.selM;if(sm&&out.indexOf(sm)<0)out.push(sm);return out}
+function months(){var set={};S.d.exps.forEach(function(e){set[e.period]=1});set[nowP()]=1;return Object.keys(set).sort().reverse()}
+function vDash(){
+  var b=bcur(),m=S.role=='manager';
+  var h='<div class="row" style="margin-top:14px"><button class="btn small ghost" onclick="toHome()">'+t('bk')+' '+t('backT')+'</button><span class="tag '+(m?'paid':'pic')+'">'+t(m?'manager':'resident')+'</span></div><h1 style="margin-top:12px">'+esc(b.name)+'</h1><div class="sub">'+esc(b.area)+sep()+esc(cnE(b.gov,b.city))+sep()+esc(gnE(b.gov))+'</div>';
+  if(m&&bstate(b)!='trial'&&bstate(b)!='active')return h+lockCard(b);
+  return h+(m?mTab(b):rTab(b));
+}
+async function toHome(){try{await loadHome();go('home')}catch(x){fail(x)}}
+
+/* ---------- fees & payments tab (manager) ---------- */
+function catOf(a){return (S.d.cats||[]).filter(function(c){return c.id==a.category_id})[0]||null}
+function catCard(b){
+  var cats=S.d.cats||[],h='<div class="card"><h3>'+t('catT')+'</h3><div class="note" style="margin-top:0">'+t('catP')+'</div>';
+  if(!cats.length){
+    [1,2,3].forEach(function(i){h+='<div class="row" style="margin-top:8px"><input id="ic_'+i+'" maxlength="30" value="'+esc(t('catN'+i))+'"><input id="ia_'+i+'" type="number" dir="ltr" inputmode="decimal" placeholder="'+t('catAmt')+'" style="max-width:130px"></div>'});
+    return h+'<button class="btn go full" onclick="createCats()">'+t('catCreate')+'</button></div>';
+  }
+  cats.forEach(function(c){var n=S.d.apts.filter(function(a){return a.category_id==c.id}).length;
+    h+='<div class="item wrap"><div style="width:100%"><div class="sub">'+t('aptsN',{n:n})+'</div><div class="row"><input id="cn_'+c.id+'" maxlength="30" value="'+esc(c.name)+'"><input id="ca_'+c.id+'" type="number" dir="ltr" inputmode="decimal" value="'+c.amount+'" style="max-width:130px"></div><label style="display:flex;gap:8px;align-items:center;margin-top:6px"><input type="checkbox" id="cx_'+c.id+'" style="width:auto"> <span class="sub">'+t('catUpd')+'</span></label><div class="acts" style="margin-top:6px"><button class="btn small go" onclick="saveCat(\''+c.id+'\')">'+t('save')+'</button><button class="btn small ghost" onclick="delCat(\''+c.id+'\')">'+(S.delk=='c'+c.id?t('delConf'):t('removeFees'))+'</button></div></div></div>'});
+  h+='<div class="row" style="margin-top:10px"><input id="cn_new" maxlength="30" placeholder="'+t('catName')+'"><input id="ca_new" type="number" dir="ltr" inputmode="decimal" placeholder="'+t('catAmt')+'" style="max-width:130px"><button class="btn" onclick="addCat()">'+t('catAdd')+'</button></div>';
+  return h+'</div>';
+}
+function createCats(){var list=[];[1,2,3].forEach(function(i){var n=$('ic_'+i).value.trim(),a=parseFloat($('ia_'+i).value);if(n&&a>0)list.push({n:n,a:a})});if(!list.length){toast(t('eAmt'));return}
+  return act(async function(){for(var i=0;i<list.length;i++){var r=await sb.rpc('add_category',{p_building:S.cur,p_name:list[i].n,p_amount:list[i].a});if(r.error)return r}return {data:1}},function(){return t('catAdded')})}
+function addCat(){var n=$('cn_new').value.trim(),a=parseFloat($('ca_new').value);if(!n||!(a>0)){toast(t('eAmt'));return}return act(function(){return sb.rpc('add_category',{p_building:S.cur,p_name:n,p_amount:a})},function(){return t('catAdded')})}
+function saveCat(id){var n=$('cn_'+id).value.trim(),a=parseFloat($('ca_'+id).value),x=!!$('cx_'+id).checked;if(!n||!(a>0)){toast(t('eAmt'));return}return act(function(){return sb.rpc('update_category',{p_id:id,p_name:n,p_amount:a,p_apply_existing:x})},function(k){return t('catOk',{n:k||0})})}
+function delCat(id){if(S.delk!='c'+id){S.delk='c'+id;render();return}S.delk='';return act(function(){return sb.rpc('delete_category',{p_id:id})},function(){return t('catGone')})}
+function setCat(aid,v){return act(function(){return sb.rpc('set_apt_category',{p_apartments:[aid],p_category:v||null})},function(k){return t('catOk',{n:k||0})})}
+function bulkCat(){var f=$('bf').value,c=$('bc').value,ids=S.d.apts.filter(function(a){return f=='all'||String(a.floor)==f}).map(function(a){return a.id});if(!ids.length)return;return act(function(){return sb.rpc('set_apt_category',{p_apartments:ids,p_category:c||null})},function(k){return t('catOk',{n:k||0})})}
+function lastPayOf(aid){var l=S.d.pays.filter(function(p){return p.apartment_id==aid&&!p.cancelled});return l.length?l[l.length-1]:null}
+function tagName(id){var g=(S.d.tags||[]).filter(function(x){return x.id==id})[0];return g?g.name:''}
+function perSt(aid,c){return c.settled?'sx':paidIn(aid,c.period)>=Number(c.amount)?'paid':paidIn(aid,c.period)>0?'part':'out'}
+function payTab(b){
+  var h='',pt=b.plan_type,lk=!!pt&&S.d.charges.length>0,cp=lk?pt:(S.ptype||pt||'monthly'),sel=lk?pt:(S.ptype||pt),pu=t(pt=='monthly'?'perMonth':'perYear');
+  /* 1. plan + amount to collect */
+  h+='<div class="card"><h3>'+t('plan')+'</h3><div class="switch"><button '+(lk&&pt!='monthly'?'disabled ':'')+'class="'+(sel=='monthly'?'on':'')+'" onclick="'+(lk?'':'S.ptype=\'monthly\';render()')+'">'+t('monthly')+'</button><button '+(lk&&pt!='yearly'?'disabled ':'')+'class="'+(sel=='yearly'?'on':'')+'" onclick="'+(lk?'':'S.ptype=\'yearly\';render()')+'">'+t('yearly')+'</button></div>'+(lk?'<div class="note">'+t('planLocked')+'</div>':'');
+  h+='<label for="pa">'+t('amt')+'</label><input id="pa" type="number" dir="ltr" inputmode="numeric" value="'+(b.plan_amount||'')+'" placeholder="500"><button class="btn full" onclick="savePlan(\''+cp+'\')">'+t('savePlan')+'</button><div class="sub" style="margin-top:8px">'+(pt?t('planText',{a:money(b.plan_amount),u:pu}):t('noPlan'))+'</div><div class="note">'+t('planNote')+'</div>'+(lk?'':'<div class="note">'+t('planLockN')+'</div>')+'</div>';
+  /* 2. add a year / month */
+  if(pt)h+=catCard(b);
+  if(pt){
+    var ps=periodList(pt),fp=S.fperiod||(pt=='monthly'?nowP():String(new Date().getFullYear()));
+    h+='<div class="card"><h3>'+t('addFees')+'</h3><label for="fp">'+t('period')+'</label><select id="fp" onchange="S.fperiod=this.value">'+ps.map(function(p){return '<option value="'+p+'"'+(p==fp?' selected':'')+'>'+ml(p)+'</option>'}).join('')+'</select><button class="btn go full" onclick="addFees()">'+t('addFeesBtn')+'</button></div>';
+  }
+  /* 3. fees already added */
+  var per={};S.d.charges.forEach(function(c){per[c.period]=(per[c.period]||0)+1});var pk=Object.keys(per).sort().reverse();
+  if(pk.length)h+='<div class="card"><h3>'+t('feePeriods')+'</h3>'+pk.map(function(p){
+    var cs=S.d.charges.filter(function(c){return c.period==p}),am=cs.map(function(c){return Number(c.amount)}).filter(function(v,i,a){return a.indexOf(v)==i}),
+      col=S.d.pays.filter(function(x){return x.period==p&&!x.cancelled}).reduce(function(x,y){return x+Number(y.amount)},0),
+      rem=S.d.apts.reduce(function(x,a){return x+leftIn(a.id,p)},0);
+    return '<div class="item wrap"><div><b>'+ml(p)+'</b> · '+(am.length==1?t('planText',{a:money(am[0]),u:pu}):am.map(money).join(' / '))+'<div class="sub">'+t('aptsN',{n:per[p]})+'</div><div class="sub"><b>'+t('feeCol',{a:money(col)})+'</b> · <b>'+t('feeRem',{a:money(rem)})+'</b></div></div><button class="btn small ghost" onclick="removeFees(\''+p+'\')">'+(S.delk=='f'+p?t('delConf'):t('removeFees'))+'</button></div>'}).join('')+'</div>';
+  return h;
+}
+function incTab(b){
+  var h='',pt=b.plan_type;
+  /* 4. record a payment */
+  var sa=S.asel,opn=sa?openPeriods(sa):[];
+  h+='<div class="card"><h3>'+t('recPay')+'</h3><label for="ap">'+t('apt')+'</label><select id="ap" onchange="S.pamt=$(\'am\').value;S.asel=this.value;S.pper=\'\';render()"><option value="">'+t('chApt')+'</option>'+S.d.apts.map(function(a){var d=dueOf(a.id);return '<option value="'+a.id+'"'+(a.id==S.asel?' selected':'')+'>'+a.code+(personOf(a)?' · '+esc(personOf(a)):'')+(d>0?' · '+t('due',{a:money(d)}):'')+'</option>'}).join('')+'</select>';
+  if(sa){if(!opn.length)h+='<div class="note">'+t('noOut')+'</div>';else h+='<label for="pp">'+t(pt=='monthly'?'payForM':'payForY')+'</label><select id="pp" onchange="payPick()"><option value="">'+t('chPer')+'</option>'+opn.map(function(p){return '<option value="'+p+'"'+(p==S.pper?' selected':'')+'>'+ml(p)+' · '+(isSet(sa,p)?t('sxSettled'):leftIn(sa,p)>0?t('due',{a:money(leftIn(sa,p))}):t('payDone'))+'</option>'}).join('')+'</select>'}
+  h+='<label for="am">'+t('payAmt')+'</label><input id="am" type="number" dir="ltr" inputmode="decimal" placeholder="0" value="'+esc(S.pamt||'')+'"><div class="note">'+t('payFlex')+'</div><div class="err" id="err"></div><button class="btn go full" style="margin-top:6px" '+(sa&&!opn.length?'disabled':'')+' onclick="addPay()">'+t('payBtn')+'</button></div>';
+  /* 5. apartments */
+  var tags=S.d.tags||[],tf=S.tagF||'';
+  h+='<div class="row" style="margin-top:18px"><h2 style="margin:0">'+t('apt')+'</h2><div class="acts" style="width:auto">'+((S.d.cats||[]).length?'<button class="btn small ghost" onclick="S.catMgr=!S.catMgr;render()">'+t('catBulk')+(S.catMgr?' ▴':' ▾')+'</button>':'')+'<button class="btn small ghost" onclick="S.tagMgr=!S.tagMgr;render()">'+t('tagMgr')+(S.tagMgr?' ▴':' ▾')+'</button></div></div>';
+  if(S.catMgr&&(S.d.cats||[]).length){var fls={};S.d.apts.forEach(function(a){fls[a.floor]=1});h+='<div class="card"><div class="sub">'+t('catBulkP')+'</div><div class="row"><select id="bf"><option value="all">'+t('catAll')+'</option>'+Object.keys(fls).map(function(f){return '<option value="'+f+'">'+flLbl(parseInt(f,10))+'</option>'}).join('')+'</select><select id="bc"><option value="">'+t('catNone')+'</option>'+S.d.cats.map(function(c){return '<option value="'+c.id+'">'+esc(c.name)+' · '+money(c.amount)+'</option>'}).join('')+'</select></div><button class="btn go full" onclick="bulkCat()">'+t('catApply')+'</button></div>'}
+  if(S.tagMgr)h+='<div class="card"><div class="sub">'+t('tagP')+'</div><div class="row"><input id="tgn" maxlength="30" placeholder="'+t('tagNew')+'"><button class="btn go" onclick="addTag()">'+t('tagAdd')+'</button></div>'+(tags.length?tags.map(function(g){var n=S.d.apts.filter(function(a){return a.tag_id==g.id}).length;return '<div class="item"><div><span class="tag pic">'+esc(g.name)+'</span> <span class="sub">'+t('aptsN',{n:n})+'</span></div><button class="btn small ghost" onclick="delTag(\''+g.id+'\')">'+(S.delk=='g'+g.id?t('delConf'):t('removeFees'))+'</button></div>'}).join(''):'<div class="sub" style="margin-top:8px">'+t('noTags')+'</div>')+'</div>';
+  if(tags.length)h+='<select id="tgf" onchange="S.tagF=this.value;render()" style="margin-top:8px"><option value="">'+t('tagAll')+'</option><option value="none"'+(tf=='none'?' selected':'')+'>'+t('tagNone')+'</option>'+tags.map(function(g){return '<option value="'+g.id+'"'+(tf==g.id?' selected':'')+'>'+esc(g.name)+'</option>'}).join('')+'</select>';
+  h+='<div class="card" style="margin-top:10px">';
+  S.d.apts.filter(function(a){return !tf||(tf=='none'?!a.tag_id:a.tag_id==tf)}).forEach(function(a){
+    var st=stOf(a.id),all=S.d.pays.filter(function(p){return p.apartment_id==a.id}).slice().reverse(),open=S.openApt==a.id,lp=lastPayOf(a.id);
+    h+='<div class="item wrap"><div style="flex:1"><b>'+a.code+'</b> <span class="sub">'+esc(personOf(a))+'</span><div class="sub">'+(st=='none'?'':t('partPaid',{a:money(paidOf(a.id)),b:money(charged(a.id))}))+(lp?(st=='none'?'':' · ')+t('lastPay',{d:new Date(lp.created_at).toLocaleDateString('en-GB')}):'')+'</div></div><span class="tag '+(st=='paid'||st=='ex'?'paid':st=='out'?'due':'pic')+'">'+t('st_'+st)+'</span>'+(a.tag_id?'<span class="tag pic">'+esc(tagName(a.tag_id))+'</span>':'')+(catOf(a)?'<span class="tag pic">'+esc(catOf(a).name)+' · '+money(catOf(a).amount)+'</span>':'')+(a.custom_fee?'<span class="tag pic">'+t('ownFeeTag',{a:money(a.custom_fee)})+'</span>':'')+'<div class="acts"><button class="btn small ghost" onclick="S.openApt=S.openApt==\''+a.id+'\'?\'\':\''+a.id+'\';S.delk=\'\';render()">'+t('aptDet')+(open?' ▴':' ▾')+'</button></div>';
+    if(open){
+      h+='<div style="width:100%">';
+      h+='<div class="card" style="margin:0 0 8px"><b>'+t('feeByP')+'</b>'+(S.d.charges.filter(function(c){return c.apartment_id==a.id}).length?S.d.charges.filter(function(c){return c.apartment_id==a.id}).slice().sort(function(x,y){return x.period<y.period?1:-1}).map(function(c){var ps2=perSt(a.id,c);return '<div class="item wrap"><div><b>'+ml(c.period)+'</b> <span class="tag '+(ps2=='paid'||ps2=='sx'?'paid':ps2=='out'?'due':'pic')+'">'+t(ps2=='sx'?'sxSettled':ps2=='part'?'st_part':ps2=='paid'?'st_paid':'st_out')+'</span><div class="sub">'+t('feeLine',{f:money(c.amount),p:money(paidIn(a.id,c.period))})+(c.settled&&c.settled_note?' · '+esc(c.settled_note):'')+'</div></div><button class="btn small ghost" onclick="settleToggle(\''+a.id+'\',\''+c.period+'\','+(c.settled?'false':'true')+')">'+t(c.settled?'sxUndo':'sxMark')+'</button></div>'}).join(''):'<div class="sub">'+t('st_none')+'</div>')+'</div>';
+      if((S.d.cats||[]).length)h+='<div class="card" style="margin:0 0 8px"><label for="ct_'+a.id+'">'+t('catLbl')+'</label><select id="ct_'+a.id+'" onchange="setCat(\''+a.id+'\',this.value)"><option value="">'+t('catNone')+'</option>'+S.d.cats.map(function(c){return '<option value="'+c.id+'"'+(a.category_id==c.id?' selected':'')+'>'+esc(c.name)+' · '+money(c.amount)+'</option>'}).join('')+'</select></div>';
+      if(tags.length)h+='<div class="card" style="margin:0 0 8px"><label for="tg_'+a.id+'">'+t('tagLbl')+'</label><select id="tg_'+a.id+'" onchange="setTag(\''+a.id+'\',this.value)"><option value="">'+t('tagNone')+'</option>'+tags.map(function(g){return '<option value="'+g.id+'"'+(a.tag_id==g.id?' selected':'')+'>'+esc(g.name)+'</option>'}).join('')+'</select></div>';
+      h+='<div class="card" style="margin:0 0 8px"><label for="cf_'+a.id+'">'+t('ownFee')+'</label><div class="sub">'+t('ownFeeP')+'</div><div class="row"><input id="cf_'+a.id+'" type="number" dir="ltr" inputmode="decimal" value="'+(a.custom_fee||'')+'" placeholder="'+(b.plan_amount||'')+'"><button class="btn" onclick="saveAptFee(\''+a.id+'\',true)">'+t('save')+'</button></div>'+(a.custom_fee?'<button class="btn small ghost" style="margin-top:8px" onclick="saveAptFee(\''+a.id+'\',false)">'+t('ownFeeOff')+'</button>':'')+'</div>';
+      h+='<div class="item wrap"><div style="flex:1"><div class="sub">'+t('exHint')+'</div></div><button class="btn small ghost" onclick="exemptA(\''+a.id+'\','+(a.exempt?'false':'true')+')">'+(S.delk=='x'+a.id?t('delConf'):t(a.exempt?'exUndo':'exBtn'))+'</button></div>';
+      h+=all.map(function(p){return '<div class="item"><div><b>'+money(p.amount)+'</b><div class="sub">'+(p.period?'<b>'+t('paidFor',{p:ml(p.period)})+'</b> · ':'')+esc(p.receipt_no)+' · '+new Date(p.created_at).toLocaleDateString('en-GB')+'</div></div>'+(p.cancelled?'<span class="tag late">'+t('cancelledTag')+'</span>':'<div class="acts" style="width:auto"><button class="btn small ghost" onclick="shareRcP(\''+p.id+'\')">'+t('receipt')+'</button><button class="btn small ghost" onclick="cancelPay(\''+p.id+'\')">'+(S.delk=='p'+p.id?t('delConf'):t('cancelPay'))+'</button></div>')+'</div>'}).join('');
+      h+='</div>';
+    }
+    h+='</div>';
+  });
+  return h+'</div>';
+}
+function settleToggle(a,pe,on){return act(function(){return sb.rpc('settle_period',{p_apartment:a,p_period:pe,p_on:on,p_note:''})},function(){return t(on?'sxOk':'sxUndone')})}
+function setTag(a,v){return act(function(){return sb.rpc('set_apt_tag',{p_apartment:a,p_tag:v||null})},function(){return t('tagSaved')})}
+function addTag(){var n=$('tgn').value.trim();if(!n){toast(t('tagNew'));return}return act(function(){return sb.rpc('add_tag',{p_building:S.cur,p_name:n})},function(){return t('tagAdded')})}
+function delTag(id){if(S.delk!='g'+id){S.delk='g'+id;render();return}S.delk='';if(S.tagF==id)S.tagF='';return act(function(){return sb.rpc('delete_tag',{p_tag:id})},function(){return t('tagGone')})}
+function mTab(b){
+  var tb=S.tab,h='',T=totals();
+  if(tb=='overview'){
+    h+='<div class="hero"><div class="sub">'+t('fundBal')+'</div><div class="big">'+money(T.inn-T.out)+'</div><div class="sub">'+licLine(b)+'</div></div><div class="two"><div class="card"><div class="sub">'+t('cashIn')+'</div><div class="big">'+money(T.inn)+'</div></div><div class="card"><div class="sub">'+t('spent')+'</div><div class="big">'+money(T.out)+'</div></div></div><div class="two"><div class="card"><div class="sub">'+t('outst')+'</div><div class="big">'+money(T.due)+'</div></div><div class="card"><div class="sub">'+t('joinedC')+'</div><div class="big">'+S.d.apts.filter(function(a){return a.resident_id}).length+' / '+S.d.apts.length+'</div></div></div>';
+  }
+  if(tb=='fees')h+=payTab(b);
+  if(tb=='inc')h+=incTab(b);
+  if(tb=='exp'){
+    var ms=months(),sm=S.selM||ms[0],list=S.d.exps.filter(function(e){return e.period==sm}).reverse();
+    h+='<div class="card"><h3>'+t('addExp')+'</h3><label for="ec">'+t('cat')+'</label><select id="ec" onchange="$(\'enl\').textContent=t(this.value==\'oth\'?\'noteReq\':\'note\')">'+['elec','water','lift','clean','sec','rep','oth'].map(function(k){return '<option value="'+k+'">'+catName(k)+'</option>'}).join('')+'</select><label for="ea">'+t('amt').replace(/.*/,t('payAmt'))+'</label><input id="ea" type="number" dir="ltr" inputmode="decimal" placeholder="0"><label for="em2">'+t('month')+'</label><select id="em2">'+expMonths().map(function(p){return '<option value="'+p+'"'+(p==sm?' selected':'')+'>'+ml(p)+'</option>'}).join('')+'</select><label for="en" id="enl">'+t('note')+'</label><input id="en"><label for="ef">'+t('photo')+'</label><input id="ef" type="file" accept="image/*"><div class="err" id="err"></div><button class="btn go full" style="margin-top:6px" onclick="addExp()">'+t('saveExp')+'</button></div>';
+    h+=monthPick(ms,sm)+expList(list,true,sm);
+    h+='<button class="btn ghost full" onclick="shareStmt(\''+sm+'\')">'+t('shareM')+'</button>';
+  }
+  if(tb=='res'){
+    h+='<div class="card"><div class="sub">'+t('bCode')+'</div><div class="code" dir="ltr" style="text-align:start">'+esc(b.code)+'</div></div><div class="note">'+t('legend')+'</div>'+noteForm(b);
+    var fl=-1;S.d.apts.forEach(function(a){if(a.floor!=fl){if(fl>=0)h+='</div></div>';fl=a.floor;h+='<div class="card"><b>'+flLbl(fl)+'</b><div class="chips">'}
+      var st=a.resident_id?'joined':a.invited?'invited':'none';h+='<button class="chip '+st+(a.id==S.asel?' sel':'')+'" onclick="S.asel=\''+a.id+'\';render()">'+a.code+'</button>'});
+    if(fl>=0)h+='</div></div>';
+    if(S.asel){var sa=S.d.apts.filter(function(a){return a.id==S.asel})[0];if(sa)h+='<div class="card"><b>'+t('apt')+' '+sa.code+'</b><div class="sub">'+(sa.resident_id?esc(personOf(sa))+' · '+t('joined'):t(sa.invited?'invited':'notInv'))+'</div>'+(sa.resident_id?'<div class="note">'+t('rmResP')+'</div><button class="btn ghost full" onclick="unlinkRes(\''+sa.id+'\')">'+(S.delk=='u'+sa.id?t('delConf'):t('rmRes'))+'</button>':'<button class="btn go full" onclick="invite(\''+sa.id+'\')">'+t('invite')+'</button>')+'</div>'}
+  }
+  if(tb=='hist'){h+='<div class="note" style="margin-top:0">'+t('histNote')+'</div><div class="card">'+(S.d.log.length?S.d.log.map(function(e){return '<div class="item"><div>'+esc(logText(e))+'</div><div class="sub">'+new Date(e.created_at).toLocaleDateString('en-GB')+'</div></div>'}).join(''):'<div class="sub">'+t('noH')+'</div>')+'</div>'}
+  return h;
+}
+function logText(e){var d=e.detail||{},k=e.kind,u=function(x){return t(x=='monthly'?'perMonth':'perYear')};
+  if(k=='plan')return t(d.old_amount?'h_plan2':'h_plan',{a:money(d.amount),o:money(d.old_amount),u:t(d.type=='monthly'?'perMonth':'perYear')});
+  if(k=='fees')return t('h_fees',{p:ml(d.period),a:money(d.amount),n:d.apartments});
+  if(k=='pay')return t(d.period?'h_pay2':'h_pay',{r:d.receipt,a:money(d.amount),c:aptCode(d.apartment),p:ml(d.period)});
+  if(k=='cancel')return t(d.period?'h_cancel2':'h_cancel',{r:d.receipt,a:money(d.amount),c:aptCode(d.apartment),p:ml(d.period)});
+  if(k=='exp')return t('h_exp',{k:expName(d),a:money(d.amount),p:ml(d.period)});
+  if(k=='delexp')return t('h_delexp',{k:expName(d),a:money(d.amount)});
+  if(k=='building')return t('h_building');
+  if(k=='edit')return t('h_edit');
+  if(k=='rename')return t('h_rename',{n:d.count});
+  if(k=='floor')return t('h_floor',{f:flLbl(d.floor),n:d.count});
+  if(k=='xfer')return t(d.apartment?'h_xfer2':'h_xfer',{a:d.from||'—',b:d.to||'—',c:d.apartment||''});
+  if(k=='settle')return t('h_settle',{c:d.apartment||'',p:ml(d.period),n:d.note?'('+d.note+')':''});
+  if(k=='unsettle')return t('h_unsettle',{c:d.apartment||'',p:ml(d.period)});
+  if(k=='exempt')return t('h_exempt',{c:d.apartment||''});
+  if(k=='unlink')return t('h_unlink',{c:d.apartment||''});
+  if(k=='category_add')return t('h_catadd',{n:d.name||'',a:money(d.amount)});
+  if(k=='category_edit')return t('h_catedit',{n:d.name||'',a:money(d.amount)});
+  if(k=='category_del')return t('h_catdel',{n:d.name||''});
+  if(k=='category_set')return t('h_catset',{a:d.apartments,n:d.name||t('catNone')});
+  if(k=='aptfee')return t(d.amount?'h_aptfee':'h_aptfee0',{c:d.apartment||'',a:money(d.amount)});
+  if(k=='unexempt')return t('h_unexempt',{c:d.apartment||''});
+  if(k=='xfer_req')return t('h_xfer_req',{e:d.to||''});
+  if(k=='deleted')return t('h_deleted');
+  if(k=='restored')return t('h_restored');
+  if(k=='license')return t('h_license',{s:t('b_'+d.status)});
+  if(k=='unfees')return t('h_unfees',{p:ml(d.period),n:d.apartments});
+  if(k=='join')return t('h_join',{c:d.apartment});
+  return k}
+function monthPick(ms,sm){return '<div class="card"><label for="sm">'+t('month')+'</label><select id="sm" onchange="S.selM=this.value;render()">'+ms.map(function(p){return '<option value="'+p+'"'+(p==sm?' selected':'')+'>'+ml(p)+'</option>'}).join('')+'</select></div>'}
+function expList(list,mgr,sm){
+  var tot=list.reduce(function(s,e){return s+Number(e.amount)},0);
+  if(!list.length)return '<div class="card"><div class="sub">'+t('noExp')+'</div></div>';
+  return '<div class="card">'+list.map(function(e){return '<div class="item wrap"><div><b>'+esc(expName(e))+'</b><div class="sub">'+(e.category=='oth'?'':esc(e.note))+'</div></div><b>'+money(e.amount)+'</b><div class="acts">'+(e.invoice_path?'<button class="btn small ghost" onclick="viewInv(\''+e.invoice_path+'\')">'+t('viewInv')+'</button>':'<span class="tag pic">'+t('noInv')+'</span>')+(mgr?'<button class="btn small ghost" onclick="delExp(\''+e.id+'\')">'+(S.delk==e.id?t('delConf'):t('delExp'))+'</button>':'')+'</div></div>'}).join('')+'<div class="item"><b>'+t('total')+'</b><b>'+money(tot)+'</b></div></div>'}
+function rTab(b){
+  var tb=S.tab,h='',me=S.d.apts[0];
+  if(!me)return h;
+  if(tb=='mine'){
+    var d=dueOf(me.id),st=stOf(me.id);
+    h+='<div class="hero"><div class="sub">'+t('aptN',{c:me.code})+'</div><div class="big">'+(st=='none'?t('st_none'):d>0?money(d):t('st_paid'))+'</div><div class="sub">'+(st=='none'?'':t('partPaid',{a:money(paidOf(me.id)),b:money(charged(me.id))}))+'</div></div>';
+    if(b.plan_type){var ct=catOf(me),fa=me.custom_fee||(ct?ct.amount:b.plan_amount);h+='<div class="card"><div class="sub">'+t('rFee')+'</div>'+(ct&&!me.exempt?'<div><b>'+t('rCat',{c:esc(ct.name)})+'</b></div>':'')+'<b>'+(me.exempt?t('st_ex'):t('planText',{a:money(fa),u:t(b.plan_type=='monthly'?'perMonth':'perYear')}))+'</b></div>'}
+    h+='<h2>'+t('myFees')+'</h2><div class="card" style="margin-top:0">'+(S.d.charges.length?S.d.charges.slice().sort(function(a,b){return a.period<b.period?1:-1}).map(function(c){var pd=paidIn(me.id,c.period);return '<div class="item"><div><span>'+t('fee',{p:ml(c.period)})+'</span><div class="sub">'+(c.settled?t('sxSettled')+(c.settled_note?' · '+esc(c.settled_note):''):pd>=Number(c.amount)?t('st_paid'):t('partPaid',{a:money(pd),b:money(c.amount)}))+'</div></div><b>'+money(c.amount)+'</b></div>'}).join(''):'<div class="sub">'+t('st_none')+'</div>')+'</div>';
+    h+='<h2>'+t('myPays')+'</h2><div class="card" style="margin-top:0">'+payRows(me,true)+'</div>';
+  }
+  if(tb=='bld'){
+    var ms=months(),sm=S.selM||ms[0],list=S.d.exps.filter(function(e){return e.period==sm}).reverse(),ci=S.d.cash.filter(function(c){return c.period==sm})[0];
+    h+=monthPick(ms,sm)+'<div class="two"><div class="card"><div class="sub">'+t('cashM')+'</div><div class="big">'+money(ci?ci.total:0)+'</div></div><div class="card"><div class="sub">'+t('spent')+'</div><div class="big">'+money(list.reduce(function(s,e){return s+Number(e.amount)},0))+'</div></div></div>'+expList(list,false,sm);
+  }
+  if(tb=='hist')h+='<div class="card">'+payRows(me,false)+'</div>';
+  return h;
+}
+function payRows(me,sh){var ps=S.d.pays.filter(function(p){return p.apartment_id==me.id&&!p.cancelled}).reverse();if(!ps.length)return '<div class="sub">'+t('noH')+'</div>';return ps.map(function(p,i){return '<div class="item wrap"><div><b>'+money(p.amount)+'</b><div class="sub">'+(p.period?'<b>'+t('paidFor',{p:ml(p.period)})+'</b> · ':'')+esc(p.receipt_no)+' · '+new Date(p.created_at).toLocaleDateString('en-GB')+'</div></div>'+(sh?'<div class="acts"><button class="btn small ghost" onclick="shareRcR(\''+p.id+'\')">'+t('receipt')+'</button></div>':'')+'</div>'}).join('')}
+
+/* ---------- actions ---------- */
+async function act(fn,okMsg){if(S.busy)return;S.busy=true;try{var r=await fn();if(r&&r.error)throw r.error;S.busy=false;await loadBuilding();render();if(okMsg)toast(okMsg(r&&r.data))}catch(x){fail(x)}}
+function savePlan(type){var a=parseFloat($('pa').value);if(!(a>0)){toast(t('eAmt'));return}act(function(){return sb.rpc('set_plan',{p_building:S.cur,p_type:type,p_amount:a})},function(){return t('planSaved')}).then(async function(){var r=await sb.from('buildings').select('*').order('created_at');if(r.data){S.blds=r.data;S.ptype=null;render()}})}
+function settleP(on){var a=$('ap').value,pe=$('pp')?$('pp').value:'',n=$('sn')?$('sn').value.trim():'';if(!a){setErr('eApt');return}if(!pe){setErr('ePer');return}S.sxn='';return act(function(){return sb.rpc('settle_period',{p_apartment:a,p_period:pe,p_on:on,p_note:n})},function(){return t('sxOk')})}
+function settleX(a,pe){return act(function(){return sb.rpc('settle_period',{p_apartment:a,p_period:pe,p_on:false,p_note:''})},function(){return t('sxUndone')})}
+function saveAptFee(id,on){var v=on?parseFloat($('cf_'+id).value):null;if(on&&!(v>0)){toast(t('eAmt'));return}return act(function(){return sb.rpc('set_apt_fee',{p_apartment:id,p_amount:on?v:null})},function(n){return t('ownFeeOk',{n:n})})}
+function exemptA(id,on){if(on&&S.delk!='x'+id){S.delk='x'+id;render();return}S.delk='';return act(function(){return sb.rpc('set_exempt',{p_apartment:id,p_on:on,p_note:''})},function(){return t(on?'exOk':'exUndone')})}
+function addFees(){var p=$("fp").value;return act(function(){return sb.rpc('add_fees',{p_building:S.cur,p_period:p})},function(n){return n>0?t('feesAdded',{n:n}):t('feesNone')})}
+function addPay(){var a=$('ap').value,m=parseFloat($('am').value),pe=$('pp')?$('pp').value:'';if(!a){setErr('eApt');return}if(!pe){setErr('ePer');return}if(!(m>0)){setErr('eAmt');return}S.asel=a;S.pper='';S.pamt='';return act(function(){return sb.rpc('add_payment',{p_apartment:a,p_amount:m,p_period:pe})},function(r){return t('paySaved',{r:r})})}
+function shareRcP(pid){var p=S.d.pays.filter(function(x){return x.id==pid})[0];send(t('rcTxt',{r:p.receipt_no,b:bcur().name,n:aptCode(p.apartment_id),a:money(p.amount),d:money(dueOf(p.apartment_id))})+(p.period?'\n'+t('forP',{p:ml(p.period)}):'')+'\n— it7ad molak | إتحاد ملاك')}
+function cancelPay(id){if(S.delk!='p'+id){S.delk='p'+id;render();return}S.delk='';return act(function(){return sb.rpc('cancel_payment',{p_payment:id})},function(){return t('cancelled')})}
+function removeFees(p){if(S.delk!='f'+p){S.delk='f'+p;render();return}S.delk='';return act(function(){return sb.rpc('remove_fees',{p_building:S.cur,p_period:p})},function(){return t('feesRemoved')})}
+function cancelLast(id){if(S.delk!='c'+id){S.delk='c'+id;render();return}S.delk='';return act(function(){return sb.rpc('cancel_last_payment',{p_apartment:id})},function(){return t('cancelled')})}
+function delExp(id){if(S.delk!=id){S.delk=id;render();return}S.delk='';return act(function(){return sb.rpc('delete_expense',{p_expense:id})},function(){return t('expDel')})}
+function shrink(file){return new Promise(function(res,rej){var im=new Image();im.onload=function(){var mx=1400,r=Math.min(1,mx/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.round(im.width*r);c.height=Math.round(im.height*r);c.getContext('2d').drawImage(im,0,0,c.width,c.height);c.toBlob(function(b){b?res(b):rej(new Error('photo'))},'image/jpeg',.8)};im.onerror=function(){rej(new Error('photo'))};im.src=URL.createObjectURL(file)})}
+async function addExp(){
+  var a=parseFloat($('ea').value);if(!(a>0)){setErr('eExp');return}
+  var cat=$('ec').value,per=$('em2').value,note=$('en').value.trim(),f=$('ef').files&&$('ef').files[0];
+  if(cat=='oth'&&!note){setErr('eOth');return}
+  if(S.busy)return;S.busy=true;
+  try{
+    var path=null;
+    if(f){var blob=await shrink(f);path=S.cur+'/'+(crypto.randomUUID?crypto.randomUUID():String(Date.now()))+'.jpg';var u=await sb.storage.from('invoices').upload(path,blob,{contentType:'image/jpeg'});if(u.error)throw u.error}
+    var r=await sb.rpc('add_expense',{p_building:S.cur,p_category:cat,p_amount:a,p_period:per,p_note:note,p_invoice:path});if(r.error)throw r.error;
+    S.busy=false;S.selM=per;await loadBuilding();render();toast(t('expSaved'))
+  }catch(x){fail(x)}
+}
+async function viewInv(path){
+  try{var r=await sb.storage.from('invoices').createSignedUrl(path,3600);if(r.error)throw r.error;var m=$('modal');m.innerHTML='<div class="mbox"><img alt="" src="'+esc(r.data.signedUrl)+'"><button class="btn full" onclick="$(\'modal\').className=\'modal\'">'+t('close')+'</button></div>';m.className='modal show'}catch(x){fail(x)}
+}
+function aptLabel(a){return a.code}
+function shareRc(aid){var ps=S.d.pays.filter(function(p){return p.apartment_id==aid&&!p.cancelled}),p=ps[ps.length-1];if(!p)return;send(t('rcTxt',{r:p.receipt_no,b:bcur().name,n:aptCode(aid),a:money(p.amount),d:money(dueOf(aid))})+(p.period?'\n'+t('forP',{p:ml(p.period)}):'')+'\n— it7ad molak | إتحاد ملاك')}
+function shareRcR(pid){var p=S.d.pays.filter(function(x){return x.id==pid})[0],me=S.d.apts[0];send(t('rcTxt',{r:p.receipt_no,b:bcur().name,n:me.code,a:money(p.amount),d:money(dueOf(me.id))})+(p.period?'\n'+t('forP',{p:ml(p.period)}):'')+'\n— it7ad molak | إتحاد ملاك')}
+function remind(aid){var a=S.d.apts.filter(function(x){return x.id==aid})[0];send(t('rmTxt',{w:personOf(a)||a.code,d:money(dueOf(aid)),n:a.code,b:bcur().name})+'\n— it7ad molak | إتحاد ملاك')}
+function shareStmt(p){var L=S.d.exps.filter(function(e){return e.period==p}).map(function(e){return '- '+expName(e)+': '+money(e.amount)}).join('\n'),ci=S.d.cash.filter(function(c){return c.period==p})[0],out=S.d.exps.filter(function(e){return e.period==p}).reduce(function(s,e){return s+Number(e.amount)},0);send(t('stHead',{m:ml(p),b:bcur().name})+'\n'+t('cashIn')+': '+money(ci?ci.total:0)+'\n'+t('spent')+': '+money(out)+'\n\n'+L+'\n\n— it7ad molak | إتحاد ملاك')}
+function unlinkRes(id){if(S.delk!='u'+id){S.delk='u'+id;render();return}S.delk='';return act(function(){return sb.rpc('unlink_resident',{p_apartment:id})},function(){return t('rmDone')})}
+async function invite(aid){
+  var a=S.d.apts.filter(function(x){return x.id==aid})[0],b=bcur(),link=location.origin+location.pathname+'?join='+b.code+'-'+a.code;
+  send(t('invTxt',{b:b.name,c:a.code,k:b.code,l:link}));
+  try{await sb.rpc('mark_invited',{p_apartment:aid});await loadBuilding();render()}catch(x){fail(x)}
+}
+function replay(){S.tour={r:S.role,i:0};S.tab=TS[S.role][0][0];render()}
+function tourDone(r){return !!(S.profile&&(S.profile.tour_manager||S.profile.tour_resident))}
+function markTour(r){if(!S.profile||(S.profile.tour_manager&&S.profile.tour_resident))return;S.profile.tour_manager=true;S.profile.tour_resident=true;sb.rpc('set_tour',{p_role:'manager'});sb.rpc('set_tour',{p_role:'resident'})}
+function tourGo(d){var s=TS[S.tour.r],i=S.tour.i+d;if(i>=s.length){markTour();S.tour=null;render();return}if(i<0)return;S.tour.i=i;S.tab=s[i][0];render()}
+function endTour(){markTour();S.tour=null;render()}
+
+/* ---------- edit / delete building, install ---------- */
+async function openEdit(id){
+  try{var r=await sb.from('apartments').select('id,floor,code').eq('building_id',id).order('floor').order('code');if(r.error)throw r.error;
+    var per=[],gr=0,cnt={};(r.data||[]).forEach(function(a){cnt[a.floor]=(cnt[a.floor]||0)+1;if(a.floor==0)gr++;else per[a.floor-1]=(per[a.floor-1]||0)+1});for(var i=0;i<per.length;i++)if(!per[i])per[i]=1;if(!per.length)per=[1];
+    var b=S.blds.filter(function(x){return x.id==id})[0],gi=GEO.en.map(function(x){return x.g}).indexOf(b.gov),ci=gi>=0?GEO.en[gi].c.indexOf(b.city):-1;
+    S.edit={id:id,name:b.name,gi:gi,ci:ci,area:b.area,floors:per.length,per:per,ground:gr,cnt:cnt,fsel:'1',nsel:'1',aps:(r.data||[]),orig:JSON.stringify([gr,per])};go('editB')}catch(x){fail(x)}
+}
+function editSnap(){if($('bn')){S.edit.name=$('bn').value;S.edit.area=$('ar').value}}
+function vEditB(){
+  var d=S.edit,govs=GEO[lang].map(function(x){return x.g});
+  var h=back('settings')+'<h1 style="margin-top:10px">'+t('editBT')+'</h1><div class="card"><label for="bn">'+t('bName')+'</label><input id="bn" value="'+esc(d.name)+'"><label for="gv">'+t('gov')+'</label><select id="gv" onchange="editSnap();S.edit.gi=this.value===\'\'?-1:parseInt(this.value,10);S.edit.ci=-1;render()">'+opt(govs,d.gi,t('chGov'))+'</select><label for="ct">'+t('city')+'</label><select id="ct" '+(d.gi>=0?'':'disabled')+' onchange="S.edit.ci=this.value===\'\'?-1:parseInt(this.value,10)">'+opt(d.gi>=0?GEO[lang][d.gi].c:[],d.ci,d.gi>=0?t('chCity'):t('chGovFirst'))+'</select><label for="ar">'+t('area')+'</label><input id="ar" value="'+esc(d.area)+'"></div>';
+  var mxf=0;Object.keys(d.cnt||{}).forEach(function(k){if(d.cnt[k]>0)mxf=Math.max(mxf,parseInt(k,10))});var fo=[];if(d.cnt&&d.cnt[0])fo.push(0);for(var q=1;q<=mxf+1;q++)fo.push(q);if(!d.cnt||!d.cnt[0])fo.unshift(0);
+  var fs=parseInt(d.fsel,10),cc=(d.cnt&&d.cnt[fs])||0;
+  var ns=parseInt(d.nsel,10),nlist=(d.aps||[]).filter(function(a){return a.floor==ns}),nfl=[];Object.keys(d.cnt||{}).forEach(function(k){if(d.cnt[k]>0)nfl.push(parseInt(k,10))});nfl.sort(function(a,b){return a-b});if(nfl.length&&nfl.indexOf(ns)<0){ns=nfl[0];d.nsel=String(ns);nlist=(d.aps||[]).filter(function(a){return a.floor==ns})}
+  h+='<h2>'+t('renT')+'</h2><div class="note" style="margin-top:0">'+t('renP')+'</div><div class="card"><label for="nf">'+t('floorSel')+'</label><select id="nf" onchange="editSnap();S.edit.nsel=this.value;render()">'+nfl.map(function(f){return '<option value="'+f+'"'+(f==ns?' selected':'')+'>'+flLbl(f)+'</option>'}).join('')+'</select><div class="g2" style="margin-top:6px">'+nlist.map(function(a){return '<div><label for="nm_'+a.id+'">'+t('renOld',{c:esc(a.code)})+'</label><input id="nm_'+a.id+'" dir="ltr" maxlength="8" autocapitalize="characters" value="'+esc(a.code)+'"></div>'}).join('')+'</div><button class="btn full" onclick="saveNames()">'+t('saveB')+'</button></div>';
+  h+='<h2>'+t('oneFloorT')+'</h2><div class="note" style="margin-top:0">'+t('oneFloorP')+'</div><div class="card"><label for="of">'+t('floors').replace(/.*/,t('floorSel'))+'</label><select id="of" onchange="editSnap();S.edit.fsel=this.value;S.edit.fcnt=null;render()">'+fo.map(function(f){return '<option value="'+f+'"'+(f==fs?' selected':'')+'>'+(f==mxf+1?t('newFloor',{n:flLbl(f)}):flLbl(f))+(f<=mxf&&d.cnt&&d.cnt[f]!==undefined?' · '+t('aptsN',{n:d.cnt[f]}):'')+'</option>'}).join('')+'</select><label for="oc2">'+t('oneFloorN')+'</label><input id="oc2" type="number" dir="ltr" inputmode="numeric" min="0" max="99" value="'+(S.edit.fcnt!=null?S.edit.fcnt:cc)+'"><button class="btn full" onclick="saveFloor()">'+t('saveB')+'</button></div>';
+  h+='<h2>'+t('apFl')+'</h2><div class="note" style="margin-top:0">'+t('apFloorsNote')+'</div><div class="card"><label for="gn">'+t('groundN')+'</label><input id="gn" type="number" dir="ltr" inputmode="numeric" min="0" max="99" value="'+(d.ground||0)+'" onchange="S.edit.ground=cl(this.value,0,99)"><label for="fl">'+t('floors')+'</label><input id="fl" type="number" dir="ltr" inputmode="numeric" min="1" max="40" value="'+d.floors+'" onchange="editSnap();var e=S.edit;e.floors=cl(this.value,1,40);while(e.per.length<e.floors)e.per.push(e.per[e.per.length-1]||2);e.per.length=e.floors;render()"><div class="g2" style="margin-top:6px">';
+  d.per.forEach(function(n,i){h+='<div><label for="f'+i+'">'+t('floorN',{n:i+1})+'</label><input id="f'+i+'" type="number" dir="ltr" inputmode="numeric" min="1" max="99" value="'+n+'" onchange="S.edit.per['+i+']=cl(this.value,1,99)"></div>'});
+  return h+'</div></div><div class="err" id="err"></div><button class="btn go full" style="margin-top:0" onclick="saveEdit()">'+t('saveB')+'</button>';
+}
+async function saveNames(){
+  editSnap();var d=S.edit,ns=parseInt(d.nsel,10),list=(d.aps||[]).filter(function(a){return a.floor==ns}),ids=[],codes=[];
+  for(var i=0;i<list.length;i++){var v=($('nm_'+list[i].id).value||'').trim().toUpperCase();if(!/^[A-Z0-9]{1,8}$/.test(v)){setErr('errAptName');return}ids.push(list[i].id);codes.push(v)}
+  if(!ids.length||S.busy)return;S.busy=true;
+  try{var r=await sb.rpc('rename_apartments',{p_building:d.id,p_ids:ids,p_codes:codes});if(r.error)throw r.error;S.busy=false;await loadHome();var id=d.id,f2=d.nsel,g2=d.fsel;await openEdit(id);S.edit.nsel=f2;S.edit.fsel=g2;render();toast(t('renOk'))}catch(x){fail(x)}
+}
+async function saveFloor(){
+  editSnap();var d=S.edit,f=parseInt(d.fsel,10),n=cl($('oc2').value,0,99);if(S.busy)return;S.busy=true;
+  try{var r=await sb.rpc('set_floor_count',{p_building:d.id,p_floor:f,p_count:n});if(r.error)throw r.error;S.busy=false;await loadHome();var id=d.id,fl2=d.fsel;await openEdit(id);S.edit.fsel=fl2;render();toast(t('floorSaved'))}catch(x){if(/building has data/.test(String((x&&x.message)||x))){S.busy=false;showErr(t('errFloorData'))}else fail(x)}
+}
+async function saveEdit(){
+  editSnap();var d=S.edit;if(!d.name.trim()||d.gi<0||d.ci<0||!d.area.trim()){setErr('eB1');return}
+  var changed=JSON.stringify([d.ground||0,d.per])!=d.orig;if(S.busy)return;S.busy=true;
+  try{var r=await sb.rpc('update_building',{p_building:d.id,p_name:d.name.trim(),p_gov:GEO.en[d.gi].g,p_city:GEO.en[d.gi].c[d.ci],p_area:d.area.trim(),p_per:changed?d.per:null,p_ground:changed?(d.ground||0):null});if(r.error)throw r.error;
+    S.busy=false;await loadHome();toast(t('bSaved'));go('settings')}catch(x){fail(x)}
+}
+function openDel(id){var b=S.blds.filter(function(x){return x.id==id})[0];S.del={id:id,name:b.name,st:b.status};go('delB')}
+function vDelB(){var d=S.del;return back('settings')+'<h1 style="margin-top:10px">'+t('delT')+'</h1><div class="warn">'+t('delP',{b:'<b>'+esc(d.name)+'</b>'})+(d.st=='active'?'<br>'+t('delPaid'):'')+'</div><div class="card"><label for="dn">'+t('delType')+'</label><input id="dn" autocomplete="off"></div><div class="err" id="err"></div><button class="btn go full" style="margin-top:0;background:var(--bad);color:#fff" onclick="doDelete()">'+t('delBtn')+'</button>'}
+async function doDelete(){
+  var d=S.del;if($('dn').value.trim()!=d.name){setErr('errNameMatch');return}if(S.busy)return;S.busy=true;
+  try{var r=await sb.rpc('delete_building',{p_building:d.id,p_confirm:d.name});if(r.error)throw r.error;
+    S.busy=false;S.cur=null;S.del=null;await loadHome();toast(t('bDeleted'));go('home')}catch(x){fail(x)}
+}
+if(window.addEventListener)window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();S.ip=e;if(S.scr=='settings'||S.scr=='login')render()});
+function isStandalone(){try{return (window.matchMedia&&window.matchMedia('(display-mode: standalone)').matches)||navigator.standalone===true}catch(e){return false}}
+function installBox(){if(isStandalone())return '';var ios=/iphone|ipad|ipod/i.test((navigator&&navigator.userAgent)||'');return '<div class="card"><b>'+t('instT')+'</b><div class="sub" style="margin:4px 0 10px">'+t(ios?'instIos':'instAnd')+'</div>'+(S.ip?'<button class="btn go" onclick="doInstall()">'+t('instBtn')+'</button>':'')+'</div>'}
+async function doInstall(){if(!S.ip)return;S.ip.prompt();try{await S.ip.userChoice}catch(e){}S.ip=null;render()}
+
+
+/* ---------- support requests ---------- */
+async function openSupport(){
+  try{var q=await sb.from('requests').select('id,kind,message,status,reply,created_at').eq('user_id',S.user.id).order('created_at',{ascending:false});if(q.error)throw q.error;S.myReqs=q.data||[];go('support')}catch(x){fail(x)}
+}
+function vSupport(){
+  var h=back('settings')+'<h1 style="margin-top:10px">'+t('supT')+'</h1><div class="sub">'+t('supSub')+'</div><div class="card"><label for="sk">'+t('supKind')+'</label><select id="sk">'+['question','complaint','feature','other'].map(function(k){return '<option value="'+k+'">'+t('k_'+k)+'</option>'}).join('')+'</select><label for="sm">'+t('supMsg')+'</label><textarea id="sm" rows="5" maxlength="2000" style="width:100%"></textarea></div><div class="err" id="err"></div><button class="btn go full" style="margin-top:0" onclick="sendReq()">'+t('supSend')+'</button><div class="sub" style="margin-top:8px">'+t('supEmail')+' <a href="mailto:'+CFG.supportEmail+'" dir="ltr">'+CFG.supportEmail+'</a></div>';
+  h+='<h2>'+t('supMine')+'</h2>';
+  if(!S.myReqs||!S.myReqs.length)return h+'<div class="note">'+t('supNone')+'</div>';
+  return h+'<div class="card" style="margin-top:0">'+S.myReqs.map(function(q){return '<div class="item wrap"><div><b>'+t('k_'+q.kind)+'</b><div class="sub">'+new Date(q.created_at).toLocaleDateString('en-GB')+'</div></div><span class="tag '+(q.status=='done'?'paid':'pic')+'">'+t('st_'+q.status)+'</span><div style="width:100%;margin-top:6px">'+esc(q.message)+'</div>'+(q.reply?'<div class="note" style="width:100%"><b>'+t('supReply')+':</b> '+esc(q.reply)+'</div>':'')+'</div>'}).join('')+'</div>';
+}
+async function sendReq(){
+  var m=$('sm').value.trim(),k=$('sk').value;if(m.length<5){setErr('eMsg');return}if(S.busy)return;S.busy=true;
+  try{var r=await sb.rpc('submit_request',{p_kind:k,p_message:m});if(r.error)throw r.error;S.busy=false;toast(t('supSent'));await openSupport()}catch(x){fail(x)}
+}
+/* ---------- owner dashboard ---------- */
+function startOwnerMfa(){S.afterMfa='owner';return mfaStart()}
+async function openOwner(){if(!S.mfaOn){return startOwnerMfa()}var lv=await sb.auth.mfa.getAuthenticatorAssuranceLevel();if(!lv.data||lv.data.currentLevel!='aal2'){S.mfaFactor=S.mfaId;S.afterMfa='owner';go('mfa');return}await loadOwner();go('owner')}
+async function loadOwner(){
+  var a=await Promise.all([sb.rpc('admin_buildings'),sb.rpc('admin_requests')]);
+  if(a[0].error)throw a[0].error;if(a[1].error)throw a[1].error;S.adm=a[0].data||[];S.reqs=a[1].data||[];S.otab=S.otab||'req';
+}
+function priceOf(n){return n<=20?3000:n<=50?6000:10000}
+function vOwner(){
+  var tb=S.otab||'req',nw=(S.reqs||[]).filter(function(q){return q.status=='new'}).length;
+  var h=back('settings')+'<h1 style="margin-top:10px">'+t('ownT')+'</h1><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px"><button class="btn '+(tb=='req'?'go':'ghost')+'" onclick="S.otab=\'req\';render()">'+t('ownReq')+(nw?' ('+nw+')':'')+'</button><button class="btn '+(tb=='bld'?'go':'ghost')+'" onclick="S.otab=\'bld\';render()">'+t('ownBld')+'</button><button class="btn '+(tb=='ann'?'go':'ghost')+'" onclick="S.otab=\'ann\';render()">'+t('annT')+'</button></div>';
+  if(tb=='ann')return h+'<div class="card"><label for="at">'+t('annTarget')+'</label><select id="at"><option value="managers">'+t('annMgrs')+'</option><option value="all">'+t('annAll')+'</option></select><label for="am">'+t('nMsg')+'</label><textarea id="am" rows="4" maxlength="500"></textarea><div class="note">'+t('annHint')+'</div><div class="err" id="err"></div><button class="btn go full" onclick="sendOwnerNote()">'+t('nSend')+'</button></div>';
+  if(tb=='req'){
+    if(!S.reqs.length)return h+'<div class="note">'+t('ownNoReq')+'</div>';
+    return h+S.reqs.map(function(q){return '<div class="card"><div class="item wrap" style="border:0"><div><b>'+t('k_'+q.kind)+'</b> <span class="tag '+(q.status=='done'?'paid':q.status=='new'?'due':'pic')+'">'+t('st_'+q.status)+'</span><div class="sub">'+t('ownFrom')+': '+esc(q.name)+' · <span dir="ltr">'+esc(q.mobile)+'</span> · <span dir="ltr">'+esc(q.email)+'</span></div><div class="sub">'+new Date(q.created_at).toLocaleDateString('en-GB')+'</div></div></div><div style="margin:6px 0">'+esc(q.message)+'</div><label for="rp_'+q.id+'">'+t('ownReplyL')+'</label><textarea id="rp_'+q.id+'" rows="3" maxlength="2000" style="width:100%">'+esc(q.reply)+'</textarea><div class="acts" style="margin-top:8px"><button class="btn small ghost" onclick="setReq(\''+q.id+'\',\'seen\')">'+t('ownSeen')+'</button><button class="btn small go" onclick="setReq(\''+q.id+'\',\'done\')">'+t('ownDone')+'</button></div></div>'}).join('');
+  }
+  var c={trial:0,active:0,other:0};S.adm.forEach(function(b){if(b.deleted_at)return;var st=bstate(b);if(st=='trial')c.trial++;else if(st=='active')c.active++;else c.other++});
+  h+='<div class="g2b" style="margin-top:12px"><div class="card" style="margin:0"><b>'+c.trial+'</b><div class="sub">'+t('sumTrial')+'</div></div><div class="card" style="margin:0"><b>'+c.active+'</b><div class="sub">'+t('sumActive')+'</div></div><div class="card" style="margin:0"><b>'+c.other+'</b><div class="sub">'+t('sumLocked')+'</div></div></div>';
+  if(!S.adm.length)return h+'<div class="note">'+t('ownNoBld')+'</div>';
+  return h+S.adm.map(function(b){if(b.deleted_at)return '<div class="card"><div class="item wrap" style="border:0"><div><b>'+esc(b.name)+'</b> <span class="tag due">'+t('b_deleted')+'</span><div class="sub">'+t('ownMgr')+': '+esc(b.manager_name)+' · <span dir="ltr">'+esc(b.manager_mobile)+'</span> · <span dir="ltr">'+esc(b.manager_email)+'</span></div><div class="sub">'+t('ownApts',{a:b.apts,j:b.joined})+'</div><div class="sub">'+t('ownDelOn',{d:new Date(b.deleted_at).toLocaleDateString('en-GB')})+'</div></div></div><div class="acts" style="margin-top:8px"><button class="btn small go" onclick="restoreB(\''+b.id+'\')">'+t('ownRestore')+'</button><button class="btn small ghost" onclick="purgeB(\''+b.id+'\')">'+(S.delk=='x'+b.id?t('ownConfirm'):t('ownPurge'))+'</button></div></div>';var st=bstate(b),end=st=='active'||b.status=='active'?b.license_ends:b.trial_ends,k=S.delk;
+    return '<div class="card"><div class="item wrap" style="border:0"><div><b>'+esc(b.name)+'</b> <span class="tag '+(st=='active'?'paid':st=='trial'?'pic':'due')+'">'+t('b_'+st)+'</span><div class="sub">'+esc(cnE(b.gov,b.city))+' · <span dir="ltr">'+esc(b.code)+'</span></div><div class="sub">'+t('ownMgr')+': '+esc(b.manager_name)+' · <span dir="ltr">'+esc(b.manager_mobile)+'</span> · <span dir="ltr">'+esc(b.manager_email)+'</span></div><div class="sub">'+t('ownApts',{a:b.apts,j:b.joined})+' · '+t('ownSuggest',{p:priceOf(Number(b.apts)).toLocaleString('en-US')})+'</div><div class="sub">'+t('ownEnds')+': '+(end?new Date(end).toLocaleDateString('en-GB'):'—')+'</div></div></div>'
+    +'<label for="nt_'+b.id+'">'+t('ownNote')+'</label><input id="nt_'+b.id+'" value="'+esc(b.admin_note)+'" maxlength="500"><div class="acts" style="margin-top:8px"><button class="btn small ghost" onclick="setBld(\''+b.id+'\',\'note\')">'+t('ownSaveNote')+'</button>'
+    +'<button class="btn small go" onclick="setBld(\''+b.id+'\',\'activate\')">'+(k=='a'+b.id?t('ownConfirm'):t('ownAct'))+'</button>'
+    +(st=='active'?'':'<button class="btn small ghost" onclick="setBld(\''+b.id+'\',\'trial\')">'+t('ownExt')+'</button>')
+    +(b.status=='paused'?'<button class="btn small ghost" onclick="setBld(\''+b.id+'\',\'resume\')">'+t('ownResume')+'</button>':'<button class="btn small ghost" onclick="setBld(\''+b.id+'\',\'pause\')">'+(k=='p'+b.id?t('ownConfirm'):t('ownPause'))+'</button>')
+    +(b.status!='locked'?'<button class="btn small ghost" onclick="setBld(\''+b.id+'\',\'lock\')">'+(k=='l'+b.id?t('ownConfirm'):t('ownLock'))+'</button>':'')
+    +'<button class="btn small ghost" onclick="resetMgr(\''+b.id+'\')">'+(k=='r'+b.id?t('ownConfirm'):t('ownResetMfa'))+'</button></div><label for="xt_'+b.id+'">'+t('ownXferP')+'</label><input id="xt_'+b.id+'" type="email" dir="ltr" inputmode="email" value="'+esc((S.xemail||{})[b.id]||'')+'" placeholder="name@example.com"><div class="acts" style="margin-top:8px"><button class="btn small ghost" onclick="setXfer(\''+b.id+'\')">'+(k=='t'+b.id?t('ownConfirm'):t('ownXfer'))+'</button></div></div>'}).join('');
+}
+async function setReq(id,st){
+  var rp=$('rp_'+id);return ownAct(function(){return sb.rpc('admin_set_request',{p_id:id,p_status:st,p_reply:rp?rp.value:''})},'ownSaved');
+}
+async function setBld(id,what){
+  var b=S.adm.filter(function(x){return x.id==id})[0],now=Date.now(),D=864e5,note=($('nt_'+id)||{}).value;
+  var need={activate:'a',pause:'p',lock:'l'}[what];
+  if(need&&S.delk!=need+id){S.delk=need+id;render();return}S.delk='';
+  var st=b.status,ends=null;
+  if(what=='activate'){st='active';var base=b.license_ends&&new Date(b.license_ends).getTime()>now?new Date(b.license_ends).getTime():now;ends=new Date(base+365*D).toISOString()}
+  else if(what=='trial'){st='trial';var tb=new Date(b.trial_ends).getTime();ends=new Date(Math.max(tb,now)+14*D).toISOString()}
+  else if(what=='pause')st='paused';else if(what=='lock')st='locked';
+  else if(what=='resume')st=b.license_ends&&new Date(b.license_ends).getTime()>now?'active':'trial';
+  if(what=='resume'&&st=='active')ends=b.license_ends;
+  return ownAct(function(){return sb.rpc('admin_set_building',{p_building:id,p_status:st,p_ends:ends,p_note:note==null?b.admin_note:note})},what=='note'?'ownSaved':'ownDone2');
+}
+function restoreB(id){return ownAct(function(){return sb.rpc('admin_restore_building',{p_building:id})},'ownRestored')}
+function purgeB(id){if(S.delk!='x'+id){S.delk='x'+id;render();return}S.delk='';return ownAct(function(){return sb.rpc('admin_purge_building',{p_building:id})},'ownPurged')}
+function resetMgr(id){
+  if(S.delk!='r'+id){S.delk='r'+id;render();return}S.delk='';
+  var b=S.adm.filter(function(x){return x.id==id})[0];
+  return ownAct(function(){return sb.rpc('admin_reset_manager',{p_email:b.manager_email})},'ownResetOk');
+}
+async function ownAct(fn,msg){
+  if(S.busy)return;S.busy=true;
+  try{var r=await fn();if(r&&r.error)throw r.error;S.busy=false;await loadOwner();render();toast(t(msg))}catch(x){fail(x)}
+}
+
+
+/* ---------- notifications ---------- */
+function unreadN(){return (S.notifs||[]).filter(function(n){return !n.read}).length}
+function bellBadge(){var b=$('bb');if(!b)return;var n=unreadN();b.textContent=n>9?'9+':String(n);b.style.display=n?'inline-block':'none'}
+async function loadNotifs(){
+  var q=await sb.from('notifications').select('id,kind,message,data,read,created_at').order('created_at',{ascending:false}).limit(50);
+  if(q.error)throw q.error;var old=unreadN();S.notifs=q.data||[];bellBadge();
+  if(unreadN()>old&&S.scr!='notif')toast(t('nT')+': '+unreadN())
+}
+function notifText(n){
+  var d=n.data||{},k=n.kind;
+  if(k=='announce')return esc(n.message);
+  if(k=='payment')return esc(t('nPay',{a:money(d.amount),r:d.receipt}));
+  if(k=='paycancel')return esc(t('nPayC',{a:money(d.amount),r:d.receipt}));
+  if(k=='fee')return esc(t('nFee',{p:ml(d.period),a:money(d.amount)}));
+  if(k=='reply')return esc(t('nReply'));
+  if(k=='settled')return esc(t('nSettled',{p:ml(d.period)}));
+  if(k=='exempt')return esc(t('nExempt'));
+  if(k=='unlinked')return esc(t('nUnlinked',{c:d.apt||'',b:d.building||''}));
+  if(k=='transfer')return esc(t(d.apt?'nXfer2':'nXfer',{f:d.from||'',b:d.building||'',c:d.apt||''}));
+  if(k=='xferdone')return esc(t(d.apt?'nXferDone2':'nXferDone',{n:d.name||'',b:d.building||'',c:d.apt||''}));
+  if(k=='xferno')return esc(t('nXferNo',{b:d.building||''}));
+  if(k=='xferyou')return esc(t('nXferYou',{b:d.building||''}));
+  if(k=='xferout')return esc(t('nXferOut',{b:d.building||''}));
+  if(k=='restored')return esc(t('nRestored',{b:d.building||''}));
+  if(k=='license')return esc(t('nLic',{b:d.building||'',s:t('b_'+d.status)}));
+  return esc(n.message||'')
+}
+function notifHead(n){var d=n.data||{};if(n.kind!='announce')return '';return '<div class="sub"><b>'+(d.from=='owner'?t('nOwner'):t('nFromB',{b:esc(d.building||'')}))+'</b>'+(d.apt?' · '+t('nToApt',{a:esc(d.apt)}):'')+'</div>'}
+async function openNotifs(){
+  try{await loadNotifs();S.nview=(S.notifs||[]).map(function(n){return {n:n,isNew:!n.read}});go('notif');
+    if(unreadN()){var m=await sb.rpc('mark_notifs_read');if(!m.error){S.notifs.forEach(function(n){n.read=true});bellBadge()}}}catch(x){fail(x)}
+}
+function vNotif(){
+  var h=back('home')+'<h1 style="margin-top:10px">'+t('nT')+'</h1>';
+  if(!S.nview||!S.nview.length)return h+'<div class="note">'+t('nNone')+'</div>';
+  return h+'<div class="card" style="margin-top:0">'+S.nview.map(function(x){var n=x.n;return '<div class="item wrap"><div style="flex:1">'+notifHead(n)+'<div>'+notifText(n)+'</div><div class="sub">'+new Date(n.created_at).toLocaleDateString('en-GB')+'</div></div>'+(x.isNew?'<span class="tag due">'+t('nNewTag')+'</span>':'')+'</div>'}).join('')+'</div>';
+}
+function noteForm(b){
+  var opts='<option value="">'+t('nAll')+'</option>'+S.d.apts.filter(function(a){return a.resident_id}).map(function(a){return '<option value="'+a.id+'">'+t('apt')+' '+a.code+' · '+esc(personOf(a))+'</option>'}).join('');
+  return '<div class="card"><b>'+t('nSendT')+'</b><label for="nt">'+t('nTo')+'</label><select id="nt">'+opts+'</select><label for="nm">'+t('nMsg')+'</label><textarea id="nm" rows="3" maxlength="500"></textarea><div class="err" id="err"></div><button class="btn go full" onclick="sendNote()">'+t('nSend')+'</button></div>'
+}
+function sendNote(){
+  var m=$('nm').value.trim(),a=$('nt').value;if(m.length<5){setErr('eMsg');return}
+  return act(function(){return sb.rpc('notify_building',{p_building:S.cur,p_apartment:a||null,p_message:m})},function(n){return t('nSent',{n:n})});
+}
+async function sendOwnerNote(){
+  var m=$('am').value.trim(),tg=$('at').value;if(m.length<5){setErr('eMsg');return}if(S.busy)return;S.busy=true;
+  try{var r=await sb.rpc('owner_notify',{p_target:tg,p_message:m});if(r.error)throw r.error;S.busy=false;toast(t('nSent',{n:r.data}));$('am').value=''}catch(x){fail(x)}
+}
+
+
+/* ---------- hand a building to another manager ---------- */
+async function openXfer(id){S.xb=id;S.xapts=[];try{var q=await sb.from('apartments').select('code,resident_id').eq('building_id',id).order('floor').order('code');S.xapts=(q.data||[]).filter(function(a){return !a.resident_id})}catch(e){}go('xfer')}
+function vXfer(){
+  var b=S.blds.filter(function(x){return x.id==S.xb})[0]||{name:''},out=(S.xfers||[]).filter(function(x){return x.building_id==S.xb&&x.from_user==S.user.id})[0];
+  var h=back('settings')+'<h1 style="margin-top:10px">'+t('xfT')+'</h1><div class="sub"><b>'+esc(b.name)+'</b></div><div class="note">'+t('xfP')+'</div>';
+  if(out)return h+'<div class="card"><b>'+t('xfWait',{e:'<span dir="ltr">'+esc(out.to_email)+'</span>'})+'</b>'+(out.from_apt?'<div class="sub">'+t('xfWaitApt',{c:'<span dir="ltr">'+esc(out.from_apt)+'</span>'})+'</div>':'')+'<button class="btn ghost full" onclick="cancelX(\''+out.id+'\')">'+t('xfCancel')+'</button></div>';
+  return h+'<div class="card"><label for="xe">'+t('xfEmail')+'</label><input id="xe" type="email" dir="ltr" inputmode="email" placeholder="name@example.com"></div><div class="card"><label for="xa">'+t('xfApt')+'</label><div class="note">'+t('xfAptP')+'</div>'+((S.xapts||[]).length?'<select id="xa"><option value="">'+t('xfChApt')+'</option>'+S.xapts.map(function(a){return '<option value="'+esc(a.code)+'">'+esc(a.code)+'</option>'}).join('')+'</select>':'<div class="warn">'+t('xfNoApt')+'</div>')+'</div><div class="err" id="err"></div><button class="btn go full" style="margin-top:0" onclick="sendX()">'+t('xfSend')+'</button>';
+}
+async function sendX(){
+  var e=cleanEmail($('xe').value);if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)){setErr('eEml');return}var ap=$('xa')?$('xa').value:'';if(!ap){setErr('eXApt');return}if(S.busy)return;S.busy=true;
+  try{var r=await sb.rpc('request_transfer',{p_building:S.xb,p_email:e,p_apt:ap});if(r.error)throw r.error;S.busy=false;await loadHome();toast(t('xfSent'));render()}catch(x){fail(x)}
+}
+async function cancelX(id){if(S.busy)return;S.busy=true;try{var r=await sb.rpc('cancel_transfer',{p_id:id});if(r.error)throw r.error;S.busy=false;await loadHome();toast(t('xfCancelled'));render()}catch(x){fail(x)}}
+async function answerX(id,ok){
+  if(S.busy)return;S.busy=true;
+  try{var r=await sb.rpc('answer_transfer',{p_id:id,p_accept:ok});if(r.error)throw r.error;S.busy=false;await loadHome();toast(t(ok?'xDone':'xNo'));render()}catch(x){fail(x)}
+}
+function setXfer(id){
+  var el=$('xt_'+id),v=el?el.value.trim().toLowerCase():'';S.xemail=S.xemail||{};
+  if(S.delk!='t'+id){if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){toast(t('eEml'));return}S.xemail[id]=v;S.delk='t'+id;render();return}
+  S.delk='';return ownAct(function(){return sb.rpc('admin_transfer_building',{p_building:id,p_email:S.xemail[id]})},'ownDone2');
+}
+
+/* ---------- render ---------- */
 function render(){
-  document.documentElement.lang=lang;document.documentElement.dir=lang=='ar'?'rtl':'ltr';document.title='it7ad molak | إتحاد ملاك – '+(lang=='ar'?'فلوس عمارتك واضحة':'Clear money for your building');
-  var h='<div class="nav"><div class="brand"><img src="/favicon.svg" alt="" width="32" height="32">it7ad molak <span class="ar" lang="ar">إتحاد ملاك</span></div><div class="navr"><button class="btn small line" onclick="setLang(\''+(lang=='ar'?'en':'ar')+'\')">'+(lang=='ar'?'English':'العربية')+'</button><a class="btn small" href="/app/">'+t('cta')+'</a></div></div>';
-  h+='<header class="hero"><div><h1>'+t('h1')+'</h1><p>'+t('heroP')+'</p><div class="acts"><a class="btn" href="/app/">'+t('cta1')+'</a><a class="btn line" href="#how">'+t('cta2')+'</a></div><div class="fine">'+t('fine')+'</div></div>';
-  h+='<div class="ledger"><div class="lbl">'+t('lLbl')+'</div><div class="big">14,250 '+t('egp')+'</div><div class="bar"><i></i></div><div class="lbl">'+t('lPct')+'</div><div style="margin-top:12px">'+[['r1','1,450'],['r2','1,200'],['r3','900']].map(function(r){return '<div class="lrow"><span>'+t(r[0])+'</span><span>'+r[1]+' '+t('egp')+'<span class="chip">'+t('photo')+'</span></span></div>'}).join('')+'</div></div></header>';
-  h+='<section><h2>'+t('s1h')+'</h2><p class="lead">'+t('s1p')+'</p><div class="grid three">'+[1,2,3,4,5,6].map(card).join('')+'</div></section>';
-  h+='<section id="how"><h2>'+t('hwh')+'</h2><p class="lead">'+t('hwp')+'</p><ol class="steps">'+[1,2,3].map(function(i){return '<li><div><b>'+t('w'+i+'t')+'</b><span>'+t('w'+i+'p')+'</span></div></li>'}).join('')+'</ol></section>';
-  h+='<section><h2>'+t('ph')+'</h2><p class="lead">'+t('pp')+'</p><div class="grid three">'+[1,2,3].map(tierCard).join('')+'</div></section>';
-  h+='<section id="signup"><div class="signup">'+(sent?done():form())+'</div></section>';
-  h+='<section><h2>'+t('qh')+'</h2>'+[1,2,3,4].map(function(i){return '<details><summary>'+t('q'+i)+'</summary><p>'+t('a'+i)+'</p></details>'}).join('')+'</section><footer>'+t('foot')+'</footer>';
-  $('root').innerHTML=h;
+  document.documentElement.lang=lang;document.documentElement.dir=lang=='ar'?'rtl':'ltr';
+  $('lg').textContent=t('langBtn');$('lg').onclick=function(){setLang(lang=='ar'?'en':'ar')};
+  var f={login:vLogin,code:vCode,profile:vProfile,mfa:vMfa,mfaSetup:vMfaSetup,home:vHome,join:vJoin,create:vCreate,dash:vDash,settings:vSettings,xfer:vXfer,notif:vNotif,support:vSupport,owner:vOwner,editB:vEditB,delB:vDelB};
+  var stb=$('st');if(stb){stb.style.display=(S.user&&S.profile&&['home','dash','join','create','settings','support','owner'].indexOf(S.scr)>=0)?'inline-block':'none';stb.setAttribute('aria-label',t('settingsBtn'));stb.onclick=function(){snap();go('settings')}}
+  var bl=$('bl');if(bl){bl.style.display=(S.user&&S.profile&&['home','dash','join','create','settings','support','owner','notif','xfer'].indexOf(S.scr)>=0)?'inline-block':'none';bl.setAttribute('aria-label',t('nBell'));bl.onclick=function(){snap();openNotifs()};bellBadge()}
+  $('main').innerHTML=f[S.scr]();
+  if(S.scr=='code')startCd();
+  var nav=$('nav'),tr=$('tour'),b=S.scr=='dash'?bcur():null;
+  if(b){var lk=S.role=='manager'&&bstate(b)!='trial'&&bstate(b)!='active';nav.style.display='flex';$('tabs').innerHTML=TABS[S.role].map(function(x,i){return '<button class="'+(x[0]==S.tab?'on ':'')+(S.tour&&S.tour.i==i?'hl':'')+'" onclick="'+(S.tour?'':'S.tab=\''+x[0]+'\';S.delk=\'\';render()')+'">'+t(x[1])+(lk?'<br><small style="color:var(--bad)">'+t('locked')+'</small>':'')+'</button>'}).join('')}else nav.style.display='none';
+  if(S.tour&&b){var s=TS[S.tour.r],n=s.length,x=s[S.tour.i],pos=((S.tour.i+.5)/n*100),ar=lang=='ar';
+    tr.innerHTML='<div class="tcard"><div class="sub">'+t('tStep',{i:S.tour.i+1,n:n})+'</div><h3>'+t(x[1])+'</h3><p>'+t(x[2])+'</p><div class="row"><button class="btn small ghost" onclick="endTour()">'+t('skipT')+'</button><div><button class="btn small ghost" '+(S.tour.i?'':'disabled')+' onclick="tourGo(-1)">'+t('backT')+'</button> <button class="btn small go" onclick="tourGo(1)">'+(S.tour.i==n-1?t('done'):t('next'))+'</button></div></div><i class="arrow" style="'+(ar?'right:'+pos+'%;transform:translateX(50%) rotate(45deg)':'left:'+pos+'%')+'"></i></div>';tr.className='tour show'}else tr.className='tour';
 }
-function send(){
-  readForm();var u=parseInt(fv.un,10),m=fv.mb.replace(/[\s-]/g,'');
-  if(!fv.bn.trim()||!fv.nm.trim())err='e1';
-  else if(!(u>0))err='e2';
-  else if(!/^01[0125]\d{8}$/.test(m))err='e3';
-  else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fv.em.trim()))err='e4';
-  else{err='';sent={b:fv.bn.trim(),a:fv.ar.trim(),n:fv.nm.trim(),u:u,m:fv.mb.trim()}}
-  render();if(sent)$('signup').scrollIntoView({behavior:'smooth',block:'center'});
+async function init(){
+  try{if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js')}catch(e){}
+  var m=location.search.match(/[?&]join=([A-Za-z0-9-]+)/);if(m){S.pre=m[1].toUpperCase();try{localStorage.setItem('pre',S.pre)}catch(e){}}else{try{S.pre=localStorage.getItem('pre')||''}catch(e){}}try{var th=localStorage.getItem('theme');if(th)applyTheme(th)}catch(e){}
+  render();
+  try{var s=await sb.auth.getSession();if(s.data.session){var ea=parseInt(lsGet('emailAt')||'0',10);if(!ea){lsSet('emailAt',String(Date.now()))}else if(Date.now()-ea>CFG.emailDays*864e5){await sb.auth.signOut();ssSet('unlocked',null);lsSet('emailAt',null);S.weekly=true;go('login');return}S.user=s.data.session.user;await mfaState();await afterAuth();await mfaState().then(function(){if(S.scr=='home')render()})}}catch(x){console.error(x)}
 }
-render();
+var pollT=null;
+function startPoll(){clearInterval(pollT);pollT=setInterval(pollNow,20000)}
+async function pollNow(){
+  if(!S.user||!S.profile||document.hidden||S.busy)return;
+  try{var old=unreadN();await loadNotifs();
+    if(unreadN()>old&&S.role=='resident'&&S.scr=='dash'&&!S.tour){await loadBuilding();render()}
+    else if(unreadN()>old&&S.scr=='home'){await loadHome();render()}}catch(e){}
+}
+try{document.addEventListener('visibilitychange',function(){if(!document.hidden)pollNow()})}catch(e){}
+startPoll();
+window.__ready=init();
+
 </script>
 </body>
 </html>
